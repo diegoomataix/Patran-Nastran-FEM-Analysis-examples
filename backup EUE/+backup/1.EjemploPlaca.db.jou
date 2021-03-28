@@ -1,0 +1,905 @@
+$# Creating journal file C:\Users\diego\Dropbox\Academic\MEng Space 
+$# Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.EjemploPlaca.db.jou at 28-Mar-21 19:39:03
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/" // @
+"template.db","C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE -" // @
+" Estructuras de Uso Espacial\Patran files\1.EjemploPlaca.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E - Estructuras de Uso Espacial\Patran files" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_viewport_size_set( "default_viewport", 10.327879, 3.903051, 1 )
+db_set_pref( 303, 3, 0, FALSE, 0.00030000001, "" )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1", "[-0.25 -0.125 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1
+asm_const_grid_xyz( "2", "[0.25 -0.125 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 2
+ga_view_center_set( 0.002793, 0.000455 )
+ga_view_zoom_set( 0.095002 )
+ga_view_center_set( 0.005276, 0.000860 )
+ga_view_zoom_set( 0.084446 )
+ga_view_center_set( 0.007482, 0.001219 )
+ga_view_zoom_set( 0.075063 )
+ga_view_center_set( 0.005276, 0.000860 )
+ga_view_zoom_set( 0.084446 )
+ga_view_center_set( 0.002793, 0.000455 )
+ga_view_zoom_set( 0.095002 )
+ga_view_center_set( -0.000000, 0.000000 )
+ga_view_zoom_set( 0.106877 )
+ga_view_center_set( -0.003142, -0.000512 )
+ga_view_zoom_set( 0.120237 )
+ga_view_center_set( -0.006677, -0.001088 )
+ga_view_zoom_set( 0.135267 )
+ga_view_center_set( -0.010654, -0.001736 )
+ga_view_zoom_set( 0.152175 )
+ga_view_center_set( -0.015127, -0.002465 )
+ga_view_zoom_set( 0.171197 )
+ga_view_center_set( -0.020160, -0.003434 )
+ga_view_zoom_set( 0.192596 )
+ga_view_center_set( -0.025906, -0.004693 )
+ga_view_zoom_set( 0.216671 )
+ga_view_center_set( -0.020160, -0.003434 )
+ga_view_zoom_set( 0.192596 )
+ga_view_center_set( 0.004877, 0.121753 )
+asm_const_grid_xyz( "3", "[0.25 0.125 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 3
+default_vp_background( 13, 13, 3, 1, 0 )
+set_all_vp_background( 13, 13, 3, 1, 0 )
+default_vp_background( 8, 8, 3, 1, 0 )
+set_all_vp_background( 8, 8, 3, 1, 0 )
+default_vp_background( 11, 11, 3, 1, 0 )
+set_all_vp_background( 11, 11, 3, 1, 0 )
+default_vp_background( 0, 0, 3, 1, 0 )
+set_all_vp_background( 0, 0, 3, 1, 0 )
+$# UNDO:
+ga_view_center_set( -0.009030, 0.001684 )
+ga_view_zoom_set( 0.133333 )
+ga_view_center_set( -0.002323, 0.000348 )
+ga_view_zoom_set( 0.150000 )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "4", "Point 1 2", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# Question in application SGM by application Geometry
+$#     Point 1 already exists at the specified location to create the next 
+$# Point. Do you wish to create a duplicate Point?
+$? NO 1000034 
+$# Duplicate Point was not created at users request.
+$# Question in application SGM by application Geometry
+$#     Point 2 already exists at the specified location to create the next 
+$# Point. Do you wish to create a duplicate Point?
+$? NO 1000034 
+$# Duplicate Point was not created at users request.
+$# 0 Points created.
+ga_view_center_set( 0.022851, -0.005168 )
+ga_view_zoom_set( 0.133333 )
+ga_view_center_set( 0.045074, -0.010021 )
+ga_view_zoom_set( 0.118519 )
+ga_view_center_set( 0.023781, -0.005323 )
+ga_view_zoom_set( 0.133333 )
+ga_view_center_set( 0.000116, -0.000039 )
+ga_view_zoom_set( 0.150000 )
+ga_view_center_set( -0.026114, 0.005906 )
+ga_view_zoom_set( 0.168750 )
+ga_view_center_set( -0.055329, 0.012595 )
+ga_view_zoom_set( 0.189844 )
+ga_view_center_set( -0.087949, 0.020202 )
+ga_view_zoom_set( 0.213574 )
+ga_view_center_set( -0.124645, 0.028946 )
+ga_view_zoom_set( 0.240271 )
+ga_view_center_set( -0.165928, 0.038887 )
+ga_view_zoom_set( 0.270305 )
+ga_view_center_set( -0.214138, 0.052190 )
+ga_view_zoom_set( 0.304093 )
+ga_view_center_set( -0.268507, 0.067422 )
+ga_view_zoom_set( 0.342105 )
+ga_view_center_set( -0.090612, -0.052315 )
+asm_const_grid_xyz( "4", "Point 1:3", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# Question in application SGM by application Geometry
+$#     Point 1 already exists at the specified location to create the next 
+$# Point. Do you wish to create a duplicate Point?
+$? NO 1000034 
+$# Duplicate Point was not created at users request.
+$# Question in application SGM by application Geometry
+$#     Point 2 already exists at the specified location to create the next 
+$# Point. Do you wish to create a duplicate Point?
+$? NO 1000034 
+$# Duplicate Point was not created at users request.
+$# Question in application SGM by application Geometry
+$#     Point 3 already exists at the specified location to create the next 
+$# Point. Do you wish to create a duplicate Point?
+$? NO 1000034 
+$# Duplicate Point was not created at users request.
+$# 0 Points created.
+asm_const_grid_xyz( "4", "[-0.25 0.125 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 4
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "1", "Point 3", "Point 4", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 1
+asm_const_line_2point( "2", "Point 4", "Point 1", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 2
+asm_const_line_2point( "3", "Point 1", "Point 2", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 3
+$# UNDO:
+ga_view_center_set( -0.124320, -0.039998 )
+ga_view_zoom_set( 0.304093 )
+ga_view_center_set( -0.154046, -0.029284 )
+ga_view_zoom_set( 0.270305 )
+ga_view_center_set( -0.180365, -0.020075 )
+ga_view_zoom_set( 0.240271 )
+ga_view_center_set( -0.203759, -0.011890 )
+ga_view_zoom_set( 0.213574 )
+ga_view_center_set( -0.180551, -0.019982 )
+ga_view_zoom_set( 0.240271 )
+ga_view_center_set( -0.154441, -0.029087 )
+ga_view_zoom_set( 0.270305 )
+ga_view_center_set( -0.125068, -0.039329 )
+ga_view_zoom_set( 0.304093 )
+ga_view_center_set( -0.092023, -0.050852 )
+ga_view_zoom_set( 0.342105 )
+ga_view_center_set( -0.054847, -0.063815 )
+ga_view_zoom_set( 0.384868 )
+ga_view_center_set( -0.012690, -0.079572 )
+ga_view_zoom_set( 0.432976 )
+ga_view_center_set( 0.034738, -0.097298 )
+ga_view_zoom_set( 0.487098 )
+ga_view_center_set( 0.088094, -0.117240 )
+ga_view_zoom_set( 0.547985 )
+ga_view_center_set( 0.148119, -0.139675 )
+ga_view_zoom_set( 0.616484 )
+ga_view_center_set( 0.215648, -0.164914 )
+ga_view_zoom_set( 0.693544 )
+ga_view_center_set( 0.291617, -0.193309 )
+ga_view_zoom_set( 0.780237 )
+ga_view_center_set( 0.377084, -0.225252 )
+ga_view_zoom_set( 0.877767 )
+ga_view_center_set( 0.473232, -0.261189 )
+ga_view_zoom_set( 0.987488 )
+ga_view_center_set( 0.581400, -0.301617 )
+ga_view_zoom_set( 1.110924 )
+ga_view_center_set( 0.703089, -0.347099 )
+ga_view_zoom_set( 1.249789 )
+ga_view_center_set( 0.839989, -0.398267 )
+ga_view_zoom_set( 1.406013 )
+ga_view_center_set( 0.994001, -0.455830 )
+ga_view_zoom_set( 1.581764 )
+ga_view_center_set( 1.167265, -0.520589 )
+ga_view_zoom_set( 1.779485 )
+ga_view_center_set( 1.362186, -0.593442 )
+ga_view_zoom_set( 2.001920 )
+ga_view_center_set( 1.581474, -0.677146 )
+ga_view_zoom_set( 2.252160 )
+ga_view_center_set( 1.361314, -0.589954 )
+ga_view_zoom_set( 2.001920 )
+ga_view_center_set( 1.164068, -0.511675 )
+ga_view_zoom_set( 1.779485 )
+ga_view_center_set( 0.987359, -0.440028 )
+ga_view_zoom_set( 1.581764 )
+ga_view_center_set( 0.830285, -0.376341 )
+ga_view_zoom_set( 1.406013 )
+ga_view_center_set( 0.690663, -0.319730 )
+ga_view_zoom_set( 1.249789 )
+ga_view_center_set( 0.467269, -0.229153 )
+ga_view_zoom_set( 0.999831 )
+ga_view_center_set( 0.367983, -0.188897 )
+ga_view_zoom_set( 0.888739 )
+ga_view_center_set( 0.279728, -0.153113 )
+ga_view_zoom_set( 0.789990 )
+ga_view_center_set( 0.200668, -0.121305 )
+ga_view_zoom_set( 0.702213 )
+ga_view_center_set( 0.074172, -0.070413 )
+ga_view_zoom_set( 0.561771 )
+ga_view_center_set( 0.017951, -0.047795 )
+ga_view_zoom_set( 0.499352 )
+ga_view_center_set( -0.032023, -0.027689 )
+ga_view_zoom_set( 0.443868 )
+ga_view_center_set( -0.111981, 0.004480 )
+ga_view_zoom_set( 0.355095 )
+ga_view_center_set( -0.147518, 0.018777 )
+ga_view_zoom_set( 0.315640 )
+ga_view_center_set( -0.043357, -0.050664 )
+ga_view_center_set( -0.036277, -0.043240 )
+ga_view_zoom_set( 0.355095 )
+ga_view_center_set( -0.028312, -0.034889 )
+ga_view_zoom_set( 0.399481 )
+ga_view_center_set( -0.036277, -0.043395 )
+ga_view_zoom_set( 0.355095 )
+ga_view_center_set( -0.043357, -0.051093 )
+ga_view_zoom_set( 0.315640 )
+ga_view_center_set( -0.049650, -0.057936 )
+ga_view_zoom_set( 0.280569 )
+ga_view_center_set( -0.059719, -0.068885 )
+ga_view_zoom_set( 0.224455 )
+ga_view_center_set( -0.064194, -0.073752 )
+ga_view_zoom_set( 0.199515 )
+ga_view_center_set( -0.059719, -0.068972 )
+ga_view_zoom_set( 0.224455 )
+ga_view_center_set( -0.037273, -0.012859 )
+uil_primary_file.db_save(  )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "5", "[-0.20 -0.075 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 5
+asm_const_grid_xyz( "6", "[0.20 -0.075 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 6
+$# UNDO:
+STRING sgm_transform_point_created_ids[VIRTUAL]
+asm_transform_grid_translate_1( "7", "<0 0.15 0>", 0.15000001, FALSE,  @
+"Coord 0", 1, FALSE, FALSE, "Point 5 6", sgm_transform_point_created_ids )
+$# 2 Points created: Grid 7,8
+ga_display_lines_set( "general", 2 )
+ga_display_lines_set( "general", 0 )
+uil_toolbar.shaded_smooth(  )
+uil_primary_file.db_save(  )
+default_vp_background( 13, 13, 3, 1, 0 )
+set_all_vp_background( 13, 13, 3, 1, 0 )
+uil_primary_file.db_save(  )
+ga_view_center_set( 0.031751, -0.017835 )
+ga_view_zoom_set( 0.150000 )
+ga_view_center_set( 0.045601, -0.027940 )
+ga_view_zoom_set( 0.133333 )
+ga_view_center_set( 0.057654, -0.036973 )
+ga_view_zoom_set( 0.118519 )
+ga_view_center_set( 0.068230, -0.045049 )
+ga_view_zoom_set( 0.105350 )
+ga_view_center_set( 0.057792, -0.036973 )
+ga_view_zoom_set( 0.118519 )
+ga_view_center_set( 0.046048, -0.027888 )
+ga_view_zoom_set( 0.133333 )
+ga_view_center_set( 0.032837, -0.017668 )
+ga_view_zoom_set( 0.150000 )
+ga_view_center_set( 0.017974, -0.006169 )
+ga_view_zoom_set( 0.168750 )
+ga_view_center_set( 0.001254, 0.006766 )
+ga_view_zoom_set( 0.189844 )
+ga_view_center_set( -0.017475, 0.021319 )
+ga_view_zoom_set( 0.213574 )
+$# UNDO: Create Curve 2D Circle for Coord 0.3Point 5:8
+STRING sgm_create_curve_2d_created_ids[VIRTUAL]
+sgm_const_curve_2d_circle_v2( "5", 1, 0.02, "Coord 0.3", "", "Point 5:8",  @
+FALSE, sgm_create_curve_2d_created_ids )
+$# 4 Curves Created: Curves 5:8
+pointelem_marker( FALSE )
+pointelem_marker( TRUE )
+sgm_const_curve_2d_circle_v2( "9", 1, 0.029999999, "Coord 0.3", "",  @
+"Point 7 5 6 8", FALSE, sgm_create_curve_2d_created_ids )
+$# 4 Curves Created: Curves 9:12
+uil_primary_file.db_save(  )
+STRING sgm_surface_trimmed__created_id[VIRTUAL]
+sgm_create_surface_trimmed_v1( "1", "Curve 4 1:3", "Curve 8 6 5 7", "", FALSE, @
+ FALSE, TRUE, TRUE, sgm_surface_trimmed__created_id )
+$# 1 Surface Created: Surface 1
+uil_primary_file.db_save(  )
+$# UNDO:
+ga_viewport_unpost( "default_viewport" )
+$# File display controlled by settings.pcl file entry: pref_env_set_integer(
+$# ""max_num_recent_files"",#)                                                
+$#                                                                            
+$#                                  
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 28-Mar-21 20:00:43
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.EjemploPlaca.db.jou at 28-Mar-21 20:00:45
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E - Estructuras de Uso Espacial\Patran files" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 28-Mar-21 20:00:58
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.EjemploPlaca.db.jou at 28-Mar-21 20:01:00
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E - Estructuras de Uso Espacial\Patran files" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 28-Mar-21 20:01:06
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.EjemploPlaca.db.jou at 28-Mar-21 20:01:31
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E - Estructuras de Uso Espacial\Patran files" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_viewport_current_set( "default_viewport" )
+$# UNDO:
+ga_viewport_current_set( "default_viewport" )
+uil_viewport_tiling.tile(  )
+$# Warning reported from application Group Applications
+$#     The viewport name is invalid.
+ga_viewport_create( "fgd", 0.1, 1.7, 7.6999998, 5.5 )
+ga_viewport_location_set( "fgd", 0.000000, 0.000000, 1 )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "17", "[ 0.224271 0.057366 0.000000 ]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 17
+asm_const_grid_xyz( "18", "[ -0.182366 0.050729 0.000000 ]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 18
+$# UNDO:
+ga_viewport_unpost( "fgd" )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 28-Mar-21 20:03:23
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.EjemploPlaca.db.jou at 28-Mar-21 20:03:38
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E - Estructuras de Uso Espacial\Patran files" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_viewport_create( "THISONE", 0.1, 1.7, 7.6999998, 5.5 )
+ga_viewport_location_set( "THISONE", 0.000000, 3.434178, 1 )
+ga_viewport_size_set( "THISONE", 1.013780, 0.209092, 1 )
+ga_viewport_location_set( "THISONE", 0.000000, 0.000000, 1 )
+gm_visibility_widget( "Surface 1", FALSE )
+gm_visibility_widget( "Surface 1", FALSE )
+gm_plot_erase_all( 1 )
+gm_visibility_widget( "Surface 8", FALSE )
+gm_visibility_widget( "Surface 7", FALSE )
+gm_visibility_widget( "Surface 6", FALSE )
+gm_visibility_widget( "Surface 5", FALSE )
+gm_visibility_widget( "Surface 4", FALSE )
+gm_visibility_widget( "Surface 3", FALSE )
+gm_visibility_widget( "Surface 2", FALSE )
+gm_visibility_widget( "Surface 1", FALSE )
+gm_visibility_widget( "Surface 1", FALSE )
+gm_plot_erase_all( 1 )
+gm_visibility_widget( "Curve 12", FALSE )
+gm_visibility_widget( "Surface 1", FALSE )
+gm_visibility_widget( "Surface 1", FALSE )
+gm_visibility_widget( "Surface 1", FALSE )
+gm_plot_erase_all( 1 )
+gm_visibility_widget( "Surface 1", FALSE )
+gm_visibility_widget( "Surface 1", FALSE )
+gm_plot_erase_all( 1 )
+gm_plot_erase_all( 1 )
+$# UNDO:
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 28-Mar-21 20:07:05
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.EjemploPlaca.db.jou at 28-Mar-21 20:07:22
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E - Estructuras de Uso Espacial\Patran files" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_view_center_set( -0.024146, -0.008939 )
+ga_view_zoom_set( 0.185625 )
+ga_view_center_set( 0.000000, 0.000000 )
+ga_view_zoom_set( 0.165000 )
+ga_view_center_set( 0.021463, 0.007946 )
+ga_view_zoom_set( 0.146667 )
+STRING sgm_surface_break_c_created_ids[VIRTUAL]
+sgm_edit_surface_break_v1( "2", "Surface 1", TRUE, 3, 0, 0., "", "",  @
+"Curve 9:12", sgm_surface_break_c_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original surfaces?
+$? YES 38000219 
+$# 1 Surface Created: Surface 8
+gm_visibility_widget( "Surface 8", FALSE )
+gm_visibility_widget( "Surface 8", FALSE )
+gm_plot_erase_all( 1 )
+gm_visibility_widget( "Surface 8", FALSE )
+gm_visibility_widget( "Surface 8", FALSE )
+ga_view_aa_set( 7.456400, 6.542095, 10.043382 )
+ga_view_aa_set( 0., 0., 0. )
+gm_plot_erase_all( 1 )
+gm_visibility_widget( "Surface 8", FALSE )
+ga_view_center_set( -0.037303, -0.003754 )
+ga_view_zoom_set( 0.185625 )
+ga_view_center_set( -0.079269, -0.007889 )
+ga_view_zoom_set( 0.208828 )
+ga_view_center_set( -0.037390, -0.003754 )
+ga_view_zoom_set( 0.185625 )
+ga_view_center_set( -0.000164, -0.000077 )
+ga_view_zoom_set( 0.165000 )
+ga_view_center_set( 0.032925, 0.003190 )
+ga_view_zoom_set( 0.146667 )
+uil_primary_file.db_save(  )
+gm_plot_erase_all( 1 )
+ga_view_aa_set( -75.406799, 6.282829, 52.128571 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -0.002504, -0.006949 )
+ga_view_zoom_set( 0.099717 )
+ga_view_center_set( -0.001174, -0.002604 )
+ga_view_zoom_set( 0.088638 )
+ga_view_center_set( 0.000046, 0.001184 )
+ga_view_zoom_set( 0.078789 )
+ga_view_center_set( -0.001247, -0.002419 )
+ga_view_zoom_set( 0.088638 )
+ga_view_center_set( -0.002744, -0.006473 )
+ga_view_zoom_set( 0.099717 )
+ga_view_center_set( -0.004428, -0.011033 )
+ga_view_zoom_set( 0.112182 )
+ga_view_center_set( -0.006322, -0.016163 )
+ga_view_zoom_set( 0.126205 )
+ga_view_center_set( -0.008453, -0.021935 )
+ga_view_zoom_set( 0.141980 )
+ga_view_center_set( -0.010917, -0.028162 )
+ga_view_zoom_set( 0.159728 )
+ga_view_center_set( -0.013689, -0.035167 )
+ga_view_zoom_set( 0.179694 )
+ga_view_center_set( -0.019080, -0.001025 )
+ga_view_center_set( -0.042511, 0.008457 )
+ga_view_zoom_set( 0.202156 )
+sgm_verify_surface_boundary( "Surface 3:7:2 8 9", 0.00030000001, 1 )
+$# Warning reported from application SGM
+$#     Free edges and/or non-manifold edges exist. Free edges may be due to 
+$# edges not matching directly or a missing face.  Non-manifold edges are due 
+$# to more than two surfaces connecting at the same edges. Edges are 
+$# highlighted and marked with primary markers for free edges and secondary 
+$# markers for non-manifold edges.
+sgm_incongruent_geom_display(  )
+display_cleanup(  )
+STRING sgm_edit_point_equiva_point_ids[VIRTUAL]
+sgm_edit_point_equivalence( "Point 1:18 Curve 1.2 1.1 2.1 2.2 3.2 3.1 4.2 " // @
+"4.1 5.1 5.2 6.2 6.1 7.2 7.1 8.1 8.2 9.2 9.1 10.2 10.1 11.2 11.1 12.2 12.1",  @
+sgm_edit_point_equiva_point_ids )
+$# No Points Edited.
+$# No Points Deleted.
+uil_primary_file.db_save(  )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al7075", 0,  @
+"Date: 28-Mar-21           Time: 20:12:11", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["71E9", "0.33" @
+, "2800", ""] )
+beam_section_create( "Seccion_rect_2x15mm", "BAR", ["0.002", "0.015"] )
+$# Beam Section "Seccion_rect_2x15mm" created.
+$# UNDO: Beam Section Create
+beam_section_create( "Seccion_rect_2x15mm", "BAR", ["0.002", "0.015"] )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Beam Section "Seccion_rect_2x15mm" already exists. Do you wish to 
+$# overwrite?
+$? YES 29002040 
+$# Beam Section "Seccion_rect_2x15mm" created.
+elementprops_create( "1D_Al7075_beam", 11, 2, 42, 1, 1, 20, [39, 13, 6, 4042,  @
+4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048, 4050,  @
+4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, 4411,  @
+8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Seccion_rect_2x15mm",  @
+"m:Al7075", "<0 0 1>", "<0 0 -0.008>", "<0 0 -0.008>", "", "", "", "", "", "", @
+ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "Analysis", "Analysis", "Analysis"], "" )
+$# Property Set "1D_Al7075_beam" created.
+uil_primary_file.db_save(  )
+elementprops_create( "2D_Al7075_plate_1mm", 51, 25, 35, 1, 1, 20, [13, 20, 36, @
+ 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, @
+ 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al7075", "",  @
+"0.001", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "" )
+$# Property Set "2D_Al7075_plate_1mm" created.
+uil_primary_file.db_save(  )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_create( "Curve 5:12", 1, 12, 0., 0., 0. )
+mesh_seed_create( "Curve 2 4 1 3", 6, 0, 0., 0.015, 0.029999999 )
+uil_primary_file.db_save(  )
+mesh_seed_display_mgr.erase(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+mesh_seed_display_mgr.erase(  )
+node_size( 9 )
+node_size( 0 )
+ga_display_lines_set( "general", 2 )
+ga_display_lines_set( "general", 0 )
+gm_visibility_widget( " Point 1:18 Curve 1:12 Surface 3 5 7:9", FALSE )
+gm_visibility_widget( " Point 1:18 Curve 1:12 Surface 3 5 7:9", TRUE )
+gm_visibility_widget( "", FALSE )
+gm_visibility_widget( "", TRUE )
+node_size( 9 )
+node_size( 0 )
+node_size( 9 )
+node_size( 0 )
+node_size( 9 )
+uil_toolbar.labels_on(  )
+uil_toolbar.labels_off(  )
+mesh_seed_display_mgr.refresh(  )
+uil_toolbar.labels_on(  )
+mpc_marker( FALSE )
+mpc_marker( TRUE )
+conn_2dmarker( FALSE )
+conn_3dmarker( FALSE )
+conn_2dmarker( TRUE )
+conn_3dmarker( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_toolbar.wireframe(  )
+uil_toolbar.shaded_smooth(  )
+uil_toolbar.wireframe(  )
+ga_display_shrfem_set( "general", 0.30000001 )
+ga_display_shrfem_set( "general", 0. )
+ga_display_shrfem_set( "general", 0.30000001 )
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Curve 2 4 1 3", 16384, 0.029999999, "Bar2", "1000",  @
+"1000", "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,  @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,  @
+fem_create_mesh_c_elems_created )
+$# 13 nodes and 12 elements created for Curve 2.
+$# 13 nodes and 12 elements created for Curve 4.
+$# 24 nodes and 23 elements created for Curve 1.
+$# 24 nodes and 23 elements created for Curve 3.
+$# === 74 nodes created.  IDs  = 1000:1073.
+$# === 70 elements created.  IDs  = 1000:1069.
+fem_associate_elems_to_ep( "1D_Al7075_beam", fem_create_mesh_c_elems_created,  @
+fem_create_mesh_curve_num_elems )
+$# 70 Element(s) associated to the Element Property 1D_Al7075_beam.
+uil_toolbar.labels_off(  )
+ga_view_center_set( 0.004411, -0.017220 )
+ga_view_zoom_set( 0.185625 )
+ga_view_center_set( 0.009026, -0.036940 )
+ga_view_zoom_set( 0.208828 )
+ga_view_center_set( 0.014021, -0.059322 )
+ga_view_zoom_set( 0.234932 )
+ga_view_center_set( 0.009026, -0.036940 )
+ga_view_zoom_set( 0.208828 )
+ga_view_center_set( 0.004585, -0.017046 )
+ga_view_zoom_set( 0.185625 )
+ga_view_center_set( 0.000638, 0.000639 )
+ga_view_zoom_set( 0.165000 )
+ga_view_center_set( -0.002870, 0.016358 )
+ga_view_zoom_set( 0.146667 )
+ga_view_center_set( -0.005989, 0.030330 )
+ga_view_zoom_set( 0.130370 )
+ga_view_center_set( -0.008761, 0.042750 )
+ga_view_zoom_set( 0.115885 )
+ga_view_center_set( -0.011225, 0.053791 )
+ga_view_zoom_set( 0.103009 )
+ga_view_center_set( -0.013415, 0.063604 )
+ga_view_zoom_set( 0.091563 )
+ga_view_center_set( -0.015362, 0.072327 )
+ga_view_zoom_set( 0.081390 )
+ga_view_center_set( -0.018477, 0.086284 )
+ga_view_zoom_set( 0.065112 )
+ga_view_center_set( -0.019862, 0.092487 )
+ga_view_zoom_set( 0.057877 )
+ga_view_center_set( -0.021092, 0.098001 )
+ga_view_zoom_set( 0.051446 )
+ga_view_center_set( -0.019862, 0.092487 )
+ga_view_zoom_set( 0.057877 )
+ga_view_center_set( -0.018477, 0.086284 )
+ga_view_zoom_set( 0.065112 )
+ga_view_center_set( -0.016920, 0.079305 )
+ga_view_zoom_set( 0.073251 )
+ga_view_center_set( -0.015167, 0.071455 )
+ga_view_zoom_set( 0.082407 )
+ga_view_center_set( -0.013003, 0.062932 )
+ga_view_zoom_set( 0.092708 )
+ga_view_center_set( -0.010568, 0.053344 )
+ga_view_zoom_set( 0.104296 )
+ga_view_center_set( -0.007828, 0.042557 )
+ga_view_zoom_set( 0.117333 )
+ga_view_center_set( -0.004691, 0.030532 )
+ga_view_zoom_set( 0.132000 )
+ga_view_center_set( -0.001162, 0.017004 )
+ga_view_zoom_set( 0.148500 )
+ga_view_center_set( 0.002947, 0.002272 )
+ga_view_zoom_set( 0.167063 )
+node_size( 0 )
+node_size( 9 )
+uil_toolbar.labels_on(  )
+$# UNDO: FEM Create Mesh Surface for Surface 9
+$# UNDO:
+uil_toolbar.labels_on(  )
+uil_toolbar.labels_off(  )
+gm_visibility_widget( " Point 1:18 Curve 1:12 Surface 3 5 7:9", FALSE )
+gm_visibility_widget( " Point 1:18 Curve 1:12 Surface 3 5 7:9", TRUE )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "Hybrid", 49680, "Surface 9", 4, ["0.007", "0.1",  @
+"0.2", "1.0"], "Quad4", "2000", "2000", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# Processing the geometry...
+$# Processing the geometry...
+$# Completed Meshing the Vertices...
+$# Completed Meshing the Edges...
+$# Completed Meshing the Faces...
+$# === 36 nodes created.  IDs  = 2000:2035.
+$# === 24 elements created.  IDs  = 2000:2023.
+fem_associate_elems_to_ep( "2D_Al7075_plate_1mm",  @
+fem_create_mesh_s_elems_created, fem_create_mesh_surfa_num_elems )
+$# 24 Element(s) associated to the Element Property 2D_Al7075_plate_1mm.
+ga_view_center_set( -0.028403, -0.007933 )
+ga_view_zoom_set( 0.185625 )
+ga_view_center_set( -0.060356, -0.016944 )
+ga_view_zoom_set( 0.208828 )
+ga_view_center_set( -0.096304, -0.027082 )
+ga_view_zoom_set( 0.234932 )
+ga_view_center_set( -0.136744, -0.038487 )
+ga_view_zoom_set( 0.264298 )
+ga_view_center_set( -0.182240, -0.051317 )
+ga_view_zoom_set( 0.297335 )
+ga_view_center_set( -0.136744, -0.038487 )
+ga_view_zoom_set( 0.264298 )
+ga_view_center_set( -0.096304, -0.027082 )
+ga_view_zoom_set( 0.234932 )
+ga_view_center_set( -0.060356, -0.016944 )
+ga_view_zoom_set( 0.208828 )
+ga_view_center_set( -0.002840, -0.000724 )
+ga_view_zoom_set( 0.167063 )
+ga_view_center_set( 0.022722, 0.006486 )
+ga_view_zoom_set( 0.148500 )
+ga_view_center_set( 0.045445, 0.012894 )
+ga_view_zoom_set( 0.132000 )
+ga_view_center_set( 0.065642, 0.018590 )
+ga_view_zoom_set( 0.117333 )
+ga_view_center_set( 0.083596, 0.023653 )
+ga_view_zoom_set( 0.104296 )
+ga_view_center_set( 0.099554, 0.028153 )
+ga_view_zoom_set( 0.092708 )
+ga_view_center_set( 0.113740, 0.032154 )
+ga_view_zoom_set( 0.082407 )
+ga_view_center_set( 0.126349, 0.035710 )
+ga_view_zoom_set( 0.073251 )
+ga_view_center_set( 0.137557, 0.038871 )
+ga_view_zoom_set( 0.065112 )
+ga_view_center_set( 0.147520, 0.041681 )
+ga_view_zoom_set( 0.057877 )
+ga_view_center_set( 0.156376, 0.044178 )
+ga_view_zoom_set( 0.051446 )
+ga_view_center_set( 0.164248, 0.046398 )
+ga_view_zoom_set( 0.045730 )
+ga_view_center_set( 0.156376, 0.044178 )
+ga_view_zoom_set( 0.051446 )
+ga_view_center_set( 0.147520, 0.041681 )
+ga_view_zoom_set( 0.057877 )
+ga_view_center_set( 0.137557, 0.038871 )
+ga_view_zoom_set( 0.065112 )
+ga_view_center_set( 0.126349, 0.035710 )
+ga_view_zoom_set( 0.073251 )
+ga_view_center_set( 0.113740, 0.032154 )
+ga_view_zoom_set( 0.082407 )
+ga_view_center_set( 0.099554, 0.028153 )
+ga_view_zoom_set( 0.092708 )
+ga_view_center_set( 0.083596, 0.023653 )
+ga_view_zoom_set( 0.104296 )
+ga_view_center_set( 0.065642, 0.018590 )
+ga_view_zoom_set( 0.117333 )
+ga_view_center_set( 0.045445, 0.012894 )
+ga_view_zoom_set( 0.132000 )
+ga_view_center_set( 0.022722, 0.006485 )
+ga_view_zoom_set( 0.148500 )
+uil_toolbar.labels_on(  )
+uil_toolbar.labels_off(  )
+fem_create_mesh_surf_4( "Hybrid", 49680, "Surface 5 3 7", 4, ["0.007", "0.1",  @
+"0.2", "1.0"], "Quad4", "#", "#", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# Processing the geometry...
+$# Processing the geometry...
+$# Completed Meshing the Vertices...
+$# Completed Meshing the Edges...
+$# Completed Meshing the Faces...
+$# === 108 nodes created.  IDs  = 2036:2143.
+$# === 72 elements created.  IDs  = 2024:2095.
+fem_associate_elems_to_ep( "2D_Al7075_plate_1mm",  @
+fem_create_mesh_s_elems_created, fem_create_mesh_surfa_num_elems )
+$# 72 Element(s) associated to the Element Property 2D_Al7075_plate_1mm.
+uil_primary_file.db_save(  )
+gm_visibility_widget( " Point 1:18 Curve 1:12 Surface 3 5 7:9", FALSE )
+$# UNDO: FEM Create Mesh Surface for Surface 8
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 28-Mar-21 20:35:47
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.EjemploPlaca.db.jou at 28-Mar-21 20:36:21
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E - Estructuras de Uso Espacial\Patran files" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+uil_toolbar.shaded_smooth(  )
+sys_poll_option( 2 )
+pref_fa_set( [FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE], [6, 3, 1, 1, 5, 7, 2, 2, 8, 1, 2, 3, 3, 5, 2, 1,  @
+3, 6, 5, 5, 3, 2, 2, 2, 2, 2, 6, 6, 6, 9, 9, 3, 5, 5, 5, 1, 3, 3, 15, 13], [ @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE], [3, 4, 5, 6, 1, 1, 7, 8, 9, 10], [TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE], FALSE )
+display_fa_vectors( TRUE )
+result_label_format_set( 1, 4 )
+gm_elem_prop_init_list(  )
+ga_display_offsets_set( "general", 1 )
+ga_display_beam_set( "general", 2 )
+sys_poll_option( 0 )
+ga_view_aa_set( 80.872780, 27.815950, 17.478792 )
+ga_view_aa_set( 110.197296, 25.364933, -19.382570 )
+ga_view_aa_set( 88.626022, 10.927448, -56.953297 )
+ga_view_aa_set( 108.920135, 2.364210, -37.367325 )
+ga_view_center_set( -0.023140, -0.000193 )
+ga_view_zoom_set( 0.185625 )
+ga_view_center_set( -0.000310, -0.001780 )
+ga_view_zoom_set( 0.165000 )
+ga_view_center_set( 0.019984, -0.003190 )
+ga_view_zoom_set( 0.146667 )
+ga_view_center_set( 0.037901, -0.004444 )
+ga_view_zoom_set( 0.130370 )
+ga_view_center_set( 0.053773, -0.005504 )
+ga_view_zoom_set( 0.115885 )
+ga_view_center_set( 0.067446, -0.006253 )
+ga_view_zoom_set( 0.103009 )
+ga_view_center_set( 0.079514, -0.006875 )
+ga_view_zoom_set( 0.091563 )
+ga_view_center_set( 0.090242, -0.007429 )
+ga_view_zoom_set( 0.081390 )
+ga_view_center_set( -0.023704, -0.005801 )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+verify_boundaries_display_mgr.initialize(  )
+$# Acknowledgement requested from application FEM Verify
+$#     At this time, the test for ASPECT and JACOBIAN values are not 
+$# available for the MSC.Nastran preference.  Using the MSC.Patran tests.
+$? NO 11111 
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -0.017087, -0.002323 )
+ga_view_zoom_set( 0.072346 )
+ga_view_center_set( -0.011205, 0.000769 )
+ga_view_zoom_set( 0.064308 )
+ga_view_center_set( -0.005977, 0.003517 )
+ga_view_zoom_set( 0.057163 )
+ga_view_center_set( -0.001329, 0.005960 )
+ga_view_zoom_set( 0.050811 )
+ga_view_center_set( -0.005977, 0.003517 )
+ga_view_zoom_set( 0.057163 )
+ga_view_center_set( -0.011205, 0.000769 )
+ga_view_zoom_set( 0.064308 )
+ga_view_center_set( -0.017087, -0.002323 )
+ga_view_zoom_set( 0.072346 )
+ga_view_center_set( -0.023704, -0.005801 )
+ga_view_zoom_set( 0.081390 )
+ga_view_center_set( -0.031110, -0.009752 )
+ga_view_zoom_set( 0.091563 )
+ga_view_center_set( -0.039442, -0.014197 )
+ga_view_zoom_set( 0.103009 )
+ga_view_center_set( -0.048815, -0.019198 )
+ga_view_zoom_set( 0.115885 )
+ga_view_center_set( -0.059360, -0.024824 )
+ga_view_zoom_set( 0.130370 )
+ga_view_center_set( -0.071161, -0.031214 )
+ga_view_zoom_set( 0.146667 )
+ga_view_center_set( -0.084439, -0.038403 )
+ga_view_zoom_set( 0.165000 )
+ga_view_center_set( -0.054739, 0.006147 )
+fem_verify_reset_graphics( "SHADED", "default_group", 0, "THISONE" )
+fem_verify_display.plot( "restore", 0, 0., "" )
+$# Verifying with MSC.Nastran test.
+STRING fem_verify_quad_tap_group_label[32]
+REAL fem_verify_quad_taper_min_value
+INTEGER fem_verify_quad_taper_min_el_id
+REAL fem_verify_quad_taper_max_value
+INTEGER fem_verify_quad_taper_max_el_id
+STRING fem_verify_quad_tap_created_els[100]
+STRING fem_verify_quad_t_created_nodes[100]
+INTEGER fem_verify_quad_taper_table_id
+fem_verify_quad_taper_pref( "MSC.Nastran", FALSE, 0.5, FALSE,  @
+fem_verify_quad_tap_group_label, fem_verify_quad_taper_min_value,  @
+fem_verify_quad_taper_min_el_id, fem_verify_quad_taper_max_value,  @
+fem_verify_quad_taper_max_el_id, fem_verify_quad_tap_created_els,  @
+fem_verify_quad_t_created_nodes, fem_verify_quad_taper_table_id )
+$# Quad element 2141 has a taper factor of 0.502029. ( Exceeds threshold of 
+$# 0.5 )
+fem_verify_display.thresh_dir( 1 )
+STRING fem_verify_quad_taper_ent_list[VIRTUAL]
+fem_verify_display.plot( "plot_failed", fem_verify_quad_taper_table_id, 0.5,  @
+fem_verify_quad_taper_ent_list )
+$# UNDO:
+uil_toolbar.shaded_smooth(  )
+fem_verify_reset_graphics( "SHADED", "default_group", 0, "THISONE" )
+fem_verify_display.plot( "restore", 0, 0., "" )
+$# Verifying with MSC.Nastran test.
+STRING fem_verify_quad_tap_group_label[32]
+REAL fem_verify_quad_taper_min_value
+INTEGER fem_verify_quad_taper_min_el_id
+REAL fem_verify_quad_taper_max_value
+INTEGER fem_verify_quad_taper_max_el_id
+STRING fem_verify_quad_tap_created_els[100]
+STRING fem_verify_quad_t_created_nodes[100]
+INTEGER fem_verify_quad_taper_table_id
+fem_verify_quad_taper_pref( "MSC.Nastran", FALSE, 0.5, FALSE,  @
+fem_verify_quad_tap_group_label, fem_verify_quad_taper_min_value,  @
+fem_verify_quad_taper_min_el_id, fem_verify_quad_taper_max_value,  @
+fem_verify_quad_taper_max_el_id, fem_verify_quad_tap_created_els,  @
+fem_verify_quad_t_created_nodes, fem_verify_quad_taper_table_id )
+$# Quad element 2141 has a taper factor of 0.502029. ( Exceeds threshold of 
+$# 0.5 )
+fem_verify_display.thresh_dir( 1 )
+STRING fem_verify_quad_taper_ent_list[VIRTUAL]
+fem_verify_display.plot( "plot_failed", fem_verify_quad_taper_table_id, 0.5,  @
+fem_verify_quad_taper_ent_list )
+gm_plot_erase_all( 1 )
+fem_verify_reset_graphics( "SHADED", "default_group", 0, "THISONE" )
+fem_verify_display.plot( "restore", 0, 0., "" )
+INTEGER fem_modify_qu_num_nodes_created
+INTEGER fem_modify_qu_num_elems_created
+INTEGER fem_modify_qu_num_nodes_deleted
+INTEGER fem_modify_qu_num_elems_deleted
+STRING fem_modify_quad_s_nodes_created[VIRTUAL]
+STRING fem_modify_quad_s_elems_created[VIRTUAL]
+STRING fem_modify_quad_s_nodes_deleted[VIRTUAL]
+STRING fem_modify_quad_s_elems_deleted[VIRTUAL]
+fem_mod_quad_split( "2_tria", "Auto", "Elm 2141", "", "",  @
+fem_modify_qu_num_nodes_created, fem_modify_qu_num_elems_created,  @
+fem_modify_qu_num_nodes_deleted, fem_modify_qu_num_elems_deleted,  @
+fem_modify_quad_s_nodes_created, fem_modify_quad_s_elems_created,  @
+fem_modify_quad_s_nodes_deleted, fem_modify_quad_s_elems_deleted )
+$# === No nodes deleted.
+$# === No nodes created.
+$# === 1 element deleted.  ID = 2141.
+$# === 2 elements created.  IDs  = 2408,2409.
+fem_verify_reset_graphics( "SHADED", "default_group", 0, "THISONE" )
+$# Acknowledgement requested from application FEM Verify
+$#     At this time, the test for ASPECT and JACOBIAN values are not 
+$# available for the MSC.Nastran preference.  Using the MSC.Patran tests.
+$? NO 11111 
