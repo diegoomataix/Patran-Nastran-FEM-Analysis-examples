@@ -1,0 +1,55 @@
+$# Creating journal file C:\Users\diego\Dropbox\Academic\MEng Space 
+$# Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.Nastran.Placa.v2\1.EjemploPlaca.v2.db.jou at 29-Mar-21 23:11:02
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/" // @
+"template.db","C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE -" // @
+" Estructuras de Uso Espacial\Patran files\1.Nastran.Placa.v2\1.EjemploPla" // @
+"ca.v2.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E - Estructuras de Uso Espacial\Patran files\1.Nastran.Placa.v2" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 0.00030000001, "" )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1", "[-0.25 -0.125 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1
+node_size( 9 )
+graphics_marker_data( 2, 5, 5, 20 )
+uil_toolbar.shaded_smooth(  )
+uil_toolbar.hidden_line(  )
+uil_toolbar.wireframe(  )
+mpc_marker( FALSE )
+uil_toolbar.labels_on(  )
+mpc_marker( TRUE )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "2", "[0.25 -0.125 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 2
+asm_const_grid_xyz( "3", "[0.25 0.125 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 3
+asm_const_grid_xyz( "4", "[-0.25 0.125 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 4
+uil_toolbar.labels_off(  )
+uil_viewport_tiling.tile(  )
+ga_viewport_size_set( "default_viewport", 10.080770, 3.643270, 1 )
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "1", "Point 2", "Point 3", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 1
+uil_toolbar.labels_on(  )
+asm_const_line_2point( "2", "Point 3", "Point 4", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 2
+asm_const_line_2point( "3", "Point 4", "Point 1", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 3
+asm_const_line_2point( "4", "Point 1", "Point 2", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 4
+uil_primary_file.db_save(  )

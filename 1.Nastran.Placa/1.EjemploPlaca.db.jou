@@ -3750,3 +3750,841 @@ $# The current working directory has been changed to the database location
 $# shown.                                                                     
 $#                                                                            
 $#                                   
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 29-Mar-21 01:28:50
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.Nastran.Placa\1.EjemploPlaca.db.jou at 29-Mar-21 13:54:18
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E - Estructuras de Uso Espacial\Patran files\1.Nastran.Placa" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_view_aa_set( -98.774597, -16.337639, -169.002884 )
+ga_view_aa_set( -163.041260, -21.955040, -166.769928 )
+ga_view_aa_set( -96.392334, -2.634081, -16.103106 )
+ga_view_aa_set( -53.392330, -2.634083, -16.103106 )
+$# Warning reported from application Results
+$#     No result selected
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE - Estructuras de Uso Espacial\Patran files\1.Nastran.Plac" // @
+"a\1.EjemploPlaca.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE - Estructuras de Uso Espacial\Patran files\2.Nastran." // @
+"Cabeceros\Modos cabeceros\1.ejemploplaca_eigenfreqs_0_2000.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.00030000001" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras d" // @
+"e Uso Espacial\Patran files\2.Nastran.Cabeceros\Modos cabeceros\1.ejemplo" // @
+"placa_eigenfreqs_0_2000.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras 
+$# de Uso Espacial\Patran files\2.Nastran.Cabeceros\Modos 
+$# cabeceros\1.ejemploplaca_eigenfreqs_0_2000.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/29/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2313 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:FREQS
+$# Processing result sub-case: Mode 1 : Freq. = 0.00020823
+$# Processing result sub-case: Mode 2 : Freq. = 0.00012597
+$# Processing result sub-case: Mode 3 : Freq. = 3.3082E-5
+$# Processing result sub-case: Mode 4 : Freq. = 0.00020484
+$# Processing result sub-case: Mode 5 : Freq. = 12.325
+$# Processing result sub-case: Mode 6 : Freq. = 21.653
+$# Processing result sub-case: Mode 7 : Freq. = 84.072
+$# Processing result sub-case: Mode 8 : Freq. = 107.5
+$# Processing result sub-case: Mode 9 : Freq. = 121.1
+$# Processing result sub-case: Mode 10 : Freq. = 140.25
+$# Processing result sub-case: Mode 11 : Freq. = 171.43
+$# Processing result sub-case: Mode 12 : Freq. = 202.05
+$# Processing result sub-case: Mode 13 : Freq. = 237.11
+$# Processing result sub-case: Mode 14 : Freq. = 249.86
+$# Processing result sub-case: Mode 15 : Freq. = 279.13
+$# Processing result sub-case: Mode 16 : Freq. = 298.3
+$# Processing result sub-case: Mode 17 : Freq. = 339.8
+$# Processing result sub-case: Mode 18 : Freq. = 377.21
+$# Processing result sub-case: Mode 19 : Freq. = 396.82
+$# Processing result sub-case: Mode 20 : Freq. = 421.47
+$# Processing result sub-case: Mode 21 : Freq. = 433.66
+$# Processing result sub-case: Mode 22 : Freq. = 463.49
+$# Processing result sub-case: Mode 23 : Freq. = 495.11
+$# Processing result sub-case: Mode 24 : Freq. = 576.64
+$# Processing result sub-case: Mode 25 : Freq. = 592.36
+$# Processing result sub-case: Mode 26 : Freq. = 649.26
+$# Processing result sub-case: Mode 27 : Freq. = 653.2
+$# Processing result sub-case: Mode 28 : Freq. = 659.88
+$# Processing result sub-case: Mode 29 : Freq. = 674.09
+$# Processing result sub-case: Mode 30 : Freq. = 714.16
+$# Processing result sub-case: Mode 31 : Freq. = 738.13
+$# Processing result sub-case: Mode 32 : Freq. = 784.28
+$# Processing result sub-case: Mode 33 : Freq. = 821.13
+$# Processing result sub-case: Mode 34 : Freq. = 844.72
+$# Processing result sub-case: Mode 35 : Freq. = 860.3
+$# Processing result sub-case: Mode 36 : Freq. = 870.2
+$# Processing result sub-case: Mode 37 : Freq. = 931.9
+$# Processing result sub-case: Mode 38 : Freq. = 939.86
+$# Processing result sub-case: Mode 39 : Freq. = 979.35
+$# Processing result sub-case: Mode 40 : Freq. = 995.76
+$# Processing result sub-case: Mode 41 : Freq. = 1013.9
+$# Processing result sub-case: Mode 42 : Freq. = 1038.7
+$# Processing result sub-case: Mode 43 : Freq. = 1042.1
+$# Processing result sub-case: Mode 44 : Freq. = 1079.9
+$# Processing result sub-case: Mode 45 : Freq. = 1097.1
+$# Processing result sub-case: Mode 46 : Freq. = 1116.
+$# Processing result sub-case: Mode 47 : Freq. = 1151.8
+$# Processing result sub-case: Mode 48 : Freq. = 1179.8
+$# Processing result sub-case: Mode 49 : Freq. = 1200.4
+$# Processing result sub-case: Mode 50 : Freq. = 1241.1
+$# Processing result sub-case: Mode 51 : Freq. = 1263.5
+$# Processing result sub-case: Mode 52 : Freq. = 1276.3
+$# Processing result sub-case: Mode 53 : Freq. = 1297.4
+$# Processing result sub-case: Mode 54 : Freq. = 1308.
+$# Processing result sub-case: Mode 55 : Freq. = 1330.8
+$# Processing result sub-case: Mode 56 : Freq. = 1345.5
+$# Processing result sub-case: Mode 57 : Freq. = 1411.1
+$# Processing result sub-case: Mode 58 : Freq. = 1426.1
+$# Processing result sub-case: Mode 59 : Freq. = 1466.2
+$# Processing result sub-case: Mode 60 : Freq. = 1480.7
+$# Processing result sub-case: Mode 61 : Freq. = 1491.7
+$# Processing result sub-case: Mode 62 : Freq. = 1510.2
+$# Processing result sub-case: Mode 63 : Freq. = 1518.4
+$# Processing result sub-case: Mode 64 : Freq. = 1563.4
+$# Processing result sub-case: Mode 65 : Freq. = 1604.7
+$# Processing result sub-case: Mode 66 : Freq. = 1632.1
+$# Processing result sub-case: Mode 67 : Freq. = 1665.3
+$# Processing result sub-case: Mode 68 : Freq. = 1675.7
+$# Processing result sub-case: Mode 69 : Freq. = 1688.1
+$# Processing result sub-case: Mode 70 : Freq. = 1697.
+$# Processing result sub-case: Mode 71 : Freq. = 1740.1
+$# Processing result sub-case: Mode 72 : Freq. = 1754.8
+$# Processing result sub-case: Mode 73 : Freq. = 1770.4
+$# Processing result sub-case: Mode 74 : Freq. = 1804.3
+$# Processing result sub-case: Mode 75 : Freq. = 1831.9
+$# Processing result sub-case: Mode 76 : Freq. = 1849.9
+$# Processing result sub-case: Mode 77 : Freq. = 1889.5
+$# Processing result sub-case: Mode 78 : Freq. = 1918.7
+$# Processing result sub-case: Mode 79 : Freq. = 1927.7
+$# Processing result sub-case: Mode 80 : Freq. = 1974.3
+$# Processing result sub-case: Mode 81 : Freq. = 1977.6
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.047
+$# *** End:   Attach Result File ***
+$# Warning reported from application Results
+$#     No result selected
+$# Warning reported from application Results
+$#     No result selected
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 13 : Freq. = 237.11", "Eigenvectors", "Rotational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 13 : Freq. = 237.11", "Eigenvectors", "Rotational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:MODOS PROPIOS",  @
+"A1:Mode 1: Freq.=0.000471348", "Eigenvectors", "Rotational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+$# Warning reported from application Results
+$#     Unable to open Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras 
+$# de Uso Espacial\Patran files\1.ejemploplaca.h5". Please i) verify that the 
+$# file exists and is a valid results file for the current analysis 
+$# preference; or ii) delete the attachment using the Analysis form option 
+$# Delete "Attachment" then re-attach.
+$# Error reported from application Results
+$#     Unable to connect to Direct Results Access file. Check command line 
+$# window for possible additional messages!
+$? NO 4012020 
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 1 : Freq. = 0.00020823", "Eigenvectors", "Rotational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 1 : Freq. = 0.00020823", "Eigenvectors", "Rotational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -44.287830, -0.597300, -3.996057 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 3 : Freq. = 3.3082E-5", "Eigenvectors", "Rotational", "(NON-LAYERED)" @
+, "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 3 : Freq. = 3.3082E-5", "Eigenvectors", "Rotational", "(NON-LAYERED)" @
+, "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 7 : Freq. = 84.072", "Eigenvectors", "Rotational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 7 : Freq. = 84.072", "Eigenvectors", "Rotational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -25.080805, -4.712787, 27.005302 )
+gm_visibility_widget( " Point 1:19 Curve 1:12 Surface 3 5 7:9", FALSE )
+ga_view_center_set( -0.002308, 0.002345 )
+ga_view_zoom_set( 0.313608 )
+ga_view_center_set( -0.009221, 0.003595 )
+ga_view_zoom_set( 0.352809 )
+ga_view_center_set( -0.001278, 0.001609 )
+ga_view_zoom_set( 0.313608 )
+ga_view_center_set( 0.016052, -0.002724 )
+ga_view_zoom_set( 0.228079 )
+ga_view_center_set( 0.021187, -0.004007 )
+ga_view_zoom_set( 0.202737 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 1 : Freq. = 0.00020823", "Eigenvectors", "Rotational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 1 : Freq. = 0.00020823", "Eigenvectors", "Rotational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -56.064190, -23.974165, 12.722729 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 80 : Freq. = 1974.3", "Eigenvectors", "Rotational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 80 : Freq. = 1974.3", "Eigenvectors", "Rotational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( 0.039529, -0.008360 )
+ga_view_zoom_set( 0.180210 )
+ga_view_aa_set( -63.210220, -9.882342, 10.091949 )
+ga_view_center_set( 0.031330, -0.006459 )
+ga_view_zoom_set( 0.202737 )
+ga_view_center_set( 0.022106, -0.004319 )
+ga_view_zoom_set( 0.228079 )
+ga_view_center_set( 0.011729, -0.001912 )
+ga_view_zoom_set( 0.256589 )
+ga_view_center_set( 0.022213, -0.004105 )
+ga_view_zoom_set( 0.228079 )
+ga_view_center_set( 0.031532, -0.006054 )
+ga_view_zoom_set( 0.202737 )
+ga_view_center_set( 0.051865, -0.010308 )
+ga_view_zoom_set( 0.147445 )
+ga_view_center_set( 0.058197, -0.011138 )
+ga_view_zoom_set( 0.131062 )
+ga_view_center_set( 0.063934, -0.011875 )
+ga_view_zoom_set( 0.116500 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 80 : Freq. = 1974.3", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 80 : Freq. = 1974.3", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -77.591545, -11.569533, 17.561106 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 66 : Freq. = 1632.1", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 66 : Freq. = 1632.1", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 1 : Freq. = 0.00020823", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 1 : Freq. = 0.00020823", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -47.836037, -14.740886, 23.982540 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:MODOS PROPIOS",  @
+"A1:Mode 1: Freq.=0.000471348", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+$# Warning reported from application Results
+$#     Unable to open Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras 
+$# de Uso Espacial\Patran files\1.ejemploplaca.h5". Please i) verify that the 
+$# file exists and is a valid results file for the current analysis 
+$# preference; or ii) delete the attachment using the Analysis form option 
+$# Delete "Attachment" then re-attach.
+$# Error reported from application Results
+$#     Unable to connect to Direct Results Access file. Check command line 
+$# window for possible additional messages!
+$? NO 4012020 
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE - Estructuras de Uso Espacial\Patran files\1.Nastran.Plac" // @
+"a\1.EjemploPlaca.db" )
+msc_dra_add_param( "JOBNAME", "1.EjemploPlaca" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE - Estructuras de Uso Espacial\Patran files\1.Nastran." // @
+"Placa\1.ejemploplaca.h5" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.00030000001" )
+msc_dra_add_param( "OBJECTIVE FUNCTION", "ON" )
+msc_dra_add_param( "DESIGN CONSTRAINTS", "ON" )
+msc_dra_add_param( "DESIGN VARIABLES", "ON" )
+msc_dra_add_param( "COMBINE RESULTCASES", "ON" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "CREATE P-ORDER FIELD", "" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "NASTRAN VERSION", "" )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "1.EjemploPlaca", "Attach HDF5 Results File",  @
+"C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras d" // @
+"e Uso Espacial\Patran files\1.Nastran.Placa\1.ejemploplaca.h5", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras 
+$# de Uso Espacial\Patran files\1.Nastran.Placa\1.ejemploplaca.h5"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Mode 1: Freq.=0.000471348
+$# Processing result sub-case: Mode 2: Freq.=0.000107307
+$# Processing result sub-case: Mode 3: Freq.=9.72258e-05
+$# Processing result sub-case: Mode 4: Freq.=3.63669e-05
+$# Processing result sub-case: Mode 5: Freq.=12.3246
+$# Processing result sub-case: Mode 6: Freq.=21.653
+$# Processing result sub-case: Mode 7: Freq.=84.0719
+$# Processing result sub-case: Mode 8: Freq.=107.505
+$# Processing result sub-case: Mode 9: Freq.=121.1
+$# Processing result sub-case: Mode 10: Freq.=140.248
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.016
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:MODOS PROPIOS",  @
+"A1:Mode 1: Freq.=0.000471348", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+$# Warning reported from application Results
+$#     Unable to open Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras 
+$# de Uso Espacial\Patran files\1.ejemploplaca.h5". Please i) verify that the 
+$# file exists and is a valid results file for the current analysis 
+$# preference; or ii) delete the attachment using the Analysis form option 
+$# Delete "Attachment" then re-attach.
+$# Error reported from application Results
+$#     Unable to connect to Direct Results Access file. Check command line 
+$# window for possible additional messages!
+$? NO 4012020 
+ga_view_aa_set( -86.987114, -17.998634, 19.885220 )
+ga_view_aa_set( -53.201416, -16.313999, 25.869198 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:MODOS PROPIOS",  @
+"A1:Mode 5: Freq.=12.3246", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+$# Warning reported from application Results
+$#     Unable to open Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras 
+$# de Uso Espacial\Patran files\1.ejemploplaca.h5". Please i) verify that the 
+$# file exists and is a valid results file for the current analysis 
+$# preference; or ii) delete the attachment using the Analysis form option 
+$# Delete "Attachment" then re-attach.
+$# Error reported from application Results
+$#     Unable to connect to Direct Results Access file. Check command line 
+$# window for possible additional messages!
+$? NO 4012020 
+ga_view_aa_set( -94.345245, -1.791454, 15.617809 )
+ga_view_aa_set( -45.455975, 21.538555, 20.448982 )
+ga_view_aa_set( -17.433290, -7.909075, 1.601242 )
+ga_view_center_set( 0.054414, -0.013842 )
+ga_view_zoom_set( 0.103555 )
+ga_view_center_set( 0.063886, -0.011875 )
+ga_view_zoom_set( 0.116500 )
+ga_view_center_set( 0.074541, -0.009662 )
+ga_view_zoom_set( 0.131062 )
+ga_view_center_set( 0.086528, -0.007172 )
+ga_view_zoom_set( 0.147445 )
+ga_view_center_set( 0.100014, -0.004372 )
+ga_view_zoom_set( 0.165875 )
+ga_view_aa_set( -60.369980, -13.889390, -38.096382 )
+ga_view_aa_set( -84.865807, 10.408427, 17.805656 )
+ga_view_aa_set( -61.519085, 9.898185, 15.844978 )
+ga_view_aa_set( -77.182632, 0.711479, -145.966537 )
+ga_view_center_set( 0.090211, 0.002670 )
+ga_view_zoom_set( 0.186610 )
+ga_view_center_set( 0.079183, 0.010591 )
+ga_view_zoom_set( 0.209936 )
+ga_view_center_set( 0.090211, 0.002670 )
+ga_view_zoom_set( 0.186610 )
+ga_view_center_set( 0.100014, -0.004372 )
+ga_view_zoom_set( 0.165875 )
+ga_view_center_set( 0.108728, -0.010630 )
+ga_view_zoom_set( 0.147445 )
+ga_view_center_set( 0.116474, -0.016194 )
+ga_view_zoom_set( 0.131062 )
+ga_view_center_set( 0.123359, -0.021139 )
+ga_view_zoom_set( 0.116500 )
+ga_view_center_set( -0.022266, -0.017644 )
+ga_view_aa_set( -67.401871, -3.308198, -154.023712 )
+ga_view_center_set( -0.022812, -0.011988 )
+ga_view_zoom_set( 0.131062 )
+ga_view_aa_set( -56.920349, 0.842627, -70.334846 )
+ga_view_aa_set( -65.119514, 44.304337, -157.316254 )
+ga_view_aa_set( -41.918602, 1.325829, -179.876495 )
+ga_view_center_set( -0.030353, -0.018682 )
+ga_view_zoom_set( 0.116500 )
+ga_view_center_set( -0.022812, -0.011988 )
+ga_view_zoom_set( 0.131062 )
+ga_view_center_set( -0.014329, -0.004458 )
+ga_view_zoom_set( 0.147445 )
+ga_view_center_set( -0.004785, 0.004014 )
+ga_view_zoom_set( 0.165875 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE - Estructuras de Uso Espacial\Patran files\1.Nastran.Plac" // @
+"a\1.EjemploPlaca.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE - Estructuras de Uso Espacial\Patran files\2.Nastran." // @
+"Cabeceros\Estatico cabeceros\1.ejemploplaca_quasistatic_z.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.00030000001" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras d" // @
+"e Uso Espacial\Patran files\2.Nastran.Cabeceros\Estatico cabeceros\1.ejem" // @
+"ploplaca_quasistatic_z.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras 
+$# de Uso Espacial\Patran files\2.Nastran.Cabeceros\Estatico 
+$# cabeceros\1.ejemploplaca_quasistatic_z.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/29/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2333 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 75 : Freq. = 1831.9", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 75 : Freq. = 1831.9", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( 0.022463, 0.001697 )
+ga_view_zoom_set( 0.147445 )
+ga_view_aa_set( -75.031265, 5.819706, -96.753242 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 81 : Freq. = 1977.6", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 81 : Freq. = 1977.6", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  C:\Users\diego\Dropbox\Academic\MEng Space 
+$# System
+$# s\2. EUE - Estructuras de Uso Espacial\Patran files\1.ejemploplaca.h5
+res_dra_detach_file( 1, 150, 25 )
+$# Detach external results file:  C:\Users\diego\Dropbox\Academic\MEng Space 
+$# System
+$# s\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.Nastran.Placa\1.ejemplopla
+$# ca.h5
+res_dra_detach_file( 3, 150, 27 )
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  C:\Users\diego\Dropbox\Academic\MEng Space 
+$# System
+$# s\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\2.Nastran.Cabeceros\Estatico
+$#  cabeceros\1.ejemploplaca_quasistatic_z.xdb
+res_dra_detach_file( 4, 130, 28 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE - Estructuras de Uso Espacial\Patran files\1.Nastran.Plac" // @
+"a\1.EjemploPlaca.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE - Estructuras de Uso Espacial\Patran files\2.Nastran." // @
+"Cabeceros\Estatico cabeceros\1.ejemploplaca_quasistatic_z.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.00030000001" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras d" // @
+"e Uso Espacial\Patran files\2.Nastran.Cabeceros\Estatico cabeceros\1.ejem" // @
+"ploplaca_quasistatic_z.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras 
+$# de Uso Espacial\Patran files\2.Nastran.Cabeceros\Estatico 
+$# cabeceros\1.ejemploplaca_quasistatic_z.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/29/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2333 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  C:\Users\diego\Dropbox\Academic\MEng Space 
+$# System
+$# s\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\2.Nastran.Cabeceros\Estatico
+$#  cabeceros\1.ejemploplaca_quasistatic_z.xdb
+res_dra_detach_file( 3, 130, 29 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE - Estructuras de Uso Espacial\Patran files\1.Nastran.Plac" // @
+"a\1.EjemploPlaca.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE - Estructuras de Uso Espacial\Patran files\2.Nastran." // @
+"Cabeceros\Estatico cabeceros\1.ejemploplaca_quasistatic_z.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.00030000001" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras d" // @
+"e Uso Espacial\Patran files\2.Nastran.Cabeceros\Estatico cabeceros\1.ejem" // @
+"ploplaca_quasistatic_z.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras 
+$# de Uso Espacial\Patran files\2.Nastran.Cabeceros\Estatico 
+$# cabeceros\1.ejemploplaca_quasistatic_z.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/29/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2300 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 81 : Freq. = 1977.6", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 81 : Freq. = 1977.6", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 76 : Freq. = 1849.9", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 76 : Freq. = 1849.9", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 9 : Freq. = 121.1", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 9 : Freq. = 121.1", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -65.341156, 10.604970, -107.276855 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 3 : Freq. = 3.3082E-5", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 3 : Freq. = 3.3082E-5", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 6 : Freq. = 21.653", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 6 : Freq. = 21.653", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:FREQS",  @
+"A2:Mode 8 : Freq. = 107.5", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe3", "RangeOverwrite:ON",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", @
+ "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:FREQS",  @
+"A2:Mode 8 : Freq. = 107.5", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( 0.012159, 0.004221 )
+ga_view_zoom_set( 0.165875 )
+ga_view_aa_set( -44.168438, -18.418198, -100.708061 )
+ga_view_aa_set( -121.658470, -0.957576, 43.506241 )
+uil_file_new.go( "C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/templa" // @
+"te.db", "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estr" // @
+"ucturas de Uso Espacial\Patran files\1.Nastran.Placa.v2\1.EjemploPlaca.v2.db" )
+$# Question from application FILE
+$#     A database is already open.
+$# Do you want to create a new database C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.Nastran.Placa.v2\1.EjemploPlaca.v2.db anyway ?
+$? YES 36000037 
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 29-Mar-21 23:10:59
