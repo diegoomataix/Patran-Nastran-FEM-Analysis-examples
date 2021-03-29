@@ -146,3 +146,753 @@ elementprops_create( "2D_Al7075_plate_1mm", 51, 25, 35, 1, 1, 20, [13, 20, 36, @
 $# Property Set "2D_Al7075_plate_1mm" created.
 mesh_seed_display_mgr.erase(  )
 uil_primary_file.db_save(  )
+node_size( 0 )
+node_size( 9 )
+gm_visibility_widget( "", FALSE )
+gm_visibility_widget( "", TRUE )
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Curve 2 4 1 3", 16384, 0.029999999, "Bar2", "1000",  @
+"1000", "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,  @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,  @
+fem_create_mesh_c_elems_created )
+$# 24 nodes and 23 elements created for Curve 2.
+$# 24 nodes and 23 elements created for Curve 4.
+$# 13 nodes and 12 elements created for Curve 1.
+$# 13 nodes and 12 elements created for Curve 3.
+$# === 74 nodes created.  IDs  = 1000:1073.
+$# === 70 elements created.  IDs  = 1000:1069.
+fem_associate_elems_to_ep( "1D_Al7075_beam", fem_create_mesh_c_elems_created,  @
+fem_create_mesh_curve_num_elems )
+$# 70 Element(s) associated to the Element Property 1D_Al7075_beam.
+uil_toolbar.labels_on(  )
+uil_toolbar.labels_off(  )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "Hybrid", 49680, "Surface 9", 4, ["0.007", "0.1",  @
+"0.2", "1.0"], "Quad4", "2000", "2000", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# Processing the geometry...
+$# Processing the geometry...
+$# Completed Meshing the Vertices...
+$# Completed Meshing the Edges...
+$# Completed Meshing the Faces...
+$# === 36 nodes created.  IDs  = 2000:2035.
+$# === 24 elements created.  IDs  = 2000:2023.
+fem_associate_elems_to_ep( "2D_Al7075_plate_1mm",  @
+fem_create_mesh_s_elems_created, fem_create_mesh_surfa_num_elems )
+$# 24 Element(s) associated to the Element Property 2D_Al7075_plate_1mm.
+ga_view_center_set( 0.039176, -0.002512 )
+ga_view_zoom_set( 0.194709 )
+ga_view_center_set( 0.075159, 0.006484 )
+ga_view_zoom_set( 0.219048 )
+ga_view_center_set( 0.115537, 0.016604 )
+ga_view_zoom_set( 0.246429 )
+ga_view_center_set( 0.160847, 0.028105 )
+ga_view_zoom_set( 0.277232 )
+ga_view_center_set( 0.115768, 0.016373 )
+ga_view_zoom_set( 0.246429 )
+ga_view_center_set( 0.075698, 0.005842 )
+ga_view_zoom_set( 0.219048 )
+ga_view_center_set( 0.011587, -0.011008 )
+ga_view_zoom_set( 0.175238 )
+ga_view_center_set( -0.016907, -0.018497 )
+ga_view_zoom_set( 0.155767 )
+ga_view_center_set( -0.042300, -0.025349 )
+ga_view_zoom_set( 0.138460 )
+ga_view_center_set( -0.064872, -0.031439 )
+ga_view_zoom_set( 0.123075 )
+ga_view_center_set( -0.084935, -0.036852 )
+ga_view_zoom_set( 0.109400 )
+ga_view_center_set( -0.117037, -0.045514 )
+ga_view_zoom_set( 0.087520 )
+ga_view_center_set( -0.131122, -0.049327 )
+ga_view_zoom_set( 0.077796 )
+ga_view_center_set( -0.143642, -0.052717 )
+ga_view_zoom_set( 0.069152 )
+ga_view_center_set( -0.163467, -0.058088 )
+ga_view_zoom_set( 0.055321 )
+ga_view_center_set( -0.162267, -0.060314 )
+ga_view_zoom_set( 0.049175 )
+ga_view_center_set( -0.161488, -0.062210 )
+ga_view_zoom_set( 0.043711 )
+ga_view_center_set( -0.160796, -0.063896 )
+ga_view_zoom_set( 0.038854 )
+ga_view_center_set( -0.160148, -0.065394 )
+ga_view_zoom_set( 0.034537 )
+ga_view_center_set( -0.164003, -0.064026 )
+ga_view_zoom_set( 0.038854 )
+ga_view_center_set( -0.168359, -0.062486 )
+ga_view_zoom_set( 0.043711 )
+ga_view_center_set( -0.173320, -0.060753 )
+ga_view_zoom_set( 0.049175 )
+ga_view_center_set( -0.178948, -0.058804 )
+ga_view_zoom_set( 0.055321 )
+ga_view_center_set( -0.185435, -0.056663 )
+ga_view_zoom_set( 0.062237 )
+ga_view_center_set( -0.192967, -0.054372 )
+ga_view_zoom_set( 0.070016 )
+ga_view_center_set( -0.201439, -0.051794 )
+ga_view_zoom_set( 0.078768 )
+ga_view_center_set( -0.210971, -0.048894 )
+ga_view_zoom_set( 0.088614 )
+ga_view_center_set( -0.232502, -0.042368 )
+ga_view_zoom_set( 0.110768 )
+ga_view_center_set( -0.246062, -0.038290 )
+ga_view_zoom_set( 0.124614 )
+ga_view_center_set( -0.261317, -0.033701 )
+ga_view_zoom_set( 0.140191 )
+ga_view_center_set( -0.278479, -0.028540 )
+ga_view_zoom_set( 0.157714 )
+ga_view_center_set( -0.297787, -0.022733 )
+ga_view_zoom_set( 0.177429 )
+ga_view_center_set( -0.068904, -0.017410 )
+ga_view_center_set( -0.053443, -0.018630 )
+ga_view_zoom_set( 0.157714 )
+ga_view_center_set( -0.039634, -0.019715 )
+ga_view_zoom_set( 0.140191 )
+ga_view_center_set( -0.027360, -0.020680 )
+ga_view_zoom_set( 0.124614 )
+ga_view_center_set( -0.039693, -0.019832 )
+ga_view_zoom_set( 0.140191 )
+ga_view_center_set( -0.039693, -0.004411 )
+uil_primary_file.db_save(  )
+gm_visibility_widget( " Point 1:16 Curve 1:12 Surface 3 5 7:9", FALSE )
+gm_visibility_widget( " Point 1:16 Curve 1:12 Surface 3 5 7:9", TRUE )
+fem_create_mesh_surf_4( "Hybrid", 49680, "Surface 5 3 7", 4, ["0.007", "0.1",  @
+"0.2", "1.0"], "Quad4", "#", "#", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# Processing the geometry...
+$# Processing the geometry...
+$# Completed Meshing the Vertices...
+$# Completed Meshing the Edges...
+$# Completed Meshing the Faces...
+$# === 108 nodes created.  IDs  = 2036:2143.
+$# === 72 elements created.  IDs  = 2024:2095.
+fem_associate_elems_to_ep( "2D_Al7075_plate_1mm",  @
+fem_create_mesh_s_elems_created, fem_create_mesh_surfa_num_elems )
+$# 72 Element(s) associated to the Element Property 2D_Al7075_plate_1mm.
+uil_primary_file.db_save(  )
+gm_visibility_widget( " Point 1:16 Curve 1:12 Surface 3 5 7:9", FALSE )
+uil_toolbar.shaded_smooth(  )
+uil_primary_file.db_save(  )
+fem_create_mesh_surf_4( "Paver", 49680, "Surface 8", 4, ["0.015", "0.1", "0.2" @
+, "1.0"], "Quad4", "#", "#", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# 358 nodes and 302 elements created for Surface 8.
+$# === 358 nodes created.  IDs  = 2144:2501.
+$# === 302 elements created.  IDs  = 2096:2397.
+fem_associate_elems_to_ep( "2D_Al7075_plate_1mm",  @
+fem_create_mesh_s_elems_created, fem_create_mesh_surfa_num_elems )
+$# 302 Element(s) associated to the Element Property 2D_Al7075_plate_1mm.
+uil_primary_file.db_save(  )
+ga_viewport_location_set( "default_viewport", 5.075234, 1.983206, 1 )
+ga_viewport_location_set( "default_viewport", 0.000000, 0.000000, 1 )
+gm_visibility_widget( " Point 1:16 Curve 1:12 Surface 3 5 7:9", TRUE )
+uil_toolbar.labels_on(  )
+uil_toolbar.labels_off(  )
+uil_toolbar.wireframe(  )
+uil_toolbar.shaded_smooth(  )
+ga_view_aa_set( -5.679717, -31.511475, 16.747000 )
+ga_view_aa_set( 0., 0., 0. )
+sys_poll_option( 2 )
+pref_fa_set( [FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE], [6, 3, 1, 1, 5, 7, 2, 2, 8, 1, 2, 3, 3, 5, 2, 1,  @
+3, 6, 5, 5, 3, 2, 2, 2, 2, 2, 6, 6, 6, 9, 9, 3, 5, 5, 5, 1, 3, 3, 15, 13], [ @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE], [3, 4, 5, 6, 1, 1, 7, 8, 9, 10], [TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE], FALSE )
+display_fa_vectors( TRUE )
+result_label_format_set( 1, 4 )
+gm_elem_prop_init_list(  )
+ga_display_offsets_set( "general", 1 )
+ga_display_beam_set( "general", 2 )
+sys_poll_option( 0 )
+ga_view_aa_set( 119.690636, 3.699761, -9.377587 )
+ga_view_aa_set( -114.843246, -9.259009, 2.825098 )
+ga_view_aa_set( -95.502998, -17.276138, 22.987270 )
+ga_view_aa_set( -84.629143, -1.077217, 170.071213 )
+ga_view_aa_set( 94.982246, 1.141380, -107.868362 )
+ga_view_aa_set( 125.913330, -6.628798, -19.005119 )
+ga_view_aa_set( 0., 0., 0. )
+mesh_seed_display_mgr.erase(  )
+verify_boundaries_display_mgr.initialize(  )
+$# Acknowledgement requested from application FEM Verify
+$#     At this time, the test for ASPECT and JACOBIAN values are not 
+$# available for the MSC.Nastran preference.  Using the MSC.Patran tests.
+$? NO 11111 
+fem_verify_reset_graphics( "SHADED", "default_group", 0, "default_viewport" )
+fem_verify_display.plot( "restore", 0, 0., "" )
+$# Verifying with MSC.Nastran test.
+STRING fem_verify_quad_tap_group_label[32]
+REAL fem_verify_quad_taper_min_value
+INTEGER fem_verify_quad_taper_min_el_id
+REAL fem_verify_quad_taper_max_value
+INTEGER fem_verify_quad_taper_max_el_id
+STRING fem_verify_quad_tap_created_els[100]
+STRING fem_verify_quad_t_created_nodes[100]
+INTEGER fem_verify_quad_taper_table_id
+fem_verify_quad_taper_pref( "MSC.Nastran", FALSE, 0.5, FALSE,  @
+fem_verify_quad_tap_group_label, fem_verify_quad_taper_min_value,  @
+fem_verify_quad_taper_min_el_id, fem_verify_quad_taper_max_value,  @
+fem_verify_quad_taper_max_el_id, fem_verify_quad_tap_created_els,  @
+fem_verify_quad_t_created_nodes, fem_verify_quad_taper_table_id )
+$# Quad element 2141 has a taper factor of 0.502029. ( Exceeds threshold of 
+$# 0.5 )
+fem_verify_display.thresh_dir( 1 )
+STRING fem_verify_quad_taper_ent_list[VIRTUAL]
+fem_verify_display.plot( "plot_failed", fem_verify_quad_taper_table_id, 0.5,  @
+fem_verify_quad_taper_ent_list )
+gm_plot_erase_all( 1 )
+gm_visibility_widget( "Elm 2141", TRUE )
+fem_verify_reset_graphics( "SHADED", "default_group", 0, "default_viewport" )
+fem_verify_display.plot( "restore", 0, 0., "" )
+INTEGER fem_modify_qu_num_nodes_created
+INTEGER fem_modify_qu_num_elems_created
+INTEGER fem_modify_qu_num_nodes_deleted
+INTEGER fem_modify_qu_num_elems_deleted
+STRING fem_modify_quad_s_nodes_created[VIRTUAL]
+STRING fem_modify_quad_s_elems_created[VIRTUAL]
+STRING fem_modify_quad_s_nodes_deleted[VIRTUAL]
+STRING fem_modify_quad_s_elems_deleted[VIRTUAL]
+fem_mod_quad_split( "2_tria", "Auto", "Elm 2141", "", "",  @
+fem_modify_qu_num_nodes_created, fem_modify_qu_num_elems_created,  @
+fem_modify_qu_num_nodes_deleted, fem_modify_qu_num_elems_deleted,  @
+fem_modify_quad_s_nodes_created, fem_modify_quad_s_elems_created,  @
+fem_modify_quad_s_nodes_deleted, fem_modify_quad_s_elems_deleted )
+$# === No nodes deleted.
+$# === No nodes created.
+$# === 1 element deleted.  ID = 2141.
+$# === 2 elements created.  IDs  = 2398,2399.
+uil_primary_file.db_save(  )
+ga_view_aa_set( -65.331337, 12.584035, 8.401949 )
+ga_view_aa_set( 0., 0., 0. )
+fem_verify_reset_graphics( "SHADED", "default_group", 0, "default_viewport" )
+$# Acknowledgement requested from application FEM Verify
+$#     At this time, the test for ASPECT and JACOBIAN values are not 
+$# available for the MSC.Nastran preference.  Using the MSC.Patran tests.
+$? NO 11111 
+verify_boundaries_display_mgr.initialize(  )
+INTEGER fem_verify_duplicates_num_dupl
+STRING fem_verify_duplicates_keep_ids[VIRTUAL]
+STRING fem_verify_duplicates_toss_ids[VIRTUAL]
+fem_verify_element_duplicates( FALSE, TRUE, fem_verify_duplicates_num_dupl,  @
+fem_verify_duplicates_keep_ids, fem_verify_duplicates_toss_ids )
+$# There are NO duplicate elements in the model.
+uil_primary_file.db_save(  )
+node_size( 0 )
+uil_toolbar.wireframe(  )
+gm_visibility_widget( " Node 1000:1073 2000:2501 Element 1000:1069 2000:21" // @
+"40 2142:2399", FALSE )
+node_size( 9 )
+verify_boundaries_display_mgr.initialize(  )
+uil_toolbar.shaded_smooth(  )
+gm_visibility_widget( " Node 1000:1073 2000:2501 Element 1000:1069 2000:21" // @
+"40 2142:2399", TRUE )
+node_size( 0 )
+node_size( 9 )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+node_size( 0 )
+ga_view_center_set( -0.030758, -0.015666 )
+ga_view_zoom_set( 0.185625 )
+ga_view_center_set( 0.000000, 0.000000 )
+ga_view_zoom_set( 0.165000 )
+ga_view_center_set( 0.027340, 0.013926 )
+ga_view_zoom_set( 0.146667 )
+ga_view_center_set( 0.051643, 0.026304 )
+ga_view_zoom_set( 0.130370 )
+ga_view_center_set( 0.073245, 0.037307 )
+ga_view_zoom_set( 0.115885 )
+ga_view_center_set( 0.107809, 0.054912 )
+ga_view_zoom_set( 0.092708 )
+ga_view_center_set( 0.123170, 0.062736 )
+ga_view_zoom_set( 0.082407 )
+ga_view_center_set( 0.136825, 0.069691 )
+ga_view_zoom_set( 0.073251 )
+ga_view_center_set( 0.148962, 0.075873 )
+ga_view_zoom_set( 0.065112 )
+ga_view_center_set( 0.159751, 0.081369 )
+ga_view_zoom_set( 0.057877 )
+ga_view_center_set( 0.177014, 0.090161 )
+ga_view_zoom_set( 0.046302 )
+ga_view_center_set( 0.184686, 0.094069 )
+ga_view_zoom_set( 0.041157 )
+ga_view_center_set( 0.191505, 0.097542 )
+ga_view_zoom_set( 0.036584 )
+ga_view_center_set( 0.202417, 0.103100 )
+ga_view_zoom_set( 0.029267 )
+ga_view_center_set( 0.207266, 0.105570 )
+ga_view_zoom_set( 0.026015 )
+ga_view_center_set( 0.202564, 0.103225 )
+ga_view_zoom_set( 0.029267 )
+ga_view_center_set( 0.197274, 0.100586 )
+ga_view_zoom_set( 0.032926 )
+ga_view_center_set( 0.191323, 0.097632 )
+ga_view_zoom_set( 0.037041 )
+ga_view_center_set( 0.184628, 0.094309 )
+ga_view_zoom_set( 0.041671 )
+ga_view_center_set( 0.177096, 0.090570 )
+ga_view_zoom_set( 0.046880 )
+ga_view_center_set( 0.169459, 0.087548 )
+ga_view_zoom_set( 0.052740 )
+ga_view_center_set( 0.160960, 0.084217 )
+ga_view_zoom_set( 0.059333 )
+ga_view_center_set( 0.142044, 0.077085 )
+ga_view_zoom_set( 0.074166 )
+ga_view_center_set( 0.130253, 0.072692 )
+ga_view_zoom_set( 0.083437 )
+ga_view_center_set( 0.118079, 0.069712 )
+ga_view_zoom_set( 0.093867 )
+ga_view_center_set( 0.104384, 0.066359 )
+ga_view_zoom_set( 0.105600 )
+ga_view_center_set( 0.088976, 0.062588 )
+ga_view_zoom_set( 0.118800 )
+ga_view_center_set( 0.071643, 0.058345 )
+ga_view_zoom_set( 0.133650 )
+ga_view_center_set( 0.053248, 0.054678 )
+ga_view_zoom_set( 0.150356 )
+ga_view_center_set( 0.033668, 0.052517 )
+ga_view_zoom_set( 0.169151 )
+ga_view_center_set( 0.011787, 0.050233 )
+ga_view_zoom_set( 0.190295 )
+ga_view_center_set( -0.012663, 0.047912 )
+ga_view_zoom_set( 0.214081 )
+ga_view_center_set( -0.034071, 0.026504 )
+ga_view_center_set( -0.028269, 0.022857 )
+ga_view_zoom_set( 0.190295 )
+ga_view_center_set( -0.023112, 0.019542 )
+ga_view_zoom_set( 0.169151 )
+ga_view_center_set( -0.031570, -0.014288 )
+verify_boundaries_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group4( [" "], 0, "", 1, 1, 0.00030000001, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 122 nodes deleted.
+uil_primary_file.db_save(  )
+node_size( 9 )
+node_size( 0 )
+verify_boundaries_display_mgr.initialize(  )
+verify_normals_display_mgr.initialize(  )
+STRING fem_verify_normals_group_name[32]
+INTEGER fem_verify_normals_table_id
+fem_verify_element_normals( FALSE, TRUE, "", fem_verify_normals_group_name,  @
+fem_verify_normals_table_id )
+$# There are NO reversed normals in group default_group.
+res_data_load_elem_scalar( 0, fem_verify_normals_table_id )
+res_data_title( 0, "ENodal", "Scalar", 1, [""] )
+res_display_fringe_create( "", "FreeFaces", 1, ["GR:default_group"], 12, [ @
+"Range:_", "RangeOverwrite:OFF", "FringeStyle:Discrete/Smooth", "Shade:None",  @
+"ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None", "ScaleFactor:1.0",  @
+"LabelStyle:Exponential,12,White,3"], TRUE )
+res_display_fringe_post( "", 0, "ENodal", TRUE, TRUE )
+ga_view_aa_set( -75.790604, 2.243641, 28.236025 )
+verify_normals_display_mgr.erase( TRUE, FALSE )
+ga_view_aa_set( 112.933739, 3.869807, -16.350893 )
+fem_verify_element_normals( FALSE, TRUE, "", fem_verify_normals_group_name,  @
+fem_verify_normals_table_id )
+$# There are NO reversed normals in group default_group.
+res_data_load_elem_scalar( 0, fem_verify_normals_table_id )
+res_data_title( 0, "ENodal", "Scalar", 1, [""] )
+res_display_fringe_create( "", "FreeFaces", 1, ["GR:default_group"], 12, [ @
+"Range:_", "RangeOverwrite:OFF", "FringeStyle:Discrete/Smooth", "Shade:None",  @
+"ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None", "ScaleFactor:1.0",  @
+"LabelStyle:Exponential,12,White,3"], TRUE )
+res_display_fringe_post( "", 0, "ENodal", TRUE, TRUE )
+ga_view_aa_set( -19.264759, 15.731850, -2.729629 )
+ga_view_aa_set( 14.964881, 7.863578, -3.632588 )
+verify_normals_display_mgr.erase( TRUE, FALSE )
+ga_view_aa_set( -65.076065, -4.641515, -3.159858 )
+ga_view_aa_set( 0., 0., 0. )
+uil_primary_file.db_save(  )
+mesh_seed_display_mgr.erase(  )
+STRING fem_create_nodes__nodes_created[VIRTUAL]
+fem_create_nodes_1( "Coord 0", "Coord 0", 3, "1", "Point 8 6 5 7",  @
+fem_create_nodes__nodes_created )
+$# === 4 nodes created.  IDs  = 1:4.
+node_size( 9 )
+node_size( 0 )
+node_size( 9 )
+node_size( 0 )
+node_size( 9 )
+gm_visibility_widget( " Node 1:4 1000:1047 1049:1059 1062:1072 2000:2143 2" // @
+"262:2501 Element 1000:1069 2000:2140 2142:2399", FALSE )
+gm_visibility_widget( " Node 1:4 1000:1047 1049:1059 1062:1072 2000:2143 2" // @
+"262:2501 Element 1000:1069 2000:2140 2142:2399", TRUE )
+uil_toolbar.wireframe(  )
+ga_view_center_set( -0.047850, -0.004950 )
+mesh_seed_display_mgr.erase(  )
+ga_view_center_set( -0.045047, -0.009334 )
+ga_view_zoom_set( 0.185625 )
+ga_view_center_set( -0.041894, -0.014104 )
+ga_view_zoom_set( 0.208828 )
+ga_view_center_set( -0.038347, -0.019470 )
+ga_view_zoom_set( 0.234932 )
+ga_view_center_set( -0.041894, -0.014286 )
+ga_view_zoom_set( 0.208828 )
+ga_view_center_set( -0.045047, -0.009758 )
+ga_view_zoom_set( 0.185625 )
+ga_view_center_set( -0.047850, -0.005878 )
+ga_view_zoom_set( 0.165000 )
+ga_view_center_set( -0.050341, -0.002492 )
+ga_view_zoom_set( 0.146667 )
+ga_view_center_set( -0.051988, 0.000006 )
+ga_view_zoom_set( 0.130370 )
+ga_view_center_set( -0.053452, 0.002227 )
+ga_view_zoom_set( 0.115885 )
+ga_view_center_set( -0.055794, 0.005215 )
+ga_view_zoom_set( 0.092708 )
+ga_view_center_set( -0.056583, 0.006041 )
+ga_view_zoom_set( 0.082407 )
+ga_view_center_set( -0.057285, 0.006647 )
+ga_view_zoom_set( 0.073251 )
+ga_view_center_set( -0.057909, 0.007157 )
+ga_view_zoom_set( 0.065112 )
+ga_view_center_set( -0.058464, 0.007510 )
+ga_view_zoom_set( 0.057877 )
+ga_view_center_set( -0.057077, 0.007309 )
+ga_view_zoom_set( 0.065112 )
+ga_view_center_set( -0.055517, 0.007082 )
+ga_view_zoom_set( 0.073251 )
+ga_view_center_set( -0.053763, 0.006827 )
+ga_view_zoom_set( 0.082407 )
+ga_view_center_set( -0.051789, 0.006539 )
+ga_view_zoom_set( 0.092708 )
+ga_view_center_set( -0.049568, 0.006216 )
+ga_view_zoom_set( 0.104296 )
+ga_view_center_set( -0.048160, 0.006807 )
+ga_view_zoom_set( 0.117333 )
+ga_view_center_set( -0.046575, 0.007471 )
+ga_view_zoom_set( 0.132000 )
+ga_view_center_set( -0.044793, 0.008219 )
+ga_view_zoom_set( 0.148500 )
+ga_view_center_set( -0.042788, 0.009059 )
+ga_view_zoom_set( 0.167063 )
+ga_view_center_set( -0.028963, 0.021065 )
+ga_view_zoom_set( 0.187945 )
+ga_view_center_set( -0.005634, 0.032443 )
+ga_view_zoom_set( 0.211439 )
+ga_view_center_set( 0.020612, 0.045244 )
+ga_view_zoom_set( 0.237868 )
+ga_view_center_set( -0.005634, 0.032443 )
+ga_view_zoom_set( 0.211439 )
+ga_view_center_set( -0.028963, 0.021065 )
+ga_view_zoom_set( 0.187945 )
+ga_view_center_set( -0.066291, 0.002860 )
+ga_view_zoom_set( 0.150356 )
+ga_view_center_set( -0.082997, -0.005348 )
+ga_view_zoom_set( 0.133650 )
+ga_view_center_set( -0.109727, -0.018480 )
+ga_view_zoom_set( 0.106920 )
+ga_view_center_set( -0.121607, -0.024316 )
+ga_view_zoom_set( 0.095040 )
+ga_view_center_set( -0.132167, -0.029504 )
+ga_view_zoom_set( 0.084480 )
+ga_view_center_set( -0.141586, -0.034247 )
+ga_view_zoom_set( 0.075093 )
+ga_view_center_set( -0.149959, -0.038462 )
+ga_view_zoom_set( 0.066750 )
+ga_view_center_set( -0.163355, -0.045207 )
+ga_view_zoom_set( 0.053400 )
+ga_view_center_set( -0.169268, -0.048204 )
+ga_view_zoom_set( 0.047466 )
+ga_view_center_set( -0.174524, -0.050869 )
+ga_view_zoom_set( 0.042192 )
+ga_view_center_set( -0.179195, -0.053238 )
+ga_view_zoom_set( 0.037504 )
+ga_view_center_set( -0.183348, -0.055343 )
+ga_view_zoom_set( 0.033337 )
+ga_view_center_set( -0.181681, -0.072678 )
+ga_view_center_set( -0.178571, -0.074937 )
+ga_view_zoom_set( 0.029633 )
+ga_view_center_set( -0.175806, -0.076945 )
+ga_view_zoom_set( 0.026340 )
+ga_view_center_set( -0.173348, -0.078729 )
+ga_view_zoom_set( 0.023414 )
+ga_view_center_set( -0.175796, -0.076945 )
+ga_view_zoom_set( 0.026340 )
+ga_view_center_set( -0.178549, -0.074937 )
+ga_view_zoom_set( 0.029633 )
+ga_view_center_set( -0.181647, -0.072678 )
+ga_view_zoom_set( 0.033337 )
+ga_view_center_set( -0.185131, -0.070137 )
+ga_view_zoom_set( 0.037504 )
+ga_view_center_set( -0.189035, -0.067132 )
+ga_view_zoom_set( 0.042192 )
+ga_view_center_set( -0.193427, -0.063750 )
+ga_view_zoom_set( 0.047466 )
+ga_view_center_set( -0.203309, -0.056143 )
+ga_view_zoom_set( 0.059333 )
+ga_view_center_set( -0.209486, -0.051388 )
+ga_view_zoom_set( 0.066750 )
+ga_view_center_set( -0.216434, -0.046067 )
+ga_view_zoom_set( 0.075093 )
+ga_view_center_set( -0.232067, -0.034097 )
+ga_view_zoom_set( 0.093867 )
+ga_view_center_set( -0.241838, -0.026616 )
+ga_view_zoom_set( 0.105600 )
+ga_view_center_set( -0.252831, -0.018199 )
+ga_view_zoom_set( 0.118800 )
+ga_view_center_set( -0.265249, -0.008730 )
+ga_view_zoom_set( 0.133650 )
+ga_view_center_set( -0.293189, 0.012575 )
+ga_view_zoom_set( 0.167063 )
+ga_view_center_set( -0.312108, 0.026764 )
+ga_view_zoom_set( 0.187945 )
+ga_view_center_set( -0.333391, 0.042726 )
+ga_view_zoom_set( 0.211439 )
+ga_view_center_set( -0.311535, 0.026927 )
+ga_view_zoom_set( 0.187945 )
+ga_view_center_set( -0.276565, 0.001650 )
+ga_view_zoom_set( 0.150356 )
+ga_view_center_set( -0.261023, -0.009585 )
+ga_view_zoom_set( 0.133650 )
+ga_view_center_set( -0.247208, -0.019571 )
+ga_view_zoom_set( 0.118800 )
+ga_view_center_set( -0.235664, -0.028356 )
+ga_view_zoom_set( 0.105600 )
+ga_view_center_set( -0.218370, -0.042411 )
+ga_view_zoom_set( 0.084480 )
+ga_view_center_set( -0.210979, -0.048625 )
+ga_view_zoom_set( 0.075093 )
+ga_view_center_set( -0.206734, -0.053451 )
+ga_view_zoom_set( 0.066750 )
+ga_view_center_set( -0.203323, -0.057689 )
+ga_view_zoom_set( 0.059333 )
+ga_view_center_set( -0.198651, -0.064305 )
+ga_view_zoom_set( 0.047466 )
+ga_view_center_set( -0.198026, -0.066676 )
+ga_view_zoom_set( 0.042192 )
+ga_view_center_set( -0.197536, -0.068766 )
+ga_view_zoom_set( 0.037504 )
+ga_view_center_set( -0.197144, -0.070610 )
+ga_view_zoom_set( 0.033337 )
+ga_view_center_set( -0.196609, -0.073514 )
+ga_view_zoom_set( 0.026670 )
+ga_view_center_set( -0.196723, -0.074382 )
+ga_view_zoom_set( 0.023706 )
+ga_view_center_set( -0.196870, -0.075134 )
+ga_view_zoom_set( 0.021072 )
+$# UNDO: MPC Create
+$# UNDO: MPC Create
+fem_create_mpc_nodal2( 1, "RBE2", 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 2000:2003 2008:2011 2007:2004:-1", "Node 3"], ["UX,UY,UZ,RX,RY,RZ", ""] )
+$# MPC 1 created.
+ga_view_center_set( -0.197797, -0.074776 )
+ga_view_zoom_set( 0.023706 )
+ga_view_center_set( -0.198840, -0.074374 )
+ga_view_zoom_set( 0.026670 )
+ga_view_center_set( -0.197807, -0.074776 )
+ga_view_zoom_set( 0.023706 )
+ga_view_center_set( -0.196935, -0.075134 )
+ga_view_zoom_set( 0.021072 )
+ga_view_center_set( -0.196193, -0.075452 )
+ga_view_zoom_set( 0.018731 )
+ga_view_center_set( -0.195548, -0.075735 )
+ga_view_zoom_set( 0.016650 )
+ga_view_center_set( -0.194980, -0.075987 )
+ga_view_zoom_set( 0.014800 )
+ga_view_center_set( -0.194476, -0.076210 )
+ga_view_zoom_set( 0.013155 )
+ga_view_center_set( -0.194980, -0.075987 )
+ga_view_zoom_set( 0.014800 )
+ga_view_center_set( -0.195548, -0.075735 )
+ga_view_zoom_set( 0.016650 )
+ga_view_center_set( -0.196186, -0.075474 )
+ga_view_zoom_set( 0.018731 )
+ga_view_center_set( -0.195569, -0.075576 )
+ga_view_zoom_set( 0.016650 )
+ga_view_center_set( -0.195021, -0.075666 )
+ga_view_zoom_set( 0.014800 )
+ga_view_center_set( -0.194534, -0.075746 )
+ga_view_zoom_set( 0.013155 )
+ga_view_center_set( -0.193773, -0.075893 )
+ga_view_zoom_set( 0.010524 )
+ga_view_center_set( -0.194154, -0.075815 )
+ga_view_zoom_set( 0.011840 )
+ga_view_center_set( -0.195010, -0.075640 )
+ga_view_zoom_set( 0.014800 )
+ga_view_center_set( -0.196080, -0.075420 )
+ga_view_zoom_set( 0.018500 )
+ga_view_center_set( -0.196781, -0.075187 )
+ga_view_zoom_set( 0.020812 )
+ga_view_center_set( -0.197570, -0.074924 )
+ga_view_zoom_set( 0.023414 )
+ga_view_center_set( -0.198457, -0.074628 )
+ga_view_zoom_set( 0.026340 )
+ga_view_center_set( -0.200453, -0.073963 )
+ga_view_zoom_set( 0.032926 )
+ga_view_center_set( -0.201701, -0.073561 )
+ga_view_zoom_set( 0.037041 )
+ga_view_center_set( -0.203217, -0.072803 )
+ga_view_zoom_set( 0.041671 )
+ga_view_center_set( -0.204923, -0.071950 )
+ga_view_zoom_set( 0.046880 )
+ga_view_center_set( -0.208762, -0.070031 )
+ga_view_zoom_set( 0.058601 )
+ga_view_center_set( -0.211161, -0.068831 )
+ga_view_zoom_set( 0.065926 )
+ga_view_center_set( -0.214090, -0.066850 )
+ga_view_zoom_set( 0.074166 )
+ga_view_center_set( -0.220679, -0.062392 )
+ga_view_zoom_set( 0.092708 )
+ga_view_center_set( -0.228916, -0.056820 )
+ga_view_zoom_set( 0.115885 )
+ga_view_center_set( -0.234065, -0.053337 )
+ga_view_zoom_set( 0.130370 )
+ga_view_center_set( -0.240254, -0.049022 )
+ga_view_zoom_set( 0.146667 )
+ga_view_center_set( -0.247217, -0.044167 )
+ga_view_zoom_set( 0.165000 )
+ga_view_center_set( -0.262883, -0.033244 )
+ga_view_zoom_set( 0.206250 )
+ga_view_center_set( -0.272675, -0.026776 )
+ga_view_zoom_set( 0.232031 )
+ga_view_center_set( -0.284296, -0.019500 )
+ga_view_zoom_set( 0.261035 )
+ga_view_center_set( -0.267622, -0.025664 )
+ga_view_zoom_set( 0.232031 )
+ga_view_center_set( -0.252800, -0.031144 )
+ga_view_zoom_set( 0.206250 )
+ga_view_center_set( -0.239625, -0.036015 )
+ga_view_zoom_set( 0.183333 )
+ga_view_center_set( -0.227913, -0.040344 )
+ga_view_zoom_set( 0.162963 )
+ga_view_center_set( -0.217440, -0.043562 )
+ga_view_zoom_set( 0.144856 )
+ga_view_center_set( -0.208131, -0.046422 )
+ga_view_zoom_set( 0.128761 )
+ga_view_center_set( -0.199856, -0.048964 )
+ga_view_zoom_set( 0.114454 )
+ga_view_center_set( -0.041909, -0.008905 )
+ga_view_center_set( -0.048489, -0.007310 )
+ga_view_zoom_set( 0.128761 )
+ga_view_center_set( -0.082586, 0.004467 )
+ga_view_zoom_set( 0.144856 )
+ga_view_center_set( -0.121072, 0.017085 )
+ga_view_zoom_set( 0.162963 )
+ga_view_center_set( -0.082460, 0.005287 )
+ga_view_zoom_set( 0.144856 )
+ga_view_center_set( -0.048139, -0.005200 )
+ga_view_zoom_set( 0.128761 )
+ga_view_center_set( -0.017631, -0.014472 )
+ga_view_zoom_set( 0.114454 )
+ga_view_center_set( 0.009531, -0.022448 )
+ga_view_zoom_set( 0.101737 )
+ga_view_center_set( 0.033676, -0.029538 )
+ga_view_zoom_set( 0.090433 )
+ga_view_center_set( 0.055137, -0.035840 )
+ga_view_zoom_set( 0.080385 )
+ga_view_center_set( 0.074214, -0.041379 )
+ga_view_zoom_set( 0.071453 )
+ga_view_center_set( 0.091172, -0.046303 )
+ga_view_zoom_set( 0.063514 )
+ga_view_center_set( 0.106245, -0.050680 )
+ga_view_zoom_set( 0.056457 )
+ga_view_center_set( 0.119643, -0.054571 )
+ga_view_zoom_set( 0.050184 )
+ga_view_center_set( 0.131475, -0.058009 )
+ga_view_zoom_set( 0.044608 )
+ga_view_center_set( 0.141992, -0.061066 )
+ga_view_zoom_set( 0.039651 )
+ga_view_center_set( 0.151341, -0.063783 )
+ga_view_zoom_set( 0.035246 )
+uil_toolbar.shaded_smooth(  )
+uil_toolbar.wireframe(  )
+gm_visibility_widget( " Point 1:16 Curve 1:12 Surface 3 5 7:9", FALSE )
+uil_toolbar.shaded_smooth(  )
+gm_visibility_widget( " Point 1:16 Curve 1:12 Surface 3 5 7:9", TRUE )
+gm_visibility_widget( " Point 1:16 Curve 1:12 Surface 3 5 7:9", FALSE )
+uil_toolbar.wireframe(  )
+ga_view_center_set( 0.019785, -0.001463 )
+ga_view_zoom_set( 0.134400 )
+ga_view_center_set( 0.037372, -0.002816 )
+ga_view_zoom_set( 0.119467 )
+ga_view_center_set( 0.053005, -0.004019 )
+ga_view_zoom_set( 0.106193 )
+ga_view_center_set( 0.066942, -0.005170 )
+ga_view_zoom_set( 0.094393 )
+ga_view_center_set( 0.079367, -0.007801 )
+ga_view_zoom_set( 0.083905 )
+ga_view_center_set( 0.090412, -0.010140 )
+ga_view_zoom_set( 0.074582 )
+ga_view_center_set( 0.100229, -0.012219 )
+ga_view_zoom_set( 0.066296 )
+ga_view_center_set( 0.108878, -0.014067 )
+ga_view_zoom_set( 0.058929 )
+ga_view_center_set( 0.116567, -0.015709 )
+ga_view_zoom_set( 0.052382 )
+ga_view_center_set( 0.123401, -0.017170 )
+ga_view_zoom_set( 0.046561 )
+ga_view_center_set( 0.129476, -0.018467 )
+ga_view_zoom_set( 0.041388 )
+ga_view_center_set( 0.137680, -0.021480 )
+ga_view_zoom_set( 0.036789 )
+ga_view_center_set( 0.159018, -0.079239 )
+cf_rbe_spider.create_mpc_spider( 2502, 2, "RBE2", ["0", "0"],  @
+"Node 2108:2119 ", ["UX,UY,UZ,RX,RY,RZ", ""], 1, "", FALSE )
+$# === 1 node created.  ID = 2502.
+$# MPC 2 created.
+ga_view_center_set( 0.152528, -0.077861 )
+ga_view_zoom_set( 0.041388 )
+ga_view_center_set( 0.145228, -0.076311 )
+ga_view_zoom_set( 0.046561 )
+ga_view_center_set( 0.137014, -0.074567 )
+ga_view_zoom_set( 0.052382 )
+ga_view_center_set( 0.127729, -0.072217 )
+ga_view_zoom_set( 0.058929 )
+ga_view_center_set( 0.117283, -0.069573 )
+ga_view_zoom_set( 0.066296 )
+ga_view_center_set( 0.105531, -0.066570 )
+ga_view_zoom_set( 0.074582 )
+ga_view_center_set( 0.092310, -0.063192 )
+ga_view_zoom_set( 0.083905 )
+ga_view_center_set( 0.077437, -0.059391 )
+ga_view_zoom_set( 0.094393 )
+ga_view_center_set( 0.060704, -0.055116 )
+ga_view_zoom_set( 0.106193 )
+ga_view_center_set( 0.041880, -0.050306 )
+ga_view_zoom_set( 0.119467 )
+ga_view_center_set( 0.020703, -0.044894 )
+ga_view_zoom_set( 0.134400 )
+ga_view_center_set( -0.003122, -0.038806 )
+ga_view_zoom_set( 0.151200 )
+ga_view_center_set( -0.039410, 0.009578 )
+cf_rbe_spider.create_mpc_spider( 2503, 3, "RBE2", ["0", "0"],  @
+"Node 2072:2083 ", ["UX,UY,UZ,RX,RY,RZ", ""], 1, "", FALSE )
+$# === 1 node created.  ID = 2503.
+$# MPC 3 created.
+cf_rbe_spider.create_mpc_spider( 2504, 4, "RBE2", ["0", "0"],  @
+"Node 2036:2047 ", ["UX,UY,UZ,RX,RY,RZ", ""], 1, "", FALSE )
+$# === 1 node created.  ID = 2504.
+$# MPC 4 created.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+fem_equiv_all_group4( [" "], 0, "", 1, 1, 0.00030000001, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 3 nodes deleted.
+uil_primary_file.db_save(  )
+uil_toolbar.shaded_smooth(  )
