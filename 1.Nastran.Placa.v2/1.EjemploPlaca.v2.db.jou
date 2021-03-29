@@ -101,3 +101,48 @@ $# 1 Surface Created: Surface 1
 uil_toolbar.shaded_smooth(  )
 uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\1.Nastran.Placa.v2\1.EjemploPlaca.v2.db.jou at 29-Mar-21 23:47:35
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E - Estructuras de Uso Espacial\Patran files\1.Nastran.Placa.v2" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_create( "Curve 5:12", 1, 12, 0., 0., 0. )
+ga_view_center_set( 0.007029, -0.010427 )
+ga_view_zoom_set( 0.173075 )
+mesh_seed_create( "Curve 3 4 1 2", 6, 0, 0., 0.015, 0.029999999 )
+uil_primary_file.db_save(  )
+mesh_seed_display_mgr.erase(  )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al7075", 0,  @
+"Date: 29-Mar-21           Time: 23:50:19", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["71E9", "0.33" @
+, "2800", ""] )
+$# UNDO: Beam Section Create
+beam_section_create( "Seccion_rect_2x15mm", "BAR", ["0.002", "0.015"] )
+$# Beam Section "Seccion_rect_2x15mm" created.
+elementprops_create( "1D_Al7075_beam", 11, 2, 42, 1, 1, 20, [39, 13, 6, 4042,  @
+4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048, 4050,  @
+4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, 4411,  @
+8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Seccion_rect_2x15mm",  @
+"m:Al7075", "<0 0 1>", "<0 0 -0.008>", "<0 0 -0.008>", "", "", "", "", "", "", @
+ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "Analysis", "Analysis", "Analysis"], "" )
+$# Property Set "1D_Al7075_beam" created.
+elementprops_create( "2D_Al7075_plate_1mm", 51, 25, 35, 1, 1, 20, [13, 20, 36, @
+ 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, @
+ 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al7075", "",  @
+"0.001", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "" )
+$# Property Set "2D_Al7075_plate_1mm" created.
+mesh_seed_display_mgr.erase(  )
+uil_primary_file.db_save(  )
