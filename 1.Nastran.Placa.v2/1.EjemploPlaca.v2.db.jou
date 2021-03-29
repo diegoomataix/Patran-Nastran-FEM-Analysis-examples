@@ -53,3 +53,51 @@ asm_const_line_2point( "4", "Point 1", "Point 2", 0, "", 50., 1,  @
 asm_line_2point_created_ids )
 $# 1 Line created: Line 4
 uil_primary_file.db_save(  )
+$# UNDO: Create Point XYZ command
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "5", "[-0.2 -0.075 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 5
+asm_const_grid_xyz( "6", "[0.2 -0.075 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 6
+STRING sgm_transform_point_created_ids[VIRTUAL]
+asm_transform_grid_translate_1( "7", "<0 0.15 0>", 0.15000001, FALSE,  @
+"Coord 0", 1, FALSE, FALSE, "Point 5 6", sgm_transform_point_created_ids )
+$# 2 Points created: Grid 7,8
+uil_primary_file.db_save(  )
+STRING sgm_create_curve_2d_created_ids[VIRTUAL]
+sgm_const_curve_2d_circle_v2( "5", 1, 0.02, "Coord 0.3", "", "Point 6", FALSE, @
+ sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 5
+sgm_const_curve_2d_circle_v2( "6", 1, 0.02, "Coord 0.3", "", "Point 8", FALSE, @
+ sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 6
+sgm_const_curve_2d_circle_v2( "7", 1, 0.02, "Coord 0.3", "", "Point 7", FALSE, @
+ sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 7
+sgm_const_curve_2d_circle_v2( "8", 1, 0.02, "Coord 0.3", "", "Point 5", FALSE, @
+ sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 8
+sgm_const_curve_2d_circle_v2( "9", 1, 0.029999999, "Coord 0.3", "", "Point 6", @
+ FALSE, sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 9
+sgm_const_curve_2d_circle_v2( "10", 1, 0.029999999, "Coord 0.3", "", "Point 8" @
+, FALSE, sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 10
+sgm_const_curve_2d_circle_v2( "11", 1, 0.029999999, "Coord 0.3", "", "Point 7" @
+, FALSE, sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 11
+sgm_const_curve_2d_circle_v2( "12", 1, 0.029999999, "Coord 0.3", "", "Point 5" @
+, FALSE, sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 12
+uil_primary_file.db_save(  )
+pointelem_marker( FALSE )
+pointelem_marker( TRUE )
+STRING sgm_surface_trimmed__created_id[VIRTUAL]
+sgm_create_surface_trimmed_v1( "1", "Curve 1:4", "Curve 5:8", "", FALSE,  @
+FALSE, TRUE, TRUE, sgm_surface_trimmed__created_id )
+$# 1 Surface Created: Surface 1
+uil_toolbar.shaded_smooth(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
