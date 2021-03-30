@@ -1,0 +1,258 @@
+$# Creating journal file C:\Users\diego\Dropbox\Academic\MEng Space 
+$# Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db.jou at 30-Mar-21 17:53:06
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/" // @
+"template.db","C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\F" // @
+"EA\EUE Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling\Buckl_v0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 4.9999999E-06, "" )
+uil_primary_file.db_save(  )
+point_size( 9 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 0., 0., 0. )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-Mar-21 17:57:55
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db.jou at 30-Mar-21 17:59:05
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling\Buckl_v0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_view_aa_set( -90., 0., 0. )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1", "[0 0 0]", "Coord 0", asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1
+asm_const_grid_xyz( "2", "[0 0 0.5]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 2
+uil_primary_file.db_save(  )
+STRING sgm_create_curve_2d_created_ids[VIRTUAL]
+sgm_const_curve_2d_circle_v2( "1", 1, 0.40000001, "Coord 0.3", "", "Point 1",  @
+FALSE, sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 1
+ga_view_center_set( 0.007732, -0.047306 )
+ga_view_zoom_set( 0.233176 )
+ga_view_center_set( 0.014506, -0.061447 )
+ga_view_zoom_set( 0.207267 )
+ga_view_center_set( 0.007732, -0.047702 )
+ga_view_zoom_set( 0.233176 )
+ga_view_center_set( 0.000111, -0.032238 )
+ga_view_zoom_set( 0.262323 )
+ga_view_center_set( -0.008462, -0.014842 )
+ga_view_zoom_set( 0.295113 )
+ga_view_center_set( -0.018106, 0.004729 )
+ga_view_zoom_set( 0.332002 )
+ga_view_center_set( -0.028957, 0.026746 )
+ga_view_zoom_set( 0.373502 )
+ga_view_aa_set( -76.000000, 0.000000, 0.000000 )
+sgm_const_curve_2d_circle_v2( "2", 1, 0.2, "Coord 0.3", "", "Point 2", FALSE,  @
+sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 2
+uil_primary_file.db_save(  )
+ga_view_center_set( 0.040659, 0.014233 )
+ga_view_zoom_set( 0.332002 )
+ga_view_center_set( -0.028957, 0.026746 )
+ga_view_zoom_set( 0.373502 )
+uil_toolbar.shaded_smooth(  )
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "1", "Curve 1", "Curve 2",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 1
+ga_view_aa_set( -52.667126, -5.355335, -16.132080 )
+uil_primary_file.db_save(  )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al7075", 0,  @
+"Date: 30-Mar-21           Time: 18:02:30", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["71E9", "0.33" @
+, "2800", ""] )
+uil_primary_file.db_save(  )
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db.jou at 30-Mar-21 18:20:07
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling\Buckl_v0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+gm_visibility_widget( "", FALSE )
+gm_visibility_widget( "", TRUE )
+uil_toolbar.hidden_line(  )
+uil_toolbar.hidden_line(  )
+uil_toolbar.wireframe(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.plot(  )
+mesh_seed_display_mgr.plot(  )
+$# UNDO:
+mesh_seed_display_mgr.refresh(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-Mar-21 18:20:41
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db.jou at 30-Mar-21 18:20:57
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling\Buckl_v0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_create( "Curve 1", 1, 40, 0., 0., 0. )
+mesh_seed_create( "Curve 2", 1, 40, 0., 0., 0. )
+mesh_seed_create( "Surface 1.1", 1, 30, 0., 0., 0. )
+ga_view_aa_set( -83.606201, -10.490751, -29.132545 )
+ga_view_aa_set( -61.887482, -0.524467, 2.296567 )
+uil_toolbar.shaded_smooth(  )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1", 1, ["0.167541"],  @
+"Quad4", "100", "100", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 1271 nodes and 1200 elements created for Surface 1.
+$# === 1271 nodes created.  IDs  = 100:1370.
+$# === 1200 elements created.  IDs  = 100:1299.
+fem_associate_elems_to_ep( "2D_shell_0.5mm", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 1200 Element(s) associated to the Element Property 2D_shell_0.5mm.
+mesh_seed_display_mgr.erase(  )
+verify_boundaries_display_mgr.initialize(  )
+$# Acknowledgement requested from application FEM Verify
+$#     At this time, the test for ASPECT and JACOBIAN values are not 
+$# available for the MSC.Nastran preference.  Using the MSC.Patran tests.
+$? NO 11111 
+uil_primary_file.db_save(  )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+uil_primary_file.db_save(  )
+verify_boundaries_display_mgr.initialize(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+verify_boundaries_display_mgr.erase(  )
+ga_view_aa_set( -50.846695, -8.906743, -10.159653 )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group4( [" "], 0, "", 1, 1, 4.9999999E-06, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 31 nodes deleted.
+verify_boundaries_display_mgr.initialize(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+uil_primary_file.db_save(  )
+verify_boundaries_display_mgr.erase(  )
+verify_normals_display_mgr.initialize(  )
+LOGICAL fem_verify_no_elems_color_coded
+LOGICAL fem_verify_norm_vectors_plotted
+verify_element_normals( FALSE, FALSE, "", fem_verify_no_elems_color_coded,  @
+fem_verify_norm_vectors_plotted )
+ga_view_aa_set( -35.769363, -5.341183, 32.639610 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+verify_normals_display_mgr.erase( FALSE, TRUE )
+ga_view_aa_set( -48.302738, -9.864436, 28.670345 )
+ga_view_aa_set( -60.095787, -1.561354, 41.216610 )
+ga_view_center_set( -0.1383123, -0.048673689 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -88.438782, -3.960973, 34.682892 )
+ga_view_aa_set( -61.930370, 0.605930, 47.800705 )
+ga_view_center_set( -0.162026, -0.073256 )
+ga_view_zoom_set( 0.585503 )
+ga_view_center_set( -0.188703, -0.096721 )
+ga_view_zoom_set( 0.658691 )
+ga_view_center_set( -0.162864, -0.082474 )
+ga_view_zoom_set( 0.585503 )
+ga_view_center_set( -0.139896, -0.069811 )
+ga_view_zoom_set( 0.520447 )
+ga_view_center_set( -0.114844, -0.073563 )
+ga_view_zoom_set( 0.462620 )
+ga_view_center_set( -0.092576, -0.076898 )
+ga_view_zoom_set( 0.411218 )
+ga_view_aa_set( -32.945549, -1.699756, 45.893246 )
+gm_visibility_widget( " Node 100:139 141:180 182:221 223:262 264:303 305:3" // @
+"44 346:385 387:426 428:467 469:508 510:549 551:590 592:631 633:672 674:71" // @
+"3 715:754 756:795 797:836 838:877 879:918 920:959 961:1000 1002:1041 1043" // @
+":1082 1084:1123 1125:1164 1166:1205 1207:1246 1248:1287 1289:1328 1330:13" // @
+"69 Element 100:1299", FALSE )
+gm_visibility_widget( " Node 100:139 141:180 182:221 223:262 264:303 305:3" // @
+"44 346:385 387:426 428:467 469:508 510:549 551:590 592:631 633:672 674:71" // @
+"3 715:754 756:795 797:836 838:877 879:918 920:959 961:1000 1002:1041 1043" // @
+":1082 1084:1123 1125:1164 1166:1205 1207:1246 1248:1287 1289:1328 1330:13" // @
+"69 Element 100:1299", TRUE )
+ga_view_aa_set( -76.953819, 1.190827, 49.830647 )
+ga_view_center_set( 0.003006, -0.048454 )
+ga_view_zoom_set( 0.566924 )
+ga_view_center_set( 0.006586, -0.078328 )
+ga_view_zoom_set( 0.503932 )
+ga_view_center_set( 0.009769, -0.104882 )
+ga_view_zoom_set( 0.447940 )
+ga_view_center_set( 0.018432, -0.127602 )
+ga_view_zoom_set( 0.398169 )
+ga_view_center_set( -0.020465, -0.125568 )
+ga_view_zoom_set( 0.447940 )
+ga_view_center_set( -0.083177, -0.058377 )
+ga_view_aa_set( -103.865204, 0.708520, 41.926304 )
+$# UNDO: Create RBE Spider
+cf_rbe_spider.create_mpc_spider( 2, 12, "RBE2", ["0", "0"], "Node 100:139 ", [ @
+"UX,UY,UZ,RX,RY,RZ", ""], 3, "[0.,0.,0.]", FALSE )
+$# === 1 node created.  ID = 2.
+$# MPC 12 created.
+ga_view_aa_set( -163.658051, 0.587284, 67.117401 )
+ga_view_aa_set( 2.149563, 0.243163, 93.963448 )
+cf_rbe_spider.create_mpc_spider( 3, 13, "RBE2", ["0", "0"], "Node 1330:1369 ", @
+ ["UX,UY,UZ,RX,RY,RZ", ""], 3, "[0.,0.,0.5]", FALSE )
+$# === 1 node created.  ID = 3.
+$# MPC 13 created.
+uil_primary_file.db_save(  )
+ga_view_aa_set( -76.302872, 0.315708, 86.017273 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+uil_primary_file.db_save(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+verify_normals_display_mgr.initialize(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadcase_create2( "LoadCase_buckling", "Static", "", 1., [""], [0], [0.], "",  @
+0., TRUE )
+$# Load Case "LoadCase_buckling" created.
+uil_primary_file.db_save(  )
+verify_normals_display_mgr.initialize(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
