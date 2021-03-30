@@ -78,3 +78,65 @@ material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al7075", 0,  @
 "Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["71E9", "0.33" @
 , "2800", ""] )
 uil_primary_file.db_save(  )
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db.jou at 30-Mar-21 18:20:07
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling\Buckl_v0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+gm_visibility_widget( "", FALSE )
+gm_visibility_widget( "", TRUE )
+uil_toolbar.hidden_line(  )
+uil_toolbar.hidden_line(  )
+uil_toolbar.wireframe(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.plot(  )
+mesh_seed_display_mgr.plot(  )
+$# UNDO:
+mesh_seed_display_mgr.refresh(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-Mar-21 18:20:41
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db.jou at 30-Mar-21 18:20:57
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling\Buckl_v0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_create( "Curve 1", 1, 40, 0., 0., 0. )
+mesh_seed_create( "Curve 2", 1, 40, 0., 0., 0. )
+mesh_seed_create( "Surface 1.1", 1, 30, 0., 0., 0. )
+ga_view_aa_set( -83.606201, -10.490751, -29.132545 )
+ga_view_aa_set( -61.887482, -0.524467, 2.296567 )
+uil_toolbar.shaded_smooth(  )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1", 1, ["0.167541"],  @
+"Quad4", "100", "100", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 1271 nodes and 1200 elements created for Surface 1.
+$# === 1271 nodes created.  IDs  = 100:1370.
+$# === 1200 elements created.  IDs  = 100:1299.
+fem_associate_elems_to_ep( "2D_shell_0.5mm", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 1200 Element(s) associated to the Element Property 2D_shell_0.5mm.
+mesh_seed_display_mgr.erase(  )
+verify_boundaries_display_mgr.initialize(  )
+$# Acknowledgement requested from application FEM Verify
+$#     At this time, the test for ASPECT and JACOBIAN values are not 
+$# available for the MSC.Nastran preference.  Using the MSC.Patran tests.
+$? NO 11111 
+uil_primary_file.db_save(  )
