@@ -1,4 +1,4 @@
-$ MSC.Nastran input file created on March     30, 2021 at 03:01:24 by
+$ MSC.Nastran input file created on March     30, 2021 at 03:05:44 by
 $ Patran 2020  (Student Edition)
 $ Direct Text Input for Nastran System Cell Section
 $ Direct Text Input for File Management Section
@@ -18,7 +18,7 @@ SUBCASE 1
 $ Direct Text Input for this Subcase
 BEGIN BULK
 $ Direct Text Input for Bulk Data
-MDLPRM   HDF5    0
+PARAM    POST    0
 PARAM   PRTMAXIM YES
 EIGRL    1                       10      0                       MASS
 $ Elements and Element Properties for region : 1D_Al7075_beam
@@ -1517,4 +1517,4 @@ SPCADD   2       1
 $ Displacement Constraints of Load Set : SPC_123456
 SPC1     1       123456  11      12      13      14
 $ Referenced Coordinate Frames
-ENDDATA 494131b5
+ENDDATA 9e2be988
