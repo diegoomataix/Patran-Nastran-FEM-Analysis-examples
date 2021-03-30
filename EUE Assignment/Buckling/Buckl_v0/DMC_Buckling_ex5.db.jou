@@ -1099,3 +1099,438 @@ res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
 "DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
 res_display_deformation_post( "", 0 )
 ga_view_aa_set( -81.696686, -5.361540, -113.553719 )
+ga_view_aa_set( -82.474693, -3.003864, -96.673058 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE\FEA\EUE Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE\FEA\EUE Assignment\Buckling\Buckl_v0\BucklAnalysis3\d" // @
+"mc_ex5_buckling_x.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\FEA\EUE Assignm" // @
+"ent\Buckling\Buckl_v0\BucklAnalysis3\dmc_ex5_buckling_x.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v0\BucklAnalysis3\dmc_ex5_buckling_x.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/30/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2874 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:BUCKLING_STATIC
+$# Processing result load case: SC2:BUCKLING_EIGENFREQUENCIES
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Mode 1 : Factor = 59291.
+$# Processing result sub-case: Mode 2 : Factor = 59339.
+$# Processing result sub-case: Mode 3 : Factor = 59811.
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.016
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 3 : Factor = 59811.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 3 : Factor = 59811.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -69.155655, 20.407654, 79.622604 )
+ga_view_aa_set( -79.048424, -0.434092, 49.857483 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 2 : Factor = 59339.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 2 : Factor = 59339.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 1 : Factor = 59291.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 1 : Factor = 59291.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:BUCKLING_STATIC",  @
+"A3:Static Subcase", "Displacements", "Translational", "(NON-LAYERED)", "MAG", @
+ "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:BUCKLING_STATIC",  @
+"A3:Static Subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -65.503075, 22.768847, -7.390810 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:BUCKLING_STATIC",  @
+"A3:Static Subcase", "Displacements", "Rotational", "(NON-LAYERED)", "MAG",  @
+"Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:BUCKLING_STATIC",  @
+"A3:Static Subcase", "Displacements", "Rotational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -77.363266, 30.692848, 2.872504 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:BUCKLING_STATIC",  @
+"A3:Static Subcase", "Constraint Forces", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:BUCKLING_STATIC",  @
+"A3:Static Subcase", "Constraint Forces", "Translational", "(NON-LAYERED)", "" @
+, "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:BUCKLING_STATIC",  @
+"A3:Static Subcase", "Constraint Forces", "Rotational", "(NON-LAYERED)", "MAG" @
+, "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:BUCKLING_STATIC",  @
+"A3:Static Subcase", "Constraint Forces", "Rotational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 1 : Factor = 59291.", "Constraint Forces", "Rotational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 1 : Factor = 59291.", "Constraint Forces", "Rotational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 1 : Factor = 59291.", "Constraint Forces", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 1 : Factor = 59291.", "Constraint Forces", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 1 : Factor = 59291.", "Eigenvectors", "Rotational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 1 : Factor = 59291.", "Eigenvectors", "Rotational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 1 : Factor = 59291.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC2:BUCKLING_EIGENFREQUENCIES", @
+ "A3:Mode 1 : Factor = 59291.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Black,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -63.687496, 8.605115, -52.503479 )
+res_display_anim_qk_setup( 3, "Preview", "" )
+res_display_anim_qk_fringe_data( "Nodal", "Scalar", "Eigenvectors",  @
+"Translational", "(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All",  @
+"ShapeFunc" )
+res_display_anim_qk_fringe_ttle( "$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, " // @
+"@@@$SRN, @@@$DRVL, @@@$LN (MAG)" )
+res_display_anim_qk_fringe_attr( 12, ["Range:Fri_default_Fringe",  @
+"RangeOverwrite:ON", "FringeStyle:Discrete/Smooth", "Shade:None",  @
+"ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 3"], TRUE, TRUE, TRUE )
+res_display_anim_qk_deform_data( "Nodal", "Vector", "Eigenvectors",  @
+"Translational", "(NON-LAYERED)", "", "Global", "", "", "" )
+res_display_anim_qk_deform_ttle( "$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, " // @
+"@@@$SRN, @@@$DRVL" )
+res_display_anim_qk_deform_attr( 9, ["DeformedStyle:White,Solid,1,Wireframe",  @
+"DeformedScale:Model=0.1", "UndeformedStyle:OFF,Black,Solid,1,Wireframe",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 3", "DeformDisplay:Resultant",  @
+"DeformComps:OFF,OFF,OFF"] )
+res_display_anim_qk_res_list( TRUE, TRUE, "Preview", "Fri_default_Fringe",  @
+FALSE, 3, ["SC2:BUCKLING_EIGENFREQUENCIES", "SC2:BUCKLING_EIGENFREQUENCIES",  @
+"SC2:BUCKLING_EIGENFREQUENCIES"], ["A3:Mode 1 : Factor = 59291.",  @
+"A3:Mode 2 : Factor = 59339.", "A3:Mode 3 : Factor = 59811."] )
+res_display_anim_qk_setup( 3, "Preview", "" )
+res_display_anim_qk_fringe_data( "Nodal", "Scalar", "Eigenvectors",  @
+"Translational", "(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All",  @
+"ShapeFunc" )
+res_display_anim_qk_fringe_ttle( "$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, " // @
+"@@@$SRN, @@@$DRVL, @@@$LN (MAG)" )
+res_display_anim_qk_fringe_attr( 12, ["Range:Fri_default_Fringe",  @
+"RangeOverwrite:ON", "FringeStyle:Discrete/Smooth", "Shade:None",  @
+"ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 3"], TRUE, TRUE, TRUE )
+res_display_anim_qk_deform_data( "Nodal", "Vector", "Eigenvectors",  @
+"Translational", "(NON-LAYERED)", "", "Global", "", "", "" )
+res_display_anim_qk_deform_ttle( "$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, " // @
+"@@@$SRN, @@@$DRVL" )
+res_display_anim_qk_deform_attr( 9, ["DeformedStyle:White,Solid,1,Wireframe",  @
+"DeformedScale:Model=0.1", "UndeformedStyle:OFF,Black,Solid,1,Wireframe",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 3", "DeformDisplay:Resultant",  @
+"DeformComps:OFF,OFF,OFF"] )
+res_display_anim_qk_res_list( TRUE, TRUE, "Preview", "Fri_default_Fringe",  @
+FALSE, 3, ["SC2:BUCKLING_EIGENFREQUENCIES", "SC2:BUCKLING_EIGENFREQUENCIES",  @
+"SC2:BUCKLING_EIGENFREQUENCIES"], ["A3:Mode 1 : Factor = 59291.",  @
+"A3:Mode 2 : Factor = 59339.", "A3:Mode 3 : Factor = 59811."] )
+res_display_anim_qk_setup( 3, "3D", "" )
+res_display_anim_qk_fringe_data( "Nodal", "Scalar", "Eigenvectors",  @
+"Translational", "(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All",  @
+"ShapeFunc" )
+res_display_anim_qk_fringe_ttle( "$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, " // @
+"@@@$SRN, @@@$DRVL, @@@$LN (MAG)" )
+res_display_anim_qk_fringe_attr( 12, ["Range:Fri_default_Fringe",  @
+"RangeOverwrite:ON", "FringeStyle:Discrete/Smooth", "Shade:None",  @
+"ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 3"], TRUE, TRUE, TRUE )
+res_display_anim_qk_deform_data( "Nodal", "Vector", "Eigenvectors",  @
+"Translational", "(NON-LAYERED)", "", "Global", "", "", "" )
+res_display_anim_qk_deform_ttle( "$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, " // @
+"@@@$SRN, @@@$DRVL" )
+res_display_anim_qk_deform_attr( 9, ["DeformedStyle:White,Solid,1,Wireframe",  @
+"DeformedScale:Model=0.1", "UndeformedStyle:OFF,Black,Solid,1,Wireframe",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 3", "DeformDisplay:Resultant",  @
+"DeformComps:OFF,OFF,OFF"] )
+res_display_anim_qk_res_list( TRUE, TRUE, "3D", "Fri_default_Fringe", FALSE,  @
+3, ["SC2:BUCKLING_EIGENFREQUENCIES", "SC2:BUCKLING_EIGENFREQUENCIES",  @
+"SC2:BUCKLING_EIGENFREQUENCIES"], ["A3:Mode 1 : Factor = 59291.",  @
+"A3:Mode 2 : Factor = 59339.", "A3:Mode 3 : Factor = 59811."] )
+res_display_anim_run( 10 )
+res_display_anim_run( 24 )
+res_display_anim_run( 41 )
+res_display_anim_run( 41 )
+res_display_anim_run( 58 )
+res_display_anim_run( 75 )
+res_display_anim_run( 75 )
+res_display_anim_run( 92 )
+res_display_anim_run( 92 )
+res_display_anim_run( 109 )
+res_display_anim_run( 109 )
+res_display_anim_run( 127 )
+res_display_anim_run( 127 )
+res_display_anim_run( 144 )
+res_display_anim_run( 144 )
+res_display_anim_run( 162 )
+res_display_anim_run( 180 )
+res_display_anim_run( 180 )
+res_display_anim_run( 198 )
+res_display_anim_run( 198 )
+res_display_anim_run( 216 )
+res_display_anim_run( 216 )
+res_display_anim_run( 234 )
+res_display_anim_run( 234 )
+res_display_anim_run( 252 )
+res_display_anim_run( 252 )
+res_display_anim_run( 271 )
+res_display_anim_run( 271 )
+res_display_anim_run( 289 )
+res_display_anim_run( 289 )
+res_display_anim_run( 308 )
+res_display_anim_run( 327 )
+res_display_anim_run( 346 )
+res_display_anim_run( 346 )
+res_display_anim_run( 365 )
+res_display_anim_run( 365 )
+res_display_anim_run( 384 )
+res_display_anim_run( 384 )
+res_display_anim_run( 404 )
+res_display_anim_run( 404 )
+res_display_anim_run( 424 )
+res_display_anim_run( 424 )
+res_display_anim_run( 444 )
+res_display_anim_run( 444 )
+res_display_anim_run( 464 )
+res_display_anim_run( 464 )
+res_display_anim_run( 484 )
+res_display_anim_run( 484 )
+res_display_anim_run( 504 )
+res_display_anim_run( 525 )
+res_display_anim_run( 525 )
+res_display_anim_run( 546 )
+res_display_anim_run( 546 )
+res_display_anim_clear(  )
+res_display_anim_qk_setup( 3, "Preview", "" )
+res_display_anim_qk_fringe_data( "Nodal", "Scalar", "Eigenvectors",  @
+"Translational", "(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All",  @
+"ShapeFunc" )
+res_display_anim_qk_fringe_ttle( "$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, " // @
+"@@@$SRN, @@@$DRVL, @@@$LN (MAG)" )
+res_display_anim_qk_fringe_attr( 12, ["Range:Fri_default_Fringe",  @
+"RangeOverwrite:ON", "FringeStyle:Discrete/Smooth", "Shade:None",  @
+"ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 3"], TRUE, TRUE, TRUE )
+res_display_anim_qk_deform_data( "Nodal", "Vector", "Eigenvectors",  @
+"Translational", "(NON-LAYERED)", "", "Global", "", "", "" )
+res_display_anim_qk_deform_ttle( "$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, " // @
+"@@@$SRN, @@@$DRVL" )
+res_display_anim_qk_deform_attr( 9, ["DeformedStyle:White,Solid,1,Wireframe",  @
+"DeformedScale:Model=0.1", "UndeformedStyle:OFF,Black,Solid,1,Wireframe",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 3", "DeformDisplay:Resultant",  @
+"DeformComps:OFF,OFF,OFF"] )
+res_display_anim_qk_res_list( TRUE, TRUE, "Preview", "Fri_default_Fringe",  @
+FALSE, 3, ["SC2:BUCKLING_EIGENFREQUENCIES", "SC2:BUCKLING_EIGENFREQUENCIES",  @
+"SC2:BUCKLING_EIGENFREQUENCIES"], ["A3:Mode 1 : Factor = 59291.",  @
+"A3:Mode 2 : Factor = 59339.", "A3:Mode 3 : Factor = 59811."] )
+uil_primary_file.db_save(  )
