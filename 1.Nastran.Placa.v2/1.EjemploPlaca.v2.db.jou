@@ -11074,3 +11074,56 @@ display_cleanup(  )
 uil_toolbar.shaded_smooth(  )
 ga_view_aa_set( -78.254250, 0.646286, -164.896454 )
 uil_primary_file.db_save(  )
+ga_view_aa_set( -69.214394, -7.595495, -179.741394 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE - Estructuras de Uso Espacial\Patran files\1.Nastran.Plac" // @
+"a.v2\1.EjemploPlaca.v2.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE - Estructuras de Uso Espacial\Patran files\2.Nastran." // @
+"Cabeceros\Buckling cabeceros\1.ejemploplaca_buckling_x.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.00030000001" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras d" // @
+"e Uso Espacial\Patran files\2.Nastran.Cabeceros\Buckling cabeceros\1.ejem" // @
+"ploplaca_buckling_x.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estructuras 
+$# de Uso Espacial\Patran files\2.Nastran.Cabeceros\Buckling 
+$# cabeceros\1.ejemploplaca_buckling_x.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/30/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2872 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  C:\Users\diego\Dropbox\Academic\MEng Space 
+$# System
+$# s\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\2.Nastran.Cabeceros\Buckling
+$#  cabeceros\1.ejemploplaca_buckling_x.xdb
+res_dra_detach_file( 6, 130, 31 )
+ga_view_aa_set( -69.079338, -5.917680, -177.940323 )
+uil_file_new.go( "C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/templa" // @
+"te.db", "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE - Estr" // @
+"ucturas de Uso Espacial\Patran files\3.Nastran.Buckling\Buckling_cylinder.db" )
+$# Question from application FILE
+$#     A database is already open.
+$# Do you want to create a new database C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE - Estructuras de Uso Espacial\Patran 
+$# files\3.Nastran.Buckling\Buckling_cylinder.db anyway ?
+$? YES 36000037 
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-Mar-21 14:57:59
