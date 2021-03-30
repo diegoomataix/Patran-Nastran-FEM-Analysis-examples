@@ -1030,3 +1030,238 @@ $# Student Edition Patran Nastran Preference Patran 2020  (Student Edition)
 $# has released 0 license(s) to FLEXlm at 30-Mar-21 17:10:33.
 $# The translation has completed successfully.
 $# No Analysis Requested
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-Mar-21 17:24:25
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\3.Buckling\Buckling_cylinder.db.jou at 30-Mar-21 
+$# 17:34:13
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\3.Buckling" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE\FEA\3.Buckling\Buckling_cylinder.db" )
+msc_dra_add_param( "JOBNAME", "Buckling_cylinder" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE\FEA\3.Buckling\buckling_cylinder.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "Buckling_cylinder",  @
+"Attach Results File No Job", "C:\Users\diego\Dropbox\Academic\MEng Space " // @
+"Systems\2. EUE\FEA\3.Buckling\buckling_cylinder.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. 
+$# EUE\FEA\3.Buckling\buckling_cylinder.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/30/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2874 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:LOADCASE_BUCKLING
+$# Processing result load case: SC2:LOADCASE_BUCKLING
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Mode 1 : Factor = 2.7139E+5
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.016
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 2.7139E+5", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 2.7139E+5", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -71.187950, 2.573766, 14.650121 )
+ga_view_aa_set( -92.831108, -8.198771, 7.354017 )
+ga_view_aa_set( -72.369812, -5.339353, 33.234837 )
+uil_primary_file.db_save(  )
+ga_view_center_set( -0.204974, 0.025000 )
+ga_view_zoom_set( 0.826689 )
+ga_view_center_set( -0.194251, 0.002773 )
+ga_view_zoom_set( 0.930025 )
+ga_view_center_set( -0.182187, -0.023548 )
+ga_view_zoom_set( 1.046278 )
+ga_view_center_set( -0.155043, -0.085733 )
+ga_view_zoom_set( 1.307847 )
+ga_view_center_set( -0.168478, -0.047896 )
+ga_view_zoom_set( 1.162531 )
+ga_view_center_set( -0.197790, 0.034658 )
+ga_view_zoom_set( 0.845477 )
+ga_view_center_set( -0.206475, 0.059118 )
+ga_view_zoom_set( 0.751535 )
+ga_view_center_set( -0.214195, 0.080861 )
+ga_view_zoom_set( 0.668031 )
+ga_view_center_set( -0.231039, 0.128299 )
+ga_view_zoom_set( 0.485841 )
+ga_view_center_set( -0.235215, 0.142355 )
+ga_view_zoom_set( 0.431859 )
+ga_view_center_set( -0.241897, 0.164844 )
+ga_view_zoom_set( 0.345487 )
+ga_view_center_set( -0.247242, 0.182836 )
+ga_view_zoom_set( 0.276390 )
+ga_view_center_set( -0.235248, 0.186660 )
+ga_view_zoom_set( 0.245680 )
+ga_view_center_set( -0.224277, 0.190059 )
+ga_view_zoom_set( 0.218382 )
+ga_view_center_set( -0.214068, 0.193081 )
+ga_view_zoom_set( 0.194117 )
+ga_view_center_set( -0.197993, 0.197069 )
+ga_view_zoom_set( 0.172549 )
+ga_view_center_set( -0.183705, 0.200614 )
+ga_view_zoom_set( 0.153377 )
+ga_view_center_set( -0.171004, 0.203765 )
+ga_view_zoom_set( 0.136335 )
+ga_view_center_set( -0.159714, 0.206566 )
+ga_view_zoom_set( 0.121186 )
+ga_view_aa_set( -115.142059, 1.255753, 41.483700 )
+ga_view_center_set( -0.170889, 0.205194 )
+ga_view_zoom_set( 0.136335 )
+ga_view_center_set( -0.183462, 0.203651 )
+ga_view_zoom_set( 0.153377 )
+ga_view_center_set( -0.197606, 0.201915 )
+ga_view_zoom_set( 0.172549 )
+ga_view_center_set( -0.213517, 0.200531 )
+ga_view_zoom_set( 0.194117 )
+ga_view_center_set( -0.231418, 0.198974 )
+ga_view_zoom_set( 0.218382 )
+ga_view_center_set( -0.271695, 0.195472 )
+ga_view_zoom_set( 0.272977 )
+ga_view_center_set( -0.296868, 0.193283 )
+ga_view_zoom_set( 0.307099 )
+ga_view_center_set( -0.325478, 0.194152 )
+ga_view_zoom_set( 0.345487 )
+ga_view_center_set( -0.357664, 0.195130 )
+ga_view_zoom_set( 0.388673 )
+ga_view_center_set( -0.393872, 0.196230 )
+ga_view_zoom_set( 0.437257 )
+ga_view_aa_set( -58.357277, 2.747212, 27.133532 )
+ga_view_center_set( -0.434607, 0.219537 )
+ga_view_zoom_set( 0.491914 )
+ga_view_center_set( -0.480434, 0.245525 )
+ga_view_zoom_set( 0.553403 )
+ga_view_center_set( -0.531990, 0.274761 )
+ga_view_zoom_set( 0.622579 )
+ga_view_center_set( -0.589989, 0.307652 )
+ga_view_zoom_set( 0.700401 )
+ga_view_center_set( -0.449909, 0.076520 )
+ga_view_aa_set( -86.221001, 0.128840, 19.691544 )
+ga_view_center_set( -0.502935, 0.099646 )
+ga_view_zoom_set( 0.787951 )
+ga_view_center_set( -0.562588, 0.125664 )
+ga_view_zoom_set( 0.886445 )
+ga_view_center_set( -0.629699, 0.154933 )
+ga_view_zoom_set( 0.997250 )
+ga_view_center_set( -0.705198, 0.187861 )
+ga_view_zoom_set( 1.121907 )
+ga_view_center_set( -0.629699, 0.154933 )
+ga_view_zoom_set( 0.997250 )
+ga_view_center_set( -0.562589, 0.125664 )
+ga_view_zoom_set( 0.886445 )
+ga_view_center_set( -0.502935, 0.099646 )
+ga_view_zoom_set( 0.787951 )
+ga_view_center_set( -0.407488, 0.058019 )
+ga_view_zoom_set( 0.630361 )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", TRUE )
+display_cleanup(  )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", TRUE )
+uil_toolbar.shaded_smooth(  )
+ga_view_aa_set( -78.223824, 0.194725, 20.689371 )
+uil_primary_file.db_save(  )
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  C:\Users\diego\Dropbox\Academic\MEng Space 
+$# System
+$# s\2. EUE\FEA\3.Buckling\buckling_cylinder.xdb
+res_dra_detach_file( 1, 130, 25 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE\FEA\3.Buckling\Buckling_cylinder.db" )
+msc_dra_add_param( "JOBNAME", "Buckling_cylinder" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE\FEA\3.Buckling\Analysis_buckling1\buckling_cylinder.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "Buckling_cylinder",  @
+"Attach Results File No Job", "C:\Users\diego\Dropbox\Academic\MEng Space " // @
+"Systems\2. EUE\FEA\3.Buckling\Analysis_buckling1\buckling_cylinder.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. 
+$# EUE\FEA\3.Buckling\Analysis_buckling1\buckling_cylinder.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/30/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2874 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:LOADCASE_BUCKLING
+$# Processing result load case: SC2:LOADCASE_BUCKLING
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Mode 1 : Factor = 2.7139E+5
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 2.7139E+5", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 2.7139E+5", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+uil_primary_file.db_save(  )
+display_cleanup(  )
+uil_toolbar.shaded_smooth(  )
