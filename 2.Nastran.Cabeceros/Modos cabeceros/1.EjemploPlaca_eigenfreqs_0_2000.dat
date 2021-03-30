@@ -24,6 +24,6 @@ SPCADD   2       1
 $ Displacement Constraints of Load Set : SPC_123456
 SPC1     1       123456  11      12      13      14
 $
-INCLUDE '1.EjemploPlaca.bdf'
+INCLUDE '1.EjemploPlaca.v2.bdf'     $ 22:14   4.3
 $
 ENDDATA

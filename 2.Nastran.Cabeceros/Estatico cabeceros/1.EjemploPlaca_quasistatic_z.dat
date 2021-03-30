@@ -35,6 +35,6 @@ GRAV     3              6.0      0.      1.     0.
 $ Gravity Loading of Load Set : QStatic_69.3gIP_90deg
 GRAV     4              13.0      0.      0.     1.
 $------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
-INCLUDE '1.EjemploPlaca.bdf'
+INCLUDE '1.EjemploPlaca.v2.bdf'
 $
 ENDDATA
