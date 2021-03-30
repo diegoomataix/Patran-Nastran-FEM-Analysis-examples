@@ -1,0 +1,80 @@
+$# Creating journal file C:\Users\diego\Dropbox\Academic\MEng Space 
+$# Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db.jou at 30-Mar-21 17:53:06
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/" // @
+"template.db","C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\F" // @
+"EA\EUE Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling\Buckl_v0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 4.9999999E-06, "" )
+uil_primary_file.db_save(  )
+point_size( 9 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 0., 0., 0. )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-Mar-21 17:57:55
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db.jou at 30-Mar-21 17:59:05
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling\Buckl_v0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_view_aa_set( -90., 0., 0. )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1", "[0 0 0]", "Coord 0", asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1
+asm_const_grid_xyz( "2", "[0 0 0.5]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 2
+uil_primary_file.db_save(  )
+STRING sgm_create_curve_2d_created_ids[VIRTUAL]
+sgm_const_curve_2d_circle_v2( "1", 1, 0.40000001, "Coord 0.3", "", "Point 1",  @
+FALSE, sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 1
+ga_view_center_set( 0.007732, -0.047306 )
+ga_view_zoom_set( 0.233176 )
+ga_view_center_set( 0.014506, -0.061447 )
+ga_view_zoom_set( 0.207267 )
+ga_view_center_set( 0.007732, -0.047702 )
+ga_view_zoom_set( 0.233176 )
+ga_view_center_set( 0.000111, -0.032238 )
+ga_view_zoom_set( 0.262323 )
+ga_view_center_set( -0.008462, -0.014842 )
+ga_view_zoom_set( 0.295113 )
+ga_view_center_set( -0.018106, 0.004729 )
+ga_view_zoom_set( 0.332002 )
+ga_view_center_set( -0.028957, 0.026746 )
+ga_view_zoom_set( 0.373502 )
+ga_view_aa_set( -76.000000, 0.000000, 0.000000 )
+sgm_const_curve_2d_circle_v2( "2", 1, 0.2, "Coord 0.3", "", "Point 2", FALSE,  @
+sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 2
+uil_primary_file.db_save(  )
+ga_view_center_set( 0.040659, 0.014233 )
+ga_view_zoom_set( 0.332002 )
+ga_view_center_set( -0.028957, 0.026746 )
+ga_view_zoom_set( 0.373502 )
+uil_toolbar.shaded_smooth(  )
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "1", "Curve 1", "Curve 2",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 1
+ga_view_aa_set( -52.667126, -5.355335, -16.132080 )
+uil_primary_file.db_save(  )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al7075", 0,  @
+"Date: 30-Mar-21           Time: 18:02:30", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["71E9", "0.33" @
+, "2800", ""] )
+uil_primary_file.db_save(  )

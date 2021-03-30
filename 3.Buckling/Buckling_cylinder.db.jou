@@ -2094,3 +2094,85 @@ ga_view_center_set( -0.097301, 0.191423 )
 ga_view_zoom_set( 0.617725 )
 ga_view_center_set( -0.075593, 0.241249 )
 ga_view_zoom_set( 0.694941 )
+ga_view_center_set( -0.077196, 0.195503 )
+ga_view_zoom_set( 0.617725 )
+ga_view_center_set( -0.078621, 0.154839 )
+ga_view_zoom_set( 0.549089 )
+ga_view_center_set( -0.079887, 0.118694 )
+ga_view_zoom_set( 0.488079 )
+ga_view_center_set( -0.078621, 0.154839 )
+ga_view_zoom_set( 0.549089 )
+ga_view_center_set( -0.077196, 0.195503 )
+ga_view_zoom_set( 0.617725 )
+ga_view_center_set( -0.073991, 0.286996 )
+ga_view_zoom_set( 0.772156 )
+ga_view_center_set( -0.071988, 0.344179 )
+ga_view_zoom_set( 0.868676 )
+ga_view_center_set( -0.069734, 0.405233 )
+ga_view_zoom_set( 0.977261 )
+ga_view_center_set( -0.069965, 0.483598 )
+ga_view_zoom_set( 1.099418 )
+ga_view_center_set( -0.070224, 0.571759 )
+ga_view_zoom_set( 1.236845 )
+ga_view_center_set( 0.003987, -0.059033 )
+ga_view_center_set( 0.024114, 0.004560 )
+ga_view_zoom_set( 1.391451 )
+ga_view_center_set( 0.046759, 0.076102 )
+ga_view_zoom_set( 1.565382 )
+ga_view_center_set( 0.024114, 0.006529 )
+ga_view_zoom_set( 1.391451 )
+ga_view_center_set( 0.003986, -0.055313 )
+ga_view_zoom_set( 1.236845 )
+ga_view_center_set( -0.013905, -0.110284 )
+ga_view_zoom_set( 1.099418 )
+ga_view_center_set( -0.029809, -0.159147 )
+ga_view_zoom_set( 0.977261 )
+ga_view_center_set( -0.043945, -0.202581 )
+ga_view_zoom_set( 0.868676 )
+ga_view_center_set( -0.009198, 0.023275 )
+ga_view_center_set( -0.003188, -0.010234 )
+ga_view_zoom_set( 0.772156 )
+uil_file_new.go( "C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/templa" // @
+"te.db", "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\FEA\EU" // @
+"E Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db" )
+$# Question from application FILE
+$#     A database is already open.
+$# Do you want to create a new database C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v0\DMC_Buckling_ex5.db anyway ?
+$? YES 36000037 
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-Mar-21 17:53:04
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\3.Buckling\Buckling_cylinder.db.jou at 30-Mar-21 
+$# 17:57:57
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\3.Buckling" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_view_aa_set( 0., 0., 0. )
+display_cleanup(  )
+uil_toolbar.shaded_smooth(  )
+ga_view_aa_set( 72.975594, 21.920572, -40.241493 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_aa_set( 90., 0., 0. )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_aa_set( 103.777756, 6.276671, 164.578720 )
+loadsbcs_plot_markers_v2( ["SPC_1236", "SPC_12", "Force_1N"], ["default_group" @
+], TRUE, 0. )
+ga_view_aa_set( -75.331329, -2.261557, 150.809769 )
+ga_view_aa_set( -84.771385, -6.541964, 114.041862 )
+ga_view_aa_set( -88.829155, -2.210111, -178.913864 )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_aa_set( 23., -34., 0. )
+ga_view_aa_set( 90., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( -75.011444, -0.552972, -0.931860 )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-Mar-21 17:59:03
