@@ -1828,3 +1828,29 @@ ga_view_center_set( 0.204962, 0.117055 )
 ga_view_zoom_set( 0.134074 )
 ga_view_center_set( 0.022621, -0.004953 )
 ga_view_aa_set( -84.294525, -13.885881, 3.780148 )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -65.152763, -10.961058, -3.354867 )
+mesh_seed_display_mgr.erase(  )
+elementprops_create( "Mass_2kg", 1, 25, 18, 27, 2, 20, [2069, 4001, 4024, 10,  @
+4026, 11, 4028, 4029, 12], [1, 9, 2, 1, 1, 1, 1, 1, 1], ["2.", "", "", "", "", @
+ "", "", "", ""], "" )
+$# Property Set "Mass_2kg" created.
+uil_primary_file.db_save(  )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "17", "[0 0 0.1]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 17
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+STRING fem_create_nodes__nodes_created[VIRTUAL]
+fem_create_nodes_1( "Coord 0", "Coord 0", 3, "10", "Point 17",  @
+fem_create_nodes__nodes_created )
+$# === 1 node created.  ID = 10.
+mesh_seed_display_mgr.erase(  )
+STRING fem_create_elemen_elems_created[VIRTUAL]
+fem_create_elems_1( "Point ", "Point", "10", "Standard", 3, "Node 10",  @
+"Node 4", "", "", "", "", "", "", fem_create_elemen_elems_created )
+$# === 1 element created.  ID = 10.
+fem_associate_elems_to_ep( "Mass_2kg", "10", 1 )
+$# 1 Element(s) associated to the Element Property Mass_2kg.
