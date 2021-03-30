@@ -140,3 +140,96 @@ $#     At this time, the test for ASPECT and JACOBIAN values are not
 $# available for the MSC.Nastran preference.  Using the MSC.Patran tests.
 $? NO 11111 
 uil_primary_file.db_save(  )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+uil_primary_file.db_save(  )
+verify_boundaries_display_mgr.initialize(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+verify_boundaries_display_mgr.erase(  )
+ga_view_aa_set( -50.846695, -8.906743, -10.159653 )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group4( [" "], 0, "", 1, 1, 4.9999999E-06, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 31 nodes deleted.
+verify_boundaries_display_mgr.initialize(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+uil_primary_file.db_save(  )
+verify_boundaries_display_mgr.erase(  )
+verify_normals_display_mgr.initialize(  )
+LOGICAL fem_verify_no_elems_color_coded
+LOGICAL fem_verify_norm_vectors_plotted
+verify_element_normals( FALSE, FALSE, "", fem_verify_no_elems_color_coded,  @
+fem_verify_norm_vectors_plotted )
+ga_view_aa_set( -35.769363, -5.341183, 32.639610 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+verify_normals_display_mgr.erase( FALSE, TRUE )
+ga_view_aa_set( -48.302738, -9.864436, 28.670345 )
+ga_view_aa_set( -60.095787, -1.561354, 41.216610 )
+ga_view_center_set( -0.1383123, -0.048673689 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -88.438782, -3.960973, 34.682892 )
+ga_view_aa_set( -61.930370, 0.605930, 47.800705 )
+ga_view_center_set( -0.162026, -0.073256 )
+ga_view_zoom_set( 0.585503 )
+ga_view_center_set( -0.188703, -0.096721 )
+ga_view_zoom_set( 0.658691 )
+ga_view_center_set( -0.162864, -0.082474 )
+ga_view_zoom_set( 0.585503 )
+ga_view_center_set( -0.139896, -0.069811 )
+ga_view_zoom_set( 0.520447 )
+ga_view_center_set( -0.114844, -0.073563 )
+ga_view_zoom_set( 0.462620 )
+ga_view_center_set( -0.092576, -0.076898 )
+ga_view_zoom_set( 0.411218 )
+ga_view_aa_set( -32.945549, -1.699756, 45.893246 )
+gm_visibility_widget( " Node 100:139 141:180 182:221 223:262 264:303 305:3" // @
+"44 346:385 387:426 428:467 469:508 510:549 551:590 592:631 633:672 674:71" // @
+"3 715:754 756:795 797:836 838:877 879:918 920:959 961:1000 1002:1041 1043" // @
+":1082 1084:1123 1125:1164 1166:1205 1207:1246 1248:1287 1289:1328 1330:13" // @
+"69 Element 100:1299", FALSE )
+gm_visibility_widget( " Node 100:139 141:180 182:221 223:262 264:303 305:3" // @
+"44 346:385 387:426 428:467 469:508 510:549 551:590 592:631 633:672 674:71" // @
+"3 715:754 756:795 797:836 838:877 879:918 920:959 961:1000 1002:1041 1043" // @
+":1082 1084:1123 1125:1164 1166:1205 1207:1246 1248:1287 1289:1328 1330:13" // @
+"69 Element 100:1299", TRUE )
+ga_view_aa_set( -76.953819, 1.190827, 49.830647 )
+ga_view_center_set( 0.003006, -0.048454 )
+ga_view_zoom_set( 0.566924 )
+ga_view_center_set( 0.006586, -0.078328 )
+ga_view_zoom_set( 0.503932 )
+ga_view_center_set( 0.009769, -0.104882 )
+ga_view_zoom_set( 0.447940 )
+ga_view_center_set( 0.018432, -0.127602 )
+ga_view_zoom_set( 0.398169 )
+ga_view_center_set( -0.020465, -0.125568 )
+ga_view_zoom_set( 0.447940 )
+ga_view_center_set( -0.083177, -0.058377 )
+ga_view_aa_set( -103.865204, 0.708520, 41.926304 )
+$# UNDO: Create RBE Spider
+cf_rbe_spider.create_mpc_spider( 2, 12, "RBE2", ["0", "0"], "Node 100:139 ", [ @
+"UX,UY,UZ,RX,RY,RZ", ""], 3, "[0.,0.,0.]", FALSE )
+$# === 1 node created.  ID = 2.
+$# MPC 12 created.
+ga_view_aa_set( -163.658051, 0.587284, 67.117401 )
+ga_view_aa_set( 2.149563, 0.243163, 93.963448 )
+cf_rbe_spider.create_mpc_spider( 3, 13, "RBE2", ["0", "0"], "Node 1330:1369 ", @
+ ["UX,UY,UZ,RX,RY,RZ", ""], 3, "[0.,0.,0.5]", FALSE )
+$# === 1 node created.  ID = 3.
+$# MPC 13 created.
+uil_primary_file.db_save(  )
+ga_view_aa_set( -76.302872, 0.315708, 86.017273 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+uil_primary_file.db_save(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+verify_normals_display_mgr.initialize(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
