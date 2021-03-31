@@ -1,0 +1,168 @@
+$# Creating journal file C:\Users\diego\Dropbox\Academic\MEng Space 
+$# Systems\2. EUE\FEA\EUE Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10.db.jou at 
+$# 30-Mar-21 22:26:57
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/" // @
+"template.db","C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\F" // @
+"EA\EUE Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Eigenfreqs" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 4.9999999E-06, "" )
+uil_primary_file.db_save(  )
+point_size( 9 )
+node_size( 9 )
+ga_view_aa_set( 180., 90., 180. )
+ga_view_aa_set( -90., 0., 0. )
+$# Error reported from application FEM
+$#     MPC 13 does not exist.
+$? NO 2006034 
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1", "[0 0 0]", "Coord 0", asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1
+ga_view_aa_set( -81.119057, 13.857609, 64.784599 )
+ga_view_aa_set( -80.370865, 17.372669, 53.459713 )
+asm_const_grid_xyz( "2", "[0 65E-2 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 2
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -0.001186, 0.001731 )
+ga_view_zoom_set( 0.116528 )
+ga_view_center_set( 0.000004, -0.000002 )
+ga_view_zoom_set( 0.131094 )
+ga_view_center_set( 0.001343, -0.001953 )
+ga_view_zoom_set( 0.147481 )
+ga_view_center_set( 0.002849, -0.004146 )
+ga_view_zoom_set( 0.165916 )
+ga_view_center_set( 0.004544, -0.006615 )
+ga_view_zoom_set( 0.186656 )
+ga_view_center_set( 0.006699, -0.009806 )
+ga_view_zoom_set( 0.209988 )
+uil_toolbar.model_center(  )
+gu_fit_view(  )
+gu_fit_view(  )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( 0., 0., 0. )
+asm_const_grid_xyz( "3", "[7.5E-2 65E-2 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 3
+asm_const_grid_xyz( "4", "[7.5E-2 0 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 4
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "1", "Point 1", "Point 2", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 1
+asm_const_line_2point( "2", "Point 2", "Point 3", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 2
+asm_const_line_2point( "3", "Point 3", "Point 4", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 3
+asm_const_line_2point( "4", "Point 4", "Point 1", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 4
+beam_section_create( "L_beam_7.5cmx0.5cm", "L", ["7.5E-2", "7.5E-2", "0.5E-2", @
+ "0.5E-2"] )
+$# Beam Section "L_beam_7.5cmx0.5cm" created.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Steel", 0,  @
+"Date: 31-Mar-21           Time: 03:10:48", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["200E9", "0.3" @
+, "7900", ""] )
+$# UNDO: Beam Section Create
+beam_section_create( "L_beam_7.5cmx0.5cm", "L", ["7.5E-2", "7.5E-2", "0.5E-2", @
+ "0.5E-2"] )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Beam Section "L_beam_7.5cmx0.5cm" already exists. Do you wish to 
+$# overwrite?
+$? YES 29002040 
+$# Beam Section "L_beam_7.5cmx0.5cm" created.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+beam_section_create( "L_beam_7.5cmx0.5cm", "L", ["0.075", "0.075", "0.005",  @
+"0.005"] )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Beam Section "L_beam_7.5cmx0.5cm" already exists. Do you wish to 
+$# overwrite?
+$? YES 29002040 
+$# Beam Section "L_beam_7.5cmx0.5cm" created.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+$# UNDO: Beam Section Create
+elementprops_create( "1D_Steel_L_beam", 11, 2, 42, 1, 1, 20, [39, 13, 6, 4042, @
+ 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048, 4050,  @
+4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, 4411,  @
+8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["L_beam_7.5cmx0.5cm", "m:Steel" @
+, "<0 0 1>", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "" )
+$# Property Set "1D_Steel_L_beam" created.
+mesh_seed_create( "Curve 1", 1, 30, 0., 0., 0. )
+mesh_seed_create( "Curve 3", 1, 30, 0., 0., 0. )
+mesh_seed_create( "Curve 4", 1, 5, 0., 0., 0. )
+$# UNDO:
+mesh_seed_display_mgr.refresh(  )
+mesh_seed_create( "Curve 2", 1, 5, 0., 0., 0. )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_create( "Curve 3", 5, 3, 1.5, 0., 0. )
+$# Question from application FEM
+$#     Curve 3 already has a mesh seed. Do you wish to replace it?
+$? YESFORALL 2001026 
+mesh_seed_create( "Curve 3", 6, 0, 0., 0.015, 0.029999999 )
+$# Question from application FEM
+$#     Curve 3 already has a mesh seed. Do you wish to replace it?
+$? YESFORALL 2001026 
+mesh_seed_create( "Curve 1", 6, 0, 0., 0.015, 0.029999999 )
+$# Question from application FEM
+$#     Curve 1 already has a mesh seed. Do you wish to replace it?
+$? YESFORALL 2001026 
+mesh_seed_create( "Curve 2", 1, 5, 0., 0., 0. )
+mesh_seed_create( "Curve 4", 1, 5, 0., 0., 0. )
