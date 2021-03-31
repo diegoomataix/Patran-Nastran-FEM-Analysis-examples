@@ -1,0 +1,230 @@
+$# Creating journal file C:\Users\diego\Dropbox\Academic\MEng Space 
+$# Systems\2. EUE\FEA\EUE Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10_v2.db.jou 
+$# at 31-Mar-21 12:34:33
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/" // @
+"template.db","C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\F" // @
+"EA\EUE Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10_v2.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Eigenfreqs" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 4.9999999E-06, "" )
+ga_view_aa_set( -90., 0., 0. )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1", "[0 0 0]", "Coord 0", asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1
+point_size( 9 )
+node_size( 9 )
+asm_const_grid_xyz( "2", "[0.65 0 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 2
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "1", "Point 1", "Point 2", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 1
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Steel", 0,  @
+"Date: 31-Mar-21           Time: 03:10:48", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["200E9", "0.3" @
+, "7900", ""] )
+beam_section_create( "L_beam_7.5cmx0.5cm", "L", ["0.075000003", "0.075000003", @
+ "0.0049999999", "0.0049999999"] )
+$# Beam Section "L_beam_7.5cmx0.5cm" created.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+elementprops_create( "1D_Steel_Lbeam", 11, 2, 42, 1, 1, 20, [39, 13, 6, 4042,  @
+4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048, 4050,  @
+4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, 4411,  @
+8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["L_beam_7.5cmx0.5cm", "m:Steel" @
+, "<0  0 1>", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "Analysis", "Analysis",  @
+"Analysis"], "" )
+$# Property Set "1D_Steel_Lbeam" created.
+elementprops_create( "0D_Mass_50kg", 1, 25, 18, 27, 2, 20, [2069, 4001, 4024,  @
+10, 4026, 11, 4028, 4029, 12], [1, 9, 2, 1, 1, 1, 1, 1, 1], ["50.", "", "", "" @
+, "", "", "", "", ""], "" )
+$# Property Set "0D_Mass_50kg" created.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Curve 1", 16384, 0.0049999999, "Bar2", "100", "100",  @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,  @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,  @
+fem_create_mesh_c_elems_created )
+$# 131 nodes and 130 elements created for Curve 1.
+$# === 131 nodes created.  IDs  = 100:230.
+$# === 130 elements created.  IDs  = 100:229.
+fem_associate_elems_to_ep( "1D_Steel_Lbeam", fem_create_mesh_c_elems_created,  @
+fem_create_mesh_curve_num_elems )
+$# 130 Element(s) associated to the Element Property 1D_Steel_Lbeam.
+uil_primary_file.db_save(  )
+mesh_seed_display_mgr.erase(  )
+ga_view_center_set( -0.040914, -0.000122 )
+ga_view_zoom_set( 0.144886 )
+ga_view_center_set( -0.086943, -0.000258 )
+ga_view_zoom_set( 0.162996 )
+ga_view_center_set( -0.040914, -0.000122 )
+ga_view_zoom_set( 0.144886 )
+ga_view_center_set( 0.032622, -0.000012 )
+ga_view_zoom_set( 0.115909 )
+ga_view_center_set( 0.065256, 0.000036 )
+ga_view_zoom_set( 0.103030 )
+ga_view_center_set( 0.094265, 0.000080 )
+ga_view_zoom_set( 0.091582 )
+ga_view_center_set( 0.120050, 0.000118 )
+ga_view_zoom_set( 0.081406 )
+ga_view_center_set( 0.142970, 0.000050 )
+ga_view_zoom_set( 0.072361 )
+ga_view_center_set( 0.179642, -0.000114 )
+ga_view_zoom_set( 0.057889 )
+ga_view_center_set( 0.195940, -0.000187 )
+ga_view_zoom_set( 0.051457 )
+ga_view_center_set( 0.222018, -0.000303 )
+ga_view_zoom_set( 0.041165 )
+ga_view_center_set( 0.233609, -0.000372 )
+ga_view_zoom_set( 0.036592 )
+ga_view_center_set( 0.252153, -0.000511 )
+ga_view_zoom_set( 0.029273 )
+ga_view_center_set( 0.260395, -0.000572 )
+ga_view_zoom_set( 0.026021 )
+ga_view_center_set( 0.267721, -0.000626 )
+ga_view_zoom_set( 0.023129 )
+ga_view_center_set( 0.274233, -0.000675 )
+ga_view_zoom_set( 0.020560 )
+ga_view_center_set( 0.280022, -0.000709 )
+ga_view_zoom_set( 0.018275 )
+ga_view_center_set( 0.292651, -0.000785 )
+ga_view_zoom_set( 0.013291 )
+ga_view_center_set( 0.296393, -0.000807 )
+ga_view_zoom_set( 0.011814 )
+ga_view_center_set( 0.302381, -0.000843 )
+ga_view_zoom_set( 0.009451 )
+ga_view_center_set( 0.299391, -0.000687 )
+ga_view_zoom_set( 0.010633 )
+ga_view_center_set( 0.296029, -0.000511 )
+ga_view_zoom_set( 0.011962 )
+ga_view_center_set( 0.284679, 0.000081 )
+ga_view_zoom_set( 0.016448 )
+ga_view_center_set( 0.279477, 0.000353 )
+ga_view_zoom_set( 0.018504 )
+ga_view_center_set( 0.273695, 0.000850 )
+ga_view_zoom_set( 0.020817 )
+ga_view_center_set( 0.260684, 0.001970 )
+ga_view_zoom_set( 0.026021 )
+ga_view_center_set( 0.252553, 0.002669 )
+ga_view_zoom_set( 0.029273 )
+ga_view_center_set( 0.234257, 0.004244 )
+ga_view_zoom_set( 0.036592 )
+ga_view_center_set( 0.222822, 0.005227 )
+ga_view_zoom_set( 0.041165 )
+ga_view_center_set( 0.209803, 0.006626 )
+ga_view_zoom_set( 0.046311 )
+ga_view_center_set( 0.195156, 0.008198 )
+ga_view_zoom_set( 0.052100 )
+ga_view_center_set( 0.178678, 0.009968 )
+ga_view_zoom_set( 0.058613 )
+ga_view_center_set( 0.160140, 0.011958 )
+ga_view_zoom_set( 0.065939 )
+ga_view_center_set( 0.139285, 0.014198 )
+ga_view_zoom_set( 0.074181 )
+STRING fem_create_elemen_elems_created[VIRTUAL]
+fem_create_elems_1( "Point ", "Point", "230", "Standard", 3, "Node 230", "",  @
+"", "", "", "", "", "", fem_create_elemen_elems_created )
+$# === 1 element created.  ID = 230.
+fem_associate_elems_to_ep( "0D_Mass_50kg", "230", 1 )
+$# 1 Element(s) associated to the Element Property 0D_Mass_50kg.
+ga_view_center_set( 0.140038, 0.018537 )
+ga_view_zoom_set( 0.083454 )
+ga_view_center_set( 0.140884, 0.023418 )
+ga_view_zoom_set( 0.093886 )
+ga_view_center_set( 0.141836, 0.028909 )
+ga_view_zoom_set( 0.105622 )
+ga_view_center_set( 0.142907, 0.035087 )
+ga_view_zoom_set( 0.118824 )
+ga_view_center_set( 0.144112, 0.042037 )
+ga_view_zoom_set( 0.133677 )
+ga_view_center_set( 0.145468, 0.049667 )
+ga_view_zoom_set( 0.150387 )
+ga_view_center_set( 0.146993, 0.058322 )
+ga_view_zoom_set( 0.169186 )
+ga_view_center_set( -0.040803, 0.038019 )
+ga_view_center_set( -0.050273, 0.030145 )
+ga_view_zoom_set( 0.150387 )
+sys_poll_option( 2 )
+pref_fa_set( [FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE], [6, 3, 1, 1, 5, 7, 2, 2, 8, 1, 2, 3, 3, 5, 2, 1,  @
+3, 6, 5, 5, 3, 2, 2, 2, 2, 2, 6, 6, 6, 9, 9, 3, 5, 5, 5, 1, 3, 3, 15, 13], [ @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE], [3, 4, 5, 6, 1, 1, 7, 8, 9, 10], [TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE], FALSE )
+display_fa_vectors( TRUE )
+gm_elem_prop_init_list(  )
+ga_display_offsets_set( "general", 1 )
+ga_display_beam_set( "general", 2 )
+sys_poll_option( 0 )
+uil_toolbar.shaded_smooth(  )
+ga_view_aa_set( -66.744293, 42.285183, 64.239243 )
+uil_primary_file.db_save(  )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( -71.445435, 6.976379, 28.127739 )
+mesh_seed_display_mgr.erase(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadcase_create2( "LoadCase_ModosPropios", "Static", "", 1., [""], [0], [0.],  @
+"", 0., TRUE )
+$# Load Case "LoadCase_ModosPropios" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+ga_view_aa_set( -67.422913, 2.434087, 15.904920 )
+loadsbcs_create2( "SPC_123456", "Displacement", "Nodal", "", "Static", [ @
+"Node 100"], "FEM", "Coord 0", "1.", ["< 0.,0.,0.    >", "<  0.,0.,0.     >",  @
+"<     >", "<     >"], ["", "", "", ""] )
+$# Load/BC set "SPC_123456" created.
+uil_primary_file.db_save(  )

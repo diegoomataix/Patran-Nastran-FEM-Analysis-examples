@@ -1,0 +1,533 @@
+$# Creating journal file C:\Users\diego\Dropbox\Academic\MEng Space 
+$# Systems\2. EUE\FEA\EUE Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10.db.jou at 
+$# 30-Mar-21 22:26:57
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/" // @
+"template.db","C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\F" // @
+"EA\EUE Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Eigenfreqs" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 4.9999999E-06, "" )
+uil_primary_file.db_save(  )
+point_size( 9 )
+node_size( 9 )
+ga_view_aa_set( 180., 90., 180. )
+ga_view_aa_set( -90., 0., 0. )
+$# Error reported from application FEM
+$#     MPC 13 does not exist.
+$? NO 2006034 
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1", "[0 0 0]", "Coord 0", asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1
+ga_view_aa_set( -81.119057, 13.857609, 64.784599 )
+ga_view_aa_set( -80.370865, 17.372669, 53.459713 )
+asm_const_grid_xyz( "2", "[0 65E-2 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 2
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -0.001186, 0.001731 )
+ga_view_zoom_set( 0.116528 )
+ga_view_center_set( 0.000004, -0.000002 )
+ga_view_zoom_set( 0.131094 )
+ga_view_center_set( 0.001343, -0.001953 )
+ga_view_zoom_set( 0.147481 )
+ga_view_center_set( 0.002849, -0.004146 )
+ga_view_zoom_set( 0.165916 )
+ga_view_center_set( 0.004544, -0.006615 )
+ga_view_zoom_set( 0.186656 )
+ga_view_center_set( 0.006699, -0.009806 )
+ga_view_zoom_set( 0.209988 )
+uil_toolbar.model_center(  )
+gu_fit_view(  )
+gu_fit_view(  )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( 0., 0., 0. )
+asm_const_grid_xyz( "3", "[7.5E-2 65E-2 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 3
+asm_const_grid_xyz( "4", "[7.5E-2 0 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 4
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "1", "Point 1", "Point 2", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 1
+asm_const_line_2point( "2", "Point 2", "Point 3", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 2
+asm_const_line_2point( "3", "Point 3", "Point 4", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 3
+asm_const_line_2point( "4", "Point 4", "Point 1", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 4
+beam_section_create( "L_beam_7.5cmx0.5cm", "L", ["7.5E-2", "7.5E-2", "0.5E-2", @
+ "0.5E-2"] )
+$# Beam Section "L_beam_7.5cmx0.5cm" created.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Steel", 0,  @
+"Date: 31-Mar-21           Time: 03:10:48", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["200E9", "0.3" @
+, "7900", ""] )
+$# UNDO: Beam Section Create
+beam_section_create( "L_beam_7.5cmx0.5cm", "L", ["7.5E-2", "7.5E-2", "0.5E-2", @
+ "0.5E-2"] )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Beam Section "L_beam_7.5cmx0.5cm" already exists. Do you wish to 
+$# overwrite?
+$? YES 29002040 
+$# Beam Section "L_beam_7.5cmx0.5cm" created.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+beam_section_create( "L_beam_7.5cmx0.5cm", "L", ["0.075", "0.075", "0.005",  @
+"0.005"] )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Beam Section "L_beam_7.5cmx0.5cm" already exists. Do you wish to 
+$# overwrite?
+$? YES 29002040 
+$# Beam Section "L_beam_7.5cmx0.5cm" created.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+$# UNDO: Beam Section Create
+elementprops_create( "1D_Steel_L_beam", 11, 2, 42, 1, 1, 20, [39, 13, 6, 4042, @
+ 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048, 4050,  @
+4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, 4411,  @
+8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["L_beam_7.5cmx0.5cm", "m:Steel" @
+, "<0 0 1>", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "" )
+$# Property Set "1D_Steel_L_beam" created.
+mesh_seed_create( "Curve 1", 1, 30, 0., 0., 0. )
+mesh_seed_create( "Curve 3", 1, 30, 0., 0., 0. )
+mesh_seed_create( "Curve 4", 1, 5, 0., 0., 0. )
+$# UNDO:
+mesh_seed_display_mgr.refresh(  )
+mesh_seed_create( "Curve 2", 1, 5, 0., 0., 0. )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_create( "Curve 3", 5, 3, 1.5, 0., 0. )
+$# Question from application FEM
+$#     Curve 3 already has a mesh seed. Do you wish to replace it?
+$? YESFORALL 2001026 
+mesh_seed_create( "Curve 3", 6, 0, 0., 0.015, 0.029999999 )
+$# Question from application FEM
+$#     Curve 3 already has a mesh seed. Do you wish to replace it?
+$? YESFORALL 2001026 
+mesh_seed_create( "Curve 1", 6, 0, 0., 0.015, 0.029999999 )
+$# Question from application FEM
+$#     Curve 1 already has a mesh seed. Do you wish to replace it?
+$? YESFORALL 2001026 
+mesh_seed_create( "Curve 2", 1, 5, 0., 0., 0. )
+mesh_seed_create( "Curve 4", 1, 5, 0., 0., 0. )
+uil_primary_file.db_save(  )
+gm_visibility_widget( " Point 1:4 Curve 1:4", TRUE )
+uil_toolbar.shaded_smooth(  )
+ga_view_center_set( 0.033071, -0.030929 )
+ga_view_zoom_set( 0.438750 )
+ga_view_center_set( 0.000000, -0.000000 )
+ga_view_zoom_set( 0.390000 )
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Curve 2 3 1 4", 16384, 0.064999998, "Bar2", "100",  @
+"100", "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,  @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,  @
+fem_create_mesh_c_elems_created )
+$# 6 nodes and 5 elements created for Curve 2.
+$# 31 nodes and 30 elements created for Curve 3.
+$# 31 nodes and 30 elements created for Curve 1.
+$# 6 nodes and 5 elements created for Curve 4.
+$# === 74 nodes created.  IDs  = 100:173.
+$# === 70 elements created.  IDs  = 100:169.
+fem_associate_elems_to_ep( "1D_Steel_L_beam", fem_create_mesh_c_elems_created, @
+ fem_create_mesh_curve_num_elems )
+$# 70 Element(s) associated to the Element Property 1D_Steel_L_beam.
+ga_view_center_set( -0.001371, 0.016707 )
+ga_view_zoom_set( 0.438750 )
+ga_view_center_set( -0.002913, 0.035502 )
+ga_view_zoom_set( 0.493594 )
+ga_view_center_set( -0.004648, 0.056864 )
+ga_view_zoom_set( 0.555293 )
+ga_view_center_set( -0.002046, 0.034852 )
+ga_view_zoom_set( 0.493594 )
+ga_view_center_set( 0.000268, 0.015285 )
+ga_view_zoom_set( 0.438750 )
+ga_view_center_set( 0.003969, -0.016021 )
+ga_view_zoom_set( 0.351000 )
+ga_view_center_set( 0.005888, -0.030346 )
+ga_view_zoom_set( 0.312000 )
+ga_view_center_set( 0.007594, -0.043080 )
+ga_view_zoom_set( 0.277333 )
+ga_view_center_set( 0.009110, -0.054398 )
+ga_view_zoom_set( 0.246519 )
+ga_view_center_set( 0.010458, -0.064459 )
+ga_view_zoom_set( 0.219128 )
+ga_view_center_set( 0.012341, -0.074001 )
+ga_view_zoom_set( 0.194780 )
+ga_view_center_set( 0.014015, -0.082483 )
+ga_view_zoom_set( 0.173138 )
+ga_view_center_set( 0.015502, -0.090023 )
+ga_view_zoom_set( 0.153900 )
+ga_view_center_set( 0.016825, -0.096725 )
+ga_view_zoom_set( 0.136800 )
+ga_view_center_set( 0.014180, -0.092247 )
+ga_view_zoom_set( 0.153900 )
+ga_view_center_set( 0.011205, -0.087209 )
+ga_view_zoom_set( 0.173138 )
+ga_view_center_set( 0.007858, -0.081542 )
+ga_view_zoom_set( 0.194780 )
+node_size( 0 )
+node_size( 9 )
+ga_view_center_set( 0.014533, -0.073369 )
+ga_view_zoom_set( 0.219128 )
+ga_view_center_set( 0.022042, -0.064174 )
+ga_view_zoom_set( 0.246519 )
+ga_view_center_set( 0.030491, -0.053831 )
+ga_view_zoom_set( 0.277333 )
+ga_view_center_set( 0.038777, -0.040975 )
+ga_view_zoom_set( 0.312000 )
+ga_view_center_set( 0.047961, -0.026513 )
+ga_view_zoom_set( 0.351000 )
+ga_view_center_set( 0.058140, -0.010243 )
+ga_view_zoom_set( 0.394875 )
+ga_view_center_set( 0.047961, -0.026513 )
+ga_view_zoom_set( 0.351000 )
+ga_view_center_set( 0.057214, -0.015486 )
+ga_view_zoom_set( 0.394875 )
+ga_view_center_set( 0.037470, 0.008206 )
+mesh_seed_display_mgr.erase(  )
+elementprops_create( "2D_shell_0.5cm", 51, 25, 35, 1, 1, 20, [13, 20, 36,  @
+4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408,  @
+4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Steel", "",  @
+"0.5E-2", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "" )
+$# Property Set "2D_shell_0.5cm" created.
+mesh_seed_display_mgr.erase(  )
+gm_visibility_widget( " Point 1:4 Curve 1:4", FALSE )
+gm_visibility_widget( " Point 1:4 Curve 1:4", TRUE )
+gm_visibility_widget( " Point 1:4 Curve 1:4", FALSE )
+gm_visibility_widget( " Point 1:4 Curve 1:4", TRUE )
+gm_visibility_widget( " Point 1:4 Curve 1:4", FALSE )
+uil_toolbar.shaded_smooth(  )
+ga_view_center_set( 0.067832, -0.015476 )
+ga_view_zoom_set( 0.444234 )
+ga_view_center_set( 0.037470, 0.008032 )
+ga_view_zoom_set( 0.394875 )
+ga_view_center_set( 0.010482, 0.028929 )
+ga_view_zoom_set( 0.351000 )
+uil_toolbar.wireframe(  )
+ga_view_center_set( 0.010482, 0.007869 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "Paver", 49680, "Surface 1", 4, ["0.167541", "0.1",  @
+"0.2", "1.0"], "Quad4", "#", "#", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# Error reported from application APP
+$#     Database error during List Processing: The surface requested was not 
+$# found
+$? NO 16000102 
+fem_associate_elems_to_ep( "2D_shell_0.5cm", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+mesh_seed_display_mgr.erase(  )
+sgm_verify_surface_boundary( " ", 4.9999999E-06, 1 )
+$# Error reported from application Geometry
+$#     Surface list is blank. Input required data.
+$? NO 1000057 
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+uil_toolbar.shaded_smooth(  )
+uil_toolbar.shaded_smooth(  )
+gm_visibility_widget( " Point 1:4 Curve 1:4", TRUE )
+ga_view_center_set( 0.008632, -0.004391 )
+ga_view_zoom_set( 0.394875 )
+ga_view_center_set( 0.010637, 0.006944 )
+ga_view_zoom_set( 0.351000 )
+ga_view_center_set( 0.012419, 0.016745 )
+ga_view_zoom_set( 0.312000 )
+ga_view_aa_set( 18.654116, 9.623906, -4.328835 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( 90., 0., 0. )
+ga_view_aa_set( 90., 0., 0. )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_center_set( 0.008992, 0.006944 )
+ga_view_zoom_set( 0.351000 )
+uil_toolbar.shaded_smooth(  )
+uil_toolbar.wireframe(  )
+gm_plot_erase_fem( 0 )
+gm_plot_erase_geometry( 0 )
+gm_plot_erase_geometry( 0 )
+gm_plot_erase_geometry( 1 )
+gm_plot_erase_geometry( 0 )
+gm_plot_erase_geometry( 0 )
+gm_plot_erase_geometry( 1 )
+gm_plot_erase_geometry( 1 )
+gm_plot_erase_all( 1 )
+gm_plot_erase_fem( 0 )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "1", "Curve 2", "Curve 4",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 1
+gm_visibility_widget( " Point 1:4 Curve 1:4 Surface 1", FALSE )
+gm_visibility_widget( " Point 1:4 Curve 1:4 Surface 1", TRUE )
+uil_toolbar.shaded_smooth(  )
+ga_view_aa_set( -174.412430, 65.676659, -179.491043 )
+ga_view_aa_set( 0., 180., 0. )
+mesh_seed_display_mgr.erase(  )
+uil_toolbar.wireframe(  )
+gm_plot_erase_fem( 1 )
+uil_toolbar.shaded_smooth(  )
+$# UNDO: FEM Create Mesh Surface for Surface 1
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1", 1, ["0.0268965"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 186 nodes and 150 elements created for Surface 1.
+$# === 186 nodes created.  IDs  = 174:359.
+$# === 150 elements created.  IDs  = 170:319.
+fem_associate_elems_to_ep( "2D_shell_0.5cm", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 150 Element(s) associated to the Element Property 2D_shell_0.5cm.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group4( [" "], 0, "", 1, 1, 4.9999999E-06, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 74 nodes deleted.
+verify_normals_display_mgr.initialize(  )
+LOGICAL fem_verify_no_elems_color_coded
+LOGICAL fem_verify_norm_vectors_plotted
+verify_element_normals( FALSE, FALSE, "", fem_verify_no_elems_color_coded,  @
+fem_verify_norm_vectors_plotted )
+ga_view_aa_set( -60.772251, -26.136225, -110.768791 )
+ga_view_aa_set( 0., 180., 0. )
+verify_normals_display_mgr.erase( FALSE, TRUE )
+verify_boundaries_display_mgr.initialize(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+ga_view_aa_set( -53.017475, -22.060707, -30.880220 )
+verify_boundaries_display_mgr.erase(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+ga_view_aa_set( -99.872635, -33.467758, -82.631470 )
+gm_visibility_widget( " Node 100:105 107:166 169:172 181:184 187:190 193:1" // @
+"96 199:202 205:208 211:214 217:220 223:226 229:232 235:238 241:244 247:25" // @
+"0 253:256 259:262 265:268 271:274 277:280 283:286 289:292 295:298 301:304" // @
+" 307:310 313:316 319:322 325:328 331:334 337:340 343:346 349:352 Element " // @
+"100:319", FALSE )
+gm_visibility_widget( " Point 1:4 Curve 1:4 Surface 1", FALSE )
+gm_visibility_widget( " Node 100:105 107:166 169:172 181:184 187:190 193:1" // @
+"96 199:202 205:208 211:214 217:220 223:226 229:232 235:238 241:244 247:25" // @
+"0 253:256 259:262 265:268 271:274 277:280 283:286 289:292 295:298 301:304" // @
+" 307:310 313:316 319:322 325:328 331:334 337:340 343:346 349:352 Element " // @
+"100:319", TRUE )
+ga_view_aa_set( -153.361359, 28.042830, -153.831268 )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_center_set( -0.024443, -0.000325 )
+ga_view_zoom_set( 0.238907 )
+ga_view_center_set( -0.050265, -0.000587 )
+ga_view_zoom_set( 0.268770 )
+ga_view_center_set( -0.074237, -0.000292 )
+ga_view_zoom_set( 0.302366 )
+ga_view_center_set( -0.087123, 0.000173 )
+ga_view_zoom_set( 0.340162 )
+verify_boundaries_display_mgr.plot( "Free_Faces" )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+verify_boundaries_display_mgr.erase(  )
+$# Acknowledgement requested from application FEM Verify
+$#     At this time, the test for ASPECT and JACOBIAN values are not 
+$# available for the MSC.Nastran preference.  Using the MSC.Patran tests.
+$? NO 11111 
+sys_poll_option( 2 )
+pref_fa_set( [FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE], [6, 3, 1, 1, 5, 7, 2, 2, 8, 1, 2, 3, 3, 5, 2, 1,  @
+3, 6, 5, 5, 3, 2, 2, 2, 2, 2, 6, 6, 6, 9, 9, 3, 5, 5, 5, 1, 3, 3, 15, 13], [ @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE], [3, 4, 5, 6, 1, 1, 7, 8, 9, 10], [TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE], FALSE )
+display_fa_vectors( TRUE )
+result_label_format_set( 1, 4 )
+gm_elem_prop_init_list(  )
+ga_display_offsets_set( "general", 1 )
+ga_display_beam_set( "general", 2 )
+sys_poll_option( 0 )
+ga_view_aa_set( -64.733383, -49.799454, -108.812218 )
+ga_view_aa_set( 71.815315, 16.424421, -90.783104 )
+ga_view_aa_set( -51.314709, 26.584160, 12.451809 )
+ga_view_aa_set( -142.766907, 12.170884, 89.793900 )
+ga_view_aa_set( -41.393585, -16.891539, -153.374664 )
+ga_view_aa_set( -157.506409, 18.481043, 80.234901 )
+ga_view_aa_set( -18.347309, 23.751741, 104.640617 )
+elementprops_create( "50kg_mass", 1, 25, 18, 27, 2, 20, [2069, 4001, 4024, 10, @
+ 4026, 11, 4028, 4029, 12], [1, 9, 2, 1, 1, 1, 1, 1, 1], ["50.", "", "", "",  @
+"", "", "", "", ""], "" )
+$# Property Set "50kg_mass" created.
+ga_view_aa_set( -46.771996, 0.264149, -50.658611 )
+ga_view_aa_set( -28.105350, 7.274306, -45.057220 )
+ga_view_center_set( 0.006195, 0.017402 )
+ga_view_zoom_set( 0.466565 )
+ga_view_center_set( 0.000000, 0.000000 )
+ga_view_zoom_set( 0.414724 )
+ga_view_center_set( -0.005507, -0.015468 )
+ga_view_zoom_set( 0.368644 )
+ga_view_center_set( -0.014318, -0.040217 )
+ga_view_zoom_set( 0.294915 )
+ga_view_center_set( -0.018234, -0.051217 )
+ga_view_zoom_set( 0.262147 )
+ga_view_center_set( -0.013742, -0.042751 )
+ga_view_zoom_set( 0.294915 )
+ga_view_center_set( -0.008689, -0.033227 )
+ga_view_zoom_set( 0.331779 )
+ga_view_center_set( -0.013742, -0.042751 )
+ga_view_zoom_set( 0.294915 )
+ga_view_aa_set( -38.009026, 27.575397, -63.534874 )
+ga_view_aa_set( -34.704193, 23.403059, -62.778416 )
+ga_view_aa_set( -132.785355, -8.712325, -106.105156 )
+ga_view_aa_set( -173.887665, -7.994961, -106.809326 )
+ga_view_aa_set( -76.127701, 5.110729, -66.373108 )
+ga_view_aa_set( -64.266273, 16.526344, -43.769741 )
+ga_view_aa_set( -141.468979, -33.199421, -38.388100 )
+ga_view_aa_set( -47.315132, 2.345032, -59.725170 )
+ga_view_center_set( -0.072725, 0.048673 )
+ga_view_aa_set( -48.353474, -3.068576, -65.617363 )
+ga_view_aa_set( -46.290936, 1.705168, -60.496117 )
+ga_view_aa_set( -104.304359, 3.126190, -59.881104 )
+ga_view_aa_set( -155.304352, 3.126188, -59.881107 )
+ga_view_aa_set( -50.646931, -18.930170, -6.740304 )
+ga_view_aa_set( -49.776596, -12.354778, -83.679344 )
+$# UNDO: Delete for entities Elm 121
+ga_view_aa_set( -18.848267, 16.803085, -61.112232 )
+ga_view_aa_set( -52.718204, -2.937901, -74.278702 )
+ga_view_aa_set( -129.903427, -18.712519, -65.393318 )
+ga_view_center_set( -0.051993, 0.050163 )
+ga_view_zoom_set( 0.331779 )
+ga_view_center_set( -0.028669, 0.051839 )
+ga_view_zoom_set( 0.373252 )
+ga_view_center_set( -0.002430, 0.053725 )
+ga_view_zoom_set( 0.419908 )
+ga_view_center_set( -0.028341, 0.051839 )
+ga_view_zoom_set( 0.373252 )
+ga_view_center_set( -0.051228, 0.050163 )
+ga_view_zoom_set( 0.331779 )
+ga_view_center_set( -0.071183, 0.048673 )
+ga_view_zoom_set( 0.294915 )
+ga_view_center_set( -0.088575, 0.047463 )
+ga_view_zoom_set( 0.262147 )
+ga_view_center_set( -0.103522, 0.048436 )
+ga_view_zoom_set( 0.233019 )
+ga_view_center_set( -0.116809, 0.049301 )
+ga_view_zoom_set( 0.207128 )
+ga_view_center_set( -0.128619, 0.050069 )
+ga_view_zoom_set( 0.184114 )
+ga_view_center_set( -0.147516, 0.051299 )
+ga_view_zoom_set( 0.147291 )
+ga_view_center_set( -0.155800, 0.051845 )
+ga_view_zoom_set( 0.130925 )
+ga_view_center_set( -0.163112, 0.052178 )
+ga_view_zoom_set( 0.116378 )
+ga_view_center_set( -0.169520, 0.052382 )
+ga_view_zoom_set( 0.103447 )
+ga_view_center_set( -0.179193, 0.052710 )
+ga_view_zoom_set( 0.082758 )
+ga_view_aa_set( -142.215469, -24.339666, -60.842453 )
+ga_view_aa_set( -66.568199, 5.842021, -64.297012 )
+ga_view_center_set( -0.194537, 0.056400 )
+ga_view_zoom_set( 0.093103 )
+ga_view_center_set( -0.212167, 0.060593 )
+ga_view_zoom_set( 0.104740 )
+ga_view_center_set( -0.233014, 0.066414 )
+ga_view_zoom_set( 0.117833 )
+ga_view_center_set( -0.256519, 0.072964 )
+ga_view_zoom_set( 0.132562 )
+ga_view_center_set( -0.283078, 0.080331 )
+ga_view_zoom_set( 0.149132 )
+ga_view_center_set( -0.313022, 0.088620 )
+ga_view_zoom_set( 0.167774 )
+ga_view_center_set( -0.346709, 0.097945 )
+ga_view_zoom_set( 0.188746 )
+ga_view_center_set( -0.384774, 0.108435 )
+ga_view_zoom_set( 0.212339 )
+ga_view_center_set( -0.427596, 0.120237 )
+ga_view_zoom_set( 0.238881 )
+ga_view_center_set( -0.475771, 0.133514 )
+ga_view_zoom_set( 0.268741 )
+ga_view_center_set( -0.284964, 0.098578 )
+ga_view_center_set( -0.026973, 0.034080 )
+ga_view_aa_set( -31.031593, 6.418805, -54.674381 )
+uil_file_new.go( "C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/templa" // @
+"te.db", "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\FEA\EU" // @
+"E Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10_v2.db" )
+$# Question from application FILE
+$#     A database is already open.
+$# Do you want to create a new database C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10_v2.db anyway ?
+$? YES 36000037 
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 31-Mar-21 12:34:29
