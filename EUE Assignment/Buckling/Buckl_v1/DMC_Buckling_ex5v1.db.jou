@@ -1,0 +1,706 @@
+$# Creating journal file C:\Users\diego\Dropbox\Academic\MEng Space 
+$# Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v1\DMC_Buckling_ex5v1.db.jou at 02-Apr-21 19:00:10
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/" // @
+"template.db","C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\F" // @
+"EA\EUE Assignment\Buckling\Buckl_v1\DMC_Buckling_ex5v1.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling\Buckl_v1" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 4.9999999E-06, "" )
+point_size( 9 )
+node_size( 9 )
+ga_view_aa_set( -90., 0., 0. )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1", "[0 0 0]", "Coord 0", asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1
+asm_const_grid_xyz( "2", "[0 0 0.5]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 2
+STRING sgm_create_curve_2d_created_ids[VIRTUAL]
+sgm_const_curve_2d_circle_v2( "1", 1, 0.2, "Coord 0.3", "", "Point 1", FALSE,  @
+sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 1
+ga_view_aa_set( -84.000000, 0.000000, 0.000000 )
+sgm_const_curve_2d_circle_v2( "2", 1, 0.1, "Coord 0.3", "", "Point 2", FALSE,  @
+sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 2
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "1", "Curve 1", "Curve 2",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 1
+uil_toolbar.shaded_smooth(  )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -68.729729, -5.123781, -19.304388 )
+gm_visibility_widget( "", FALSE )
+gm_visibility_widget( "", TRUE )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al7075", 0,  @
+"Date: 02-Apr-21           Time: 19:04:59", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["71E9", "0.33" @
+, "2800", ""] )
+elementprops_create( "2D_shell_0.5mm", 51, 25, 35, 1, 1, 20, [13, 20, 36,  @
+4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408,  @
+4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al7075", "",  @
+"0.0005", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "" )
+$# Property Set "2D_shell_0.5mm" created.
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+uil_primary_file.db_save(  )
+mesh_seed_create( "Curve 1", 1, 50, 0., 0., 0. )
+mesh_seed_create( "Curve 2", 1, 50, 0., 0., 0. )
+$# UNDO: FEM Create Mesh Seed for Surface 1.1
+mesh_seed_display_mgr.refresh(  )
+$# UNDO: FEM Create Mesh Seed for Surface 1.1
+mesh_seed_display_mgr.refresh(  )
+ga_view_center_set( 0.180414, -0.159910 )
+ga_view_zoom_set( 0.080870 )
+ga_view_center_set( 0.193546, -0.164501 )
+ga_view_zoom_set( 0.090979 )
+ga_view_center_set( 0.208150, -0.169624 )
+ga_view_zoom_set( 0.102351 )
+ga_view_center_set( 0.224435, -0.175291 )
+ga_view_zoom_set( 0.115145 )
+ga_view_center_set( 0.241303, -0.180322 )
+ga_view_zoom_set( 0.129538 )
+ga_view_center_set( 0.260280, -0.185982 )
+ga_view_zoom_set( 0.145731 )
+ga_view_center_set( 0.028568, -0.065026 )
+ga_view_center_set( 0.042971, -0.065809 )
+ga_view_zoom_set( 0.163947 )
+ga_view_center_set( 0.059174, -0.066690 )
+ga_view_zoom_set( 0.184440 )
+ga_view_center_set( 0.077230, -0.067940 )
+ga_view_zoom_set( 0.207495 )
+ga_view_center_set( 0.097350, -0.069345 )
+ga_view_zoom_set( 0.233432 )
+ga_view_center_set( 0.117475, -0.074527 )
+ga_view_zoom_set( 0.262611 )
+ga_view_center_set( 0.140116, -0.080356 )
+ga_view_zoom_set( 0.295438 )
+ga_view_center_set( 0.122390, -0.000588 )
+mesh_seed_create( "Surface 1.1", 1, 70, 0., 0., 0. )
+ga_view_center_set( 0.116806, -0.011816 )
+ga_view_zoom_set( 0.262611 )
+ga_view_center_set( 0.105210, -0.008810 )
+ga_view_zoom_set( 0.295438 )
+ga_view_center_set( 0.092302, -0.005427 )
+ga_view_zoom_set( 0.332367 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1", 1, ["0.01"], "Quad4",  @
+"100", "100", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 3621 nodes and 3500 elements created for Surface 1.
+$# === 3621 nodes created.  IDs  = 100:3720.
+$# === 3500 elements created.  IDs  = 100:3599.
+fem_associate_elems_to_ep( "2D_shell_0.5mm", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 3500 Element(s) associated to the Element Property 2D_shell_0.5mm.
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", TRUE )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -68.162651, 0.787540, -4.419077 )
+ga_view_center_set( 0.108532, -0.008922 )
+ga_view_zoom_set( 0.373913 )
+ga_view_center_set( 0.092612, -0.005272 )
+ga_view_zoom_set( 0.332367 )
+ga_view_center_set( 0.078462, -0.002028 )
+ga_view_zoom_set( 0.295438 )
+ga_view_center_set( 0.065883, 0.000856 )
+ga_view_zoom_set( 0.262611 )
+ga_view_center_set( 0.078462, -0.002028 )
+ga_view_zoom_set( 0.295438 )
+ga_view_center_set( 0.092336, -0.006238 )
+ga_view_zoom_set( 0.332367 )
+mesh_seed_display_mgr.erase(  )
+verify_boundaries_display_mgr.initialize(  )
+$# Acknowledgement requested from application FEM Verify
+$#     At this time, the test for ASPECT and JACOBIAN values are not 
+$# available for the MSC.Nastran preference.  Using the MSC.Patran tests.
+$? NO 11111 
+verify_boundaries_display_mgr.initialize(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+verify_boundaries_display_mgr.erase(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+verify_boundaries_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group4( [" "], 0, "", 1, 1, 4.9999999E-06, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 71 nodes deleted.
+verify_boundaries_display_mgr.initialize(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+ga_view_aa_set( -63.669750, 4.802252, -48.312424 )
+gm_visibility_widget( " Node 100:149 151:200 202:251 253:302 304:353 355:4" // @
+"04 406:455 457:506 508:557 559:608 610:659 661:710 712:761 763:812 814:86" // @
+"3 865:914 916:965 967:1016 1018:1067 1069:1118 1120:1169 1171:1220 1222:1" // @
+"271 1273:1322 1324:1373 1375:1424 1426:1475 1477:1526 1528:1577 1579:1628" // @
+" 1630:1679 1681:1730 1732:1781 1783:1832 1834:1883 1885:1934 1936:1985 19" // @
+"87:2036 2038:2087 2089:2138 2140:2189 2191:2240 2242:2291 2293:2342 2344:" // @
+"2393 2395:2444 2446:2495 2497:2546 2548:2597 2599:2648 2650:2699 2701:275" // @
+"0 2752:2801 2803:2852 2854:2903 2905:2954 2956:3005 3007:3056 3058:3107 3" // @
+"109:3158 3160:3209 3211:3260 3262:3311 3313:3362 3364:3413 3415:3464 3466" // @
+":3515 3517:3566 3568:3617 3619:3668 3670:3719 Element 100:3599", FALSE )
+gm_visibility_widget( " Node 100:149 151:200 202:251 253:302 304:353 355:4" // @
+"04 406:455 457:506 508:557 559:608 610:659 661:710 712:761 763:812 814:86" // @
+"3 865:914 916:965 967:1016 1018:1067 1069:1118 1120:1169 1171:1220 1222:1" // @
+"271 1273:1322 1324:1373 1375:1424 1426:1475 1477:1526 1528:1577 1579:1628" // @
+" 1630:1679 1681:1730 1732:1781 1783:1832 1834:1883 1885:1934 1936:1985 19" // @
+"87:2036 2038:2087 2089:2138 2140:2189 2191:2240 2242:2291 2293:2342 2344:" // @
+"2393 2395:2444 2446:2495 2497:2546 2548:2597 2599:2648 2650:2699 2701:275" // @
+"0 2752:2801 2803:2852 2854:2903 2905:2954 2956:3005 3007:3056 3058:3107 3" // @
+"109:3158 3160:3209 3211:3260 3262:3311 3313:3362 3364:3413 3415:3464 3466" // @
+":3515 3517:3566 3568:3617 3619:3668 3670:3719 Element 100:3599", TRUE )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", TRUE )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+ga_view_center_set( -0.074655, 0.004177 )
+ga_view_zoom_set( 0.515732 )
+ga_view_center_set( -0.177922, 0.007190 )
+ga_view_zoom_set( 0.580198 )
+ga_view_center_set( -0.294097, 0.010579 )
+ga_view_zoom_set( 0.652723 )
+ga_view_center_set( -0.177922, 0.007190 )
+ga_view_zoom_set( 0.580198 )
+ga_view_center_set( -0.074655, 0.004177 )
+ga_view_zoom_set( 0.515732 )
+ga_view_center_set( 0.017138, 0.001500 )
+ga_view_zoom_set( 0.458428 )
+ga_view_center_set( 0.098731, -0.000881 )
+ga_view_zoom_set( 0.407492 )
+ga_view_center_set( 0.171259, -0.002996 )
+ga_view_zoom_set( 0.362215 )
+ga_view_center_set( 0.235728, -0.004877 )
+ga_view_zoom_set( 0.321969 )
+verify_boundaries_display_mgr.erase(  )
+verify_normals_display_mgr.initialize(  )
+LOGICAL fem_verify_no_elems_color_coded
+LOGICAL fem_verify_norm_vectors_plotted
+verify_element_normals( FALSE, FALSE, "", fem_verify_no_elems_color_coded,  @
+fem_verify_norm_vectors_plotted )
+ga_view_aa_set( -63.912861, 4.526576, -23.093916 )
+verify_normals_display_mgr.erase( FALSE, TRUE )
+ga_view_aa_set( -67.877037, -4.092870, -41.154480 )
+cf_rbe_spider.create_mpc_spider( 1, 11, "RBE2", ["0", "0"], "Node 100:149 ", [ @
+"UX,UY,UZ,RX,RY,RZ", ""], 3, "[0.,0.,0.]", FALSE )
+$# === 1 node created.  ID = 1.
+$# MPC 11 created.
+cf_rbe_spider.create_mpc_spider( 2, 12, "RBE2", ["0", "0"], "Node 3670:3719 ", @
+ ["UX,UY,UZ,RX,RY,RZ", ""], 3, "[0.,0.,0.5]", FALSE )
+$# === 1 node created.  ID = 2.
+$# MPC 12 created.
+ga_view_aa_set( -64.184013, -5.663902, -34.487659 )
+ga_view_aa_set( -60.643394, -0.044976, -23.868391 )
+verify_boundaries_display_mgr.initialize(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+verify_boundaries_display_mgr.erase(  )
+ga_view_center_set( 0.002999, -0.012918 )
+ga_view_zoom_set( 0.440536 )
+ga_view_center_set( 0.012160, -0.004374 )
+ga_view_zoom_set( 0.495603 )
+ga_view_center_set( 0.002999, -0.012918 )
+ga_view_zoom_set( 0.440536 )
+ga_view_center_set( -0.005144, -0.020511 )
+ga_view_zoom_set( 0.391587 )
+ga_view_center_set( -0.012382, -0.027261 )
+ga_view_zoom_set( 0.348077 )
+ga_view_center_set( -0.018816, -0.033262 )
+ga_view_zoom_set( 0.309402 )
+ga_view_center_set( -0.024535, -0.038595 )
+ga_view_zoom_set( 0.275024 )
+ga_view_aa_set( -51.328110, -5.527606, -4.937530 )
+ga_view_center_set( -0.036936, -0.034675 )
+ga_view_zoom_set( 0.309402 )
+ga_view_center_set( -0.050888, -0.030266 )
+ga_view_zoom_set( 0.348077 )
+ga_view_aa_set( -74.935181, -4.827163, -0.849364 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadcase_create2( "LoadCase_buckling", "Static", "", 1., [""], [0], [0.], "",  @
+0., TRUE )
+$# Load Case "LoadCase_buckling" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadcase_current_set( "LoadCase_buckling" )
+loadsbcs_create2( "SPC_1236", "Displacement", "Nodal", "", "Static", ["Node 1" @
+], "FEM", "Coord 0", "1.", ["<0.,0.,0.     >", "< ,,0.    >", "<     >",  @
+"<     >"], ["", "", "", ""] )
+$# Load/BC set "SPC_1236" created.
+loadsbcs_create2( "SPC_12", "Displacement", "Nodal", "", "Static", [""], "FEM" @
+, "Coord 0", "1.", ["<0.,0.,     >", "< ,,    >", "<     >", "<     >"], ["",  @
+"", "", ""] )
+$# Application Region List is "blank".
+$# Load/BC set "SPC_12" created.
+loadsbcs_create2( "SPC_12", "Displacement", "Nodal", "", "Static", ["Node 2"], @
+ "FEM", "Coord 0", "1.", ["<0., 0., >", "", "", ""], ["", "", "", ""] )
+$# Critical Decision requested from application LOADS_BCS
+$#     Load/BC  "SPC_12" already exists. Do you wish to overwrite?
+$? YES 26002020 
+$# Load/BC set "SPC_12" created.
+ga_view_aa_set( -122.682411, -4.079875, -18.299294 )
+ga_view_aa_set( -23.142044, 3.335320, 2.035634 )
+ga_view_aa_set( -69.133293, -4.386751, -1.208656 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadsbcs_create2( "Force_1N", "Force", "Nodal", "", "Static", [""], "FEM",  @
+"Coord 0", "1.", ["<0.,0.,-1.     >", "<     >", "<     >", "<     >"], ["",  @
+"", "", ""] )
+$# Application Region List is "blank".
+$# Load/BC set "Force_1N" created.
+uil_primary_file.db_save(  )
+loadsbcs_create2( "Force_1N", "Force", "Nodal", "", "Static", ["Node 2"],  @
+"FEM", "Coord 0", "1.", ["<0.,0.,-1.     >", "<     >", "<     >", "<     >"], @
+ ["", "", "", ""] )
+$# Critical Decision requested from application LOADS_BCS
+$#     Load/BC  "Force_1N" already exists. Do you wish to overwrite?
+$? YES 26002020 
+$# Load/BC set "Force_1N" created.
+uil_primary_file.db_save(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+verify_boundaries_display_mgr.initialize(  )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+verify_boundaries_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+fem_equiv_all_group4( [" "], 0, "", 1, 1, 4.9999999E-06, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment )
+$# Geometric equivalencing completed. 0 nodes deleted.
+mscnastran_subcase.create( "105", "LoadCase_buckling",  @
+"This is a default subcase." )
+mscnastran_subcase.create_char_param( "LOAD CASE", "LoadCase_buckling" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE",  @
+"This is a default subcase." )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE", "LoadCase_buckling" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL", "" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE FLAG", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "LoadCase_buckling", "STRUCTURAL" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",  @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "EIGENVECTORS", "1" )
+mscnastran_subcase.create_char_param( "EIGENVECTORS 1",  @
+"VECTOR(PLOT,SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE DIRECT TEXT POS", "OFF" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+$#  Beginning analysis of  DMC_Buckling_ex5v1
+jobfile.open( "DMC_Buckling_ex5v1", "ANALYZE NO JOBFILE" )
+msc_delete_old_files( "DMC_Buckling_ex5v1", ".bdf", ".op2" )
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["02-Apr-21" @
+, "19:20:25"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space Sy" // @
+"stems\2. EUE\FEA\EUE Assignment\Buckling\Buckl_v1\DMC_Buckling_ex5v1.db" )
+jobfile.writec( "JOBNAME", "DMC_Buckling_ex5v1" )
+jobfile.writec( "ANALYSIS TITLE", "RBE2elements_6dof" )
+jobfile.writec( "ANALYSIS SUBTITLE", "RBE2elements_6dof" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Analysis Deck" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".op2" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Users\diego" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\alters" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\bin" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\mscexplore_files\" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\2020\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "XDB+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2020." )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "4.9999999E-06" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "BUCKLING" )
+jobfile.writei( "SOLUTION SEQUENCE", 105 )
+jobfile.writec( "CONTACT CHECK", "OFF" )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writec( "EXTRACTION METHOD", "Lanczos" )
+jobfile.writec( "LOWER EIGENVALUE", "" )
+jobfile.writec( "UPPER EIGENVALUE", "" )
+jobfile.writec( "NUMBER OF DESIRED ROOTS", "1" )
+jobfile.writec( "DIAGNOSTIC OUTPUT LEVEL", "0" )
+jobfile.writec( "NORMALIZATION METHOD", "Maximum" )
+jobfile.writec( "USE CONTACT TABLE", "OFF" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "105", "DMC_Buckling_ex5v1", 1, [ @
+"LoadCase_buckling"] )
+analysis_submit_2( "MSC.Nastran", "DMC_Buckling_ex5v1" )
+$# Patran 2020  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node KLKGNG(9cb6d021037d) (
+$# Windows 6.2 (Build 9200: Service Pack 0)) at 02-Apr-21 19:20:25.
+$# 
+$# Reading model information from the specified database, 
+$# C:\Users\diego\Dropbox\Academic\MEng\ Space\ Systems\2.\ EUE\FEA\EUE\ 
+$# Assignment\Buckling\Buckl_v1\DMC_Buckling_ex5v1.db.
+$# Messages output from the Patran 2020  (Student Edition) input deck 
+$# translator on April     02, 2021 at 19:20:25.
+$# 
+$# The NASTRAN input file, DMC_Buckling_ex5v1.bdf, has been successfully opened.
+$# 
+$# Translating 3500 elements from the element property region 2D_shell_0.5mm.
+$# 
+$# 1 property regions translated.
+$# 
+$# Translating 1 referenced material records.
+$# 
+$# Translating 2 multipoint constraints from the entire model.
+$# 
+$# Translating 3552 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : LoadCase_buckling.
+$# 
+$# Translating nodal constraints in load set : SPC_1236.
+$# 
+$# Translating nodal constraints in load set : SPC_12.
+$# Writing interface element lbcs.
+$# 
+$# Translating nodal forces in load set : Force_1N.
+$# Total execution time in real seconds: 1
+$# Total execution time in CPU seconds: 0.358978
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2020  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 02-Apr-21 19:20:26.
+$# The translation has completed successfully.
+$# No Analysis Requested
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE\FEA\EUE Assignment\Buckling\Buckl_v1\DMC_Buckling_ex5v1.db" )
+msc_dra_add_param( "JOBNAME", "DMC_Buckling_ex5v1" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE\FEA\EUE Assignment\Buckling\Buckl_v1\Analysis1_v1\dmc" // @
+"_buckling_ex5v1.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "DMC_Buckling_ex5v1",  @
+"Attach Results File No Job", "C:\Users\diego\Dropbox\Academic\MEng Space " // @
+"Systems\2. EUE\FEA\EUE Assignment\Buckling\Buckl_v1\Analysis1_v1\dmc_buck" // @
+"ling_ex5v1.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v1\Analysis1_v1\dmc_buckling_ex5v1.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 4/2/2021 using "VENDOR:INTEL    
+$#             MODEL:XEON/2678 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:LOADCASE_BUCKLING
+$# Processing result load case: SC2:LOADCASE_BUCKLING
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Mode 1 : Factor = 65785.
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -82.193703, -2.612432, 13.733646 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", TRUE )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", TRUE )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+ga_view_center_set( 0.021661, -0.001782 )
+ga_view_zoom_set( 0.451499 )
+ga_view_center_set( 0.000000, -0.000375 )
+ga_view_zoom_set( 0.401332 )
+ga_view_center_set( -0.019254, 0.000875 )
+ga_view_zoom_set( 0.356740 )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", TRUE )
+ga_view_center_set( 0.019973, -0.022598 )
+ga_view_zoom_set( 0.451499 )
+ga_view_center_set( 0.042442, -0.048022 )
+ga_view_zoom_set( 0.507936 )
+ga_view_center_set( 0.019973, -0.022598 )
+ga_view_zoom_set( 0.451499 )
+ga_view_center_set( 0.000000, 0.000000 )
+ga_view_zoom_set( 0.401332 )
+ga_view_center_set( -0.017753, 0.020087 )
+ga_view_zoom_set( 0.356740 )
+ga_view_center_set( -0.033534, 0.037943 )
+ga_view_zoom_set( 0.317102 )
+ga_view_center_set( -0.047562, 0.053815 )
+ga_view_zoom_set( 0.281868 )
+ga_view_center_set( -0.032349, 0.058490 )
+ga_view_zoom_set( 0.317102 )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", TRUE )
+ga_view_center_set( -0.017309, 0.023150 )
+ga_view_zoom_set( 0.356740 )
+ga_view_center_set( -0.033090, 0.059824 )
+ga_view_zoom_set( 0.317102 )
+ga_view_center_set( 0.004963, -0.038478 )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+ga_view_center_set( 0.014816, -0.056037 )
+ga_view_zoom_set( 0.356740 )
+ga_view_aa_set( -75.246498, -2.673456, 22.553524 )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -90.890755, -1.625652, 33.464016 )
+ga_view_center_set( -0.027992, 0.001042 )
+ga_view_aa_set( -72.605797, -0.710898, 44.358692 )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -71.523033, -2.862284, 56.302307 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE\FEA\EUE Assignment\Buckling\Buckl_v1\DMC_Buckling_ex5v1.db" )
+msc_dra_add_param( "JOBNAME", "DMC_Buckling_ex5v1" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE\FEA\EUE Assignment\Buckling\Buckl_v1\Analysis2_v1\dmc" // @
+"_buckling_ex5v1.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "DMC_Buckling_ex5v1",  @
+"Attach Results File No Job", "C:\Users\diego\Dropbox\Academic\MEng Space " // @
+"Systems\2. EUE\FEA\EUE Assignment\Buckling\Buckl_v1\Analysis2_v1\dmc_buck" // @
+"ling_ex5v1.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v1\Analysis2_v1\dmc_buckling_ex5v1.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 4/2/2021 using "VENDOR:INTEL    
+$#             MODEL:XEON/2743 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:LOADCASE_BUCKLING
+$# Processing result load case: SC2:LOADCASE_BUCKLING
+$# Processing result sub-case: Static Subcase
+$# Processing result sub-case: Mode 1 : Factor = 65628.
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A2:Mode 1 : Factor = 65628.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A2:Mode 1 : Factor = 65628.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+uil_primary_file.db_save(  )

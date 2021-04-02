@@ -1768,3 +1768,24 @@ res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
 res_display_deformation_post( "", 0 )
 ga_view_aa_set( -77.181557, -1.036808, -84.760101 )
 uil_primary_file.db_save(  )
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE Assignment\Buckling\DMC_Buckling_ex5.db.jou 
+$# at 02-Apr-21 18:59:31
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+uil_file_new.go( "C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/templa" // @
+"te.db", "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\FEA\EU" // @
+"E Assignment\Buckling\Buckl_v1\DMC_Buckling_ex5v1.db" )
+$# Question from application FILE
+$#     A database is already open.
+$# Do you want to create a new database C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v1\DMC_Buckling_ex5v1.db anyway ?
+$? YES 36000037 
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 02-Apr-21 19:00:08
