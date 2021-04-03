@@ -1672,3 +1672,1560 @@ mesh_seed_display_mgr.erase(  )
 ga_view_aa_set( -73.182449, -7.108349, -74.794586 )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 02-Apr-21 13:54:42
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10_v2.db.jou at 03-Apr-21 00:17:31
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Eigenfreqs" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Eigenfreqs\Eigenfreqs_Analysis1\dmc_eigenfreqs_ex10_v2.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/31/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2700 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:LOADCASE_MODOSPROPIOS
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1" @
+, "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -98.857643, -14.106476, -19.723719 )
+ga_view_aa_set( -155.413345, -10.572837, -1.052119 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1" @
+, "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1" @
+, "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( 169.473190, 10.569128, 6.286780 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1" @
+, "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Coord 0.1", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+db_drop_res_index(  )
+INTEGER res_create_demo_lcid
+res_db_create_loadcase_c( "Modo1_frec_viga", 1,  @
+"Assign Results To A Load Case", res_create_demo_lcid )
+INTEGER res_create_demo_scid
+INTEGER res_create_demo_rcid
+res_db_create_subcase_c( 3, "Subcase 11", res_create_demo_scid,  @
+res_create_demo_rcid )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "", "", "", "", "", 0. )
+res_data_dbres_list( 0, "Nodal", "Vector", 1, ["LoadCase_ModosPropios"], [ @
+"A1:Mode 1 : Freq. = 13.22"], ["Eigenvectors"], ["Translational"], [ @
+"(NON-LAYERED)"] )
+res_data_list_sum( 0, "Nodal", "Vector", 2, [1., 0.] )
+res_data_save( 0, "Nodal", "Vector", "Modo1_frec_viga", "Subcase 11",  @
+"(NON-LAYERED)", "Eigenvectors", "Translational" )
+db_post_results_load(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 03-Apr-21 00:21:12
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10_v2.db.jou at 03-Apr-21 00:21:37
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Eigenfreqs" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_display_report_create( "", "Nodes", 0, [""], 22, ["ReportType:Full",  @
+"ReportTitle:$PRODUCT - Analysis Code: $CODE_NAME ",  @
+"ReportTitle:Load Case: $LC_NAME, $SC_NAME ",  @
+"ReportTitle:Result $PRES_NAME, $SRES_NAME - Layer $LYR_NAME ",  @
+"ReportTitle:Entity: Node Vector", "ReportHeader:Page $PAGE",  @
+"ReportFooter:$DATE", "ReportPage:Height=52,Width=128,TopMargin=5,LeftMarg" // @
+"in=8,BottomMargin=5", "ReportPagination:OFF", "ReportPageNumber:1",  @
+"ReportPageAlignment:Center", "ReportVColumn:1,Entity ID,ID,%I6%",  @
+"ReportVColumn:2,Magnitude,MAG,%F12.6%",  @
+"ReportVColumn:3,X Component,XX,%F12.6%",  @
+"ReportVColumn:4,Y Component,YY,%F12.6%",  @
+"ReportVColumn:5,Z Component,ZZ,%F12.6%",  @
+"ReportVColumn:6,Material Name,MATNAME,%A32%", "EntitySort:LoadCase",  @
+"ValueSort:1,Ascending,Algebraic", "ColumnHeaders:ON", "Filter:None",  @
+"ScaleFactor:1."] )
+res_display_report_write( "", 0, "Vector", "Nodal", "STDOUT", "patran.rpt" )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_display_report_create( "Modo1_frec_viga", "Nodes", 0, [""], 22, [ @
+"ReportType:Full", "ReportTitle:$PRODUCT - Analysis Code: $CODE_NAME ",  @
+"ReportTitle:Load Case: $LC_NAME, $SC_NAME ",  @
+"ReportTitle:Result $PRES_NAME, $SRES_NAME - Layer $LYR_NAME ",  @
+"ReportTitle:Entity: Node Vector", "ReportHeader:Page $PAGE",  @
+"ReportFooter:$DATE", "ReportPage:Height=52,Width=128,TopMargin=5,LeftMarg" // @
+"in=8,BottomMargin=5", "ReportPagination:OFF", "ReportPageNumber:1",  @
+"ReportPageAlignment:Center", "ReportVColumn:1,Entity ID,ID,%I6%",  @
+"ReportVColumn:2,Magnitude,MAG,%F12.6%",  @
+"ReportVColumn:3,X Component,XX,%F12.6%",  @
+"ReportVColumn:4,Y Component,YY,%F12.6%",  @
+"ReportVColumn:5,Z Component,ZZ,%F12.6%",  @
+"ReportVColumn:6,Material Name,MATNAME,%A32%", "EntitySort:LoadCase",  @
+"ValueSort:1,Ascending,Algebraic", "ColumnHeaders:ON", "Filter:None",  @
+"ScaleFactor:1."] )
+res_display_report_write( "Modo1_frec_viga", 0, "Vector", "Nodal", "STDOUT",  @
+"patran.rpt" )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_display_report_create( "", "Nodes", 0, [""], 22, ["ReportType:Full",  @
+"ReportTitle:$PRODUCT - Analysis Code: $CODE_NAME ",  @
+"ReportTitle:Load Case: $LC_NAME, $SC_NAME ",  @
+"ReportTitle:Result $PRES_NAME, $SRES_NAME - Layer $LYR_NAME ",  @
+"ReportTitle:Entity: Node Vector", "ReportHeader:Page $PAGE",  @
+"ReportFooter:$DATE", "ReportPage:Height=52,Width=128,TopMargin=5,LeftMarg" // @
+"in=8,BottomMargin=5", "ReportPagination:OFF", "ReportPageNumber:1",  @
+"ReportPageAlignment:Center", "ReportVColumn:1,Entity ID,ID,%I6%",  @
+"ReportVColumn:2,Magnitude,MAG,%F12.6%",  @
+"ReportVColumn:3,X Component,XX,%F12.6%",  @
+"ReportVColumn:4,Y Component,YY,%F12.6%",  @
+"ReportVColumn:5,Z Component,ZZ,%F12.6%",  @
+"ReportVColumn:6,Material Name,MATNAME,%A32%", "EntitySort:LoadCase",  @
+"ValueSort:1,Ascending,Algebraic", "ColumnHeaders:ON", "Filter:None",  @
+"ScaleFactor:1."] )
+res_display_report_write( "", 0, "Vector", "Nodal", "STDOUT", "patran.rpt" )
+display_cleanup(  )
+uil_toolbar.shaded_smooth(  )
+loadsbcs_plot_markers_v2( ["SPC_123456"], ["default_group"], TRUE, 0. )
+point_size( 1 )
+point_size( 9 )
+node_size( 0 )
+node_size( 9 )
+ga_view_center_set( -0.004467, 0.016028 )
+ga_view_zoom_set( 0.206292 )
+ga_view_center_set( -0.022415, 0.015077 )
+ga_view_zoom_set( 0.183371 )
+ga_view_center_set( -0.038369, 0.014231 )
+ga_view_zoom_set( 0.162997 )
+ga_view_center_set( -0.052618, 0.013547 )
+ga_view_zoom_set( 0.144886 )
+ga_view_aa_set( 18.374954, 50.893551, 177.751297 )
+ga_view_center_set( -0.041027, -0.018327 )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 03-Apr-21 03:48:35
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10_v2.db.jou at 03-Apr-21 22:02:10
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Eigenfreqs" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( -80.245865, -4.521311, 69.006149 )
+ga_view_aa_set( -91.683014, -13.886607, 30.702946 )
+ga_view_aa_set( -60.396461, -14.747627, 27.788359 )
+ga_view_aa_set( -123.103020, -8.837424, -3.289179 )
+ga_view_aa_set( -82.108093, -24.086996, 76.169685 )
+ga_view_aa_set( -116.988159, -17.586639, 44.979305 )
+ga_view_aa_set( -87.643951, -16.346727, 46.292850 )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Eigenfreqs\Eigenfreqs_Analysis1\dmc_eigenfreqs_ex10_v2.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/31/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2700 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:LOADCASE_MODOSPROPIOS
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -115.717804, -11.767327, 15.918378 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( 0.000989, -0.008185 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Coord 0.1", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+xy_window_size_set( "3", 10.080770, 4.314899, 1 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 4 : Freq. = 437.", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 12, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Exponential, 12, White, 3",  @
+"ScaleFactor:1.", "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1" @
+, "xAxisGV:", "yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 12, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 12, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 12, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 12, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 12, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 12, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 12, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 12, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 12, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 12, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 12, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 12, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 12, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 12, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 4 : Freq. = 437.", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 12, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 12, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 4 : Freq. = 437.", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 12, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 4 : Freq. = 437.", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 4 : Freq. = 437.", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:ON",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 4 : Freq. = 437.", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "Plot1", "DataLocation", "Nodes", 1, [ @
+"NO:Node 100:230"], 18, ["curveFitMethod:Linear", "curveStyle:Solid",  @
+"symbolDisplay:OFF", "xAxisLabelDisplay:ON",  @
+"xAxisLabel:Length of the beam [m]", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Fixed, 18, White, 2", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational [Hz]", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", "Filter:None",  @
+"sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "Plot1", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_data_dbres_list( 0, "Nodal", "Scalar", 3, ["LoadCase_ModosPropios",  @
+"LoadCase_ModosPropios", "LoadCase_ModosPropios"], ["A1:Mode 2 : Freq. = 26.3" @
+, "A1:Mode 3 : Freq. = 332.06", "A1:Mode 4 : Freq. = 437."], ["Eigenvectors",  @
+"Eigenvectors", "Eigenvectors"], ["Translational", "Translational",  @
+"Translational"], ["(NON-LAYERED)", "(NON-LAYERED)", "(NON-LAYERED)"] )
+res_display_graph_create( "", "DataGV", "Nodes", 1, ["NO:Node 100:230"], 18, [ @
+"curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Mode number", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Fixed, 18, White, 2", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational [Hz]", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", "Filter:None",  @
+"sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:Mode number",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_data_dbres_list( 0, "Nodal", "Scalar", 3, ["LoadCase_ModosPropios",  @
+"LoadCase_ModosPropios", "LoadCase_ModosPropios"], ["A1:Mode 2 : Freq. = 26.3" @
+, "A1:Mode 3 : Freq. = 332.06", "A1:Mode 4 : Freq. = 437."], ["Eigenvectors",  @
+"Eigenvectors", "Eigenvectors"], ["Translational", "Translational",  @
+"Translational"], ["(NON-LAYERED)", "(NON-LAYERED)", "(NON-LAYERED)"] )
+res_display_graph_create( "", "DataGV", "Nodes", 1, ["NO:Node 100:230"], 18, [ @
+"curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Mode number", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Fixed, 18, White, 2", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational [Hz]", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", "Filter:None",  @
+"sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:Mode number",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_data_dbres_list( 0, "Nodal", "Scalar", 3, ["LoadCase_ModosPropios",  @
+"LoadCase_ModosPropios", "LoadCase_ModosPropios"], ["A1:Mode 2 : Freq. = 26.3" @
+, "A1:Mode 3 : Freq. = 332.06", "A1:Mode 4 : Freq. = 437."], ["Eigenvectors",  @
+"Eigenvectors", "Eigenvectors"], ["Translational", "Translational",  @
+"Translational"], ["(NON-LAYERED)", "(NON-LAYERED)", "(NON-LAYERED)"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Coord 0.1", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Fixed, 18, White, 2", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational [Hz]", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", "Filter:None",  @
+"sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Coord 0.1", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Fixed, 18, White, 2", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational [Hz]", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", "Filter:None",  @
+"sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "Plot3", "DataLocation", "Nodes", 1, [ @
+"NO:Node 100:230"], 18, ["curveFitMethod:Linear", "curveStyle:Solid",  @
+"symbolDisplay:OFF", "xAxisLabelDisplay:ON",  @
+"xAxisLabel:Length of the beam [m]", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Fixed, 18, White, 2", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational [Hz]", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", "Filter:None",  @
+"sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "Plot3", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 6 : Freq. = 1411.9", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 10 : Freq. = 5032.1", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 9 : Freq. = 3899.3", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 8 : Freq. = 2943.5", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 6 : Freq. = 1411.9", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+$# Warning reported from application Results
+$#     No result case selected
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+xy_window_location_set( "2", 1.983206, 1.717089, 1 )
+xy_window_unpost( "3" )
+xy_window_location_set( "2", 1.381275, 0.253445, 1 )
+xy_window_location_set( "2", 0.000000, 0.000000, 1 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational [Hz]",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  C:\Users\diego\Dropbox\Academic\MEng Space 
+$# System
+$# s\2. EUE\FEA\EUE 
+$# Assignment\Eigenfreqs\Eigenfreqs_Analysis1\dmc_eigenfreqs_ex10_
+$# v2.xdb
+res_dra_detach_file( 1, 130, 25 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\diego\Dropbox\Academic\MEng Space" // @
+" Systems\2. EUE\FEA\EUE Assignment\Eigenfreqs\DMC_Eigenfreqs_ex10_v2.db" )
+msc_dra_add_param( "JOBNAME", "DMC_Eigenfreqs_ex10_v2" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\diego\Dropbox\Academic\MEng S" // @
+"pace Systems\2. EUE\FEA\EUE Assignment\Eigenfreqs\Eigenfreqs_Analysis1\dm" // @
+"c_eigenfreqs_ex10_v2.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "DMC_Eigenfreqs_ex10_v2",  @
+"Attach Results File No Job", "C:\Users\diego\Dropbox\Academic\MEng Space " // @
+"Systems\2. EUE\FEA\EUE Assignment\Eigenfreqs\Eigenfreqs_Analysis1\dmc_eig" // @
+"enfreqs_ex10_v2.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Eigenfreqs\Eigenfreqs_Analysis1\dmc_eigenfreqs_ex10_v2.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 3/31/2021 using "VENDOR:INTEL   
+$#              MODEL:XEON/2700 (KLKGNG)   OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:LOADCASE_MODOSPROPIOS
+$# Processing result sub-case: Mode 1 : Freq. = 13.22
+$# Processing result sub-case: Mode 2 : Freq. = 26.3
+$# Processing result sub-case: Mode 3 : Freq. = 332.06
+$# Processing result sub-case: Mode 4 : Freq. = 437.
+$# Processing result sub-case: Mode 5 : Freq. = 869.38
+$# Processing result sub-case: Mode 6 : Freq. = 1411.9
+$# Processing result sub-case: Mode 7 : Freq. = 2808.8
+$# Processing result sub-case: Mode 8 : Freq. = 2943.5
+$# Processing result sub-case: Mode 9 : Freq. = 3899.3
+$# Processing result sub-case: Mode 10 : Freq. = 5032.1
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.031
+$# *** End:   Attach Result File ***
+$# Warning reported from application Results
+$#     No result selected
+$# Warning reported from application Results
+$#     No result selected
+$# Warning reported from application Results
+$#     No result selected
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 7 : Freq. = 2808.8", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 7 : Freq. = 2808.8", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_display_tool_unpost( "Graph", "default_Graph" )
+$# Warning reported from application Results
+$#     No result selected
+$# Error reported from application Results
+$#     Please select one item from the listbox labeled Select Fringe Template.
+$? NO 4700011 
+$# Error reported from application Results
+$#     Please select one item from the listbox labeled Select Fringe Template.
+$? NO 4700011 
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 3 : Freq. = 332.06", "Eigenvectors", "Translational", "(NON-LAYERED)" @
+, "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"ZZ", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, ZZ"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"YY", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, YY"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"XX", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, XX"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "XX", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, XX"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"XX", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, XX"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"YY", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, YY"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"ZZ", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, ZZ"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"ZZ", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, ZZ"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 1 : Freq. = 13.22", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_ModosPropios",  @
+"A1:Mode 2 : Freq. = 26.3", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, ["NO:Node 100:230"], @
+ 18, ["curveFitMethod:Linear", "curveStyle:Solid", "symbolDisplay:OFF",  @
+"xAxisLabelDisplay:ON", "xAxisLabel:Length of the beam [m]",  @
+"xAxisScale:Linear", "xAxisLabelFormat:Fixed, 18, White, 2",  @
+"yAxisLabelDisplay:ON", "yAxisLabel:Eigenvectors, Translational",  @
+"yAxisScale:Linear", "yAxisLabelFormat:Fixed, 18, White, 4", "ScaleFactor:1.", @
+ "Filter:None", "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:",  @
+"yAxisGV:", "WindowName:2"] )
+res_display_graph_post( "", "Nodal", 0, -1, "2", FALSE )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 04-Apr-21 00:02:13
