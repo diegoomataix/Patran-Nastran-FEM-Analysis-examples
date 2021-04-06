@@ -193,3 +193,36 @@ sgm_edit_point_equiva_point_ids )
 $# No Points Edited.
 $# No Points Deleted.
 uil_primary_file.db_save(  )
+STRING sgm_transform_surf__created_ids[VIRTUAL]
+sgm_transform_translate_v1( "5", "surface", "<0.072 0 0>", 0.071999997, FALSE, @
+ "Coord 0", 3, FALSE, "Surface 2 3", sgm_transform_surf__created_ids )
+$# 6 Surfaces Created: Surfaces 5:10
+ga_view_center_set( -0.001097, 0.002963 )
+ga_view_zoom_set( 0.107021 )
+ga_view_center_set( -0.002331, 0.006297 )
+ga_view_zoom_set( 0.120399 )
+ga_viewport_location_set( "default_viewport", 1.622047, 2.014887, 1 )
+ga_viewport_location_set( "default_viewport", 0.000000, 0.000000, 1 )
+ga_view_center_set( -0.022274, 0.010221 )
+ga_view_zoom_set( 0.135449 )
+sgm_transform_translate_v1( "11", "surface", "<0 0.072 0>", 0.071999997,  @
+FALSE, "Coord 0", 3, FALSE, "Surface 3 4:10:2",  @
+sgm_transform_surf__created_ids )
+$# 15 Surfaces Created: Surfaces 11:25
+sgm_transform_translate_v1( "26", "surface",  @
+"Construct 2PointVector(Evaluate Geometry(Point 1))(Evaluate Geometry(Poin" // @
+"t 33))", 0.36700001, FALSE, "Coord 0", 1, FALSE, "Surface 1 2 5:9:2",  @
+sgm_transform_surf__created_ids )
+$# 5 Surfaces Created: Surfaces 26:30
+$# UNDO: Transform Surface Translate for Surface 1 4
+$# UNDO: Transform Surface Translate for Surface 1 4 12:22:5 26
+sgm_transform_translate_v1( "31", "surface",  @
+"Construct 2PointVector(Evaluate Geometry(Point 1))(Evaluate Geometry(Poin" // @
+"t 17))", 0.36700001, FALSE, "Coord 0", 1, FALSE, "Surface 1 4 12:22:5 26",  @
+sgm_transform_surf__created_ids )
+$# 6 Surfaces Created: Surfaces 31:36
+ga_view_center_set( -0.029657, -0.005117 )
+ga_view_zoom_set( 0.306383 )
+ga_view_center_set( -0.000209, -0.000522 )
+ga_view_zoom_set( 0.272340 )
+uil_primary_file.db_save(  )
