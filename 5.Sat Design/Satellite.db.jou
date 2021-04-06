@@ -461,3 +461,43 @@ ga_view_aa_set( -1.240113, 0.506579, -15.222304 )
 ga_view_aa_set( -90., 0., 0. )
 ga_view_aa_set( 0., 0., 0. )
 uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["Bandeja_A",  @
+"Bandeja_B", "Bandeja_C", "Bandeja_D", "Eles"] )
+ga_view_aa_set( -82.249741, -2.439210, 22.560608 )
+ga_view_center_set( 0.007273, -0.008041 )
+ga_view_zoom_set( 0.247881 )
+ga_view_center_set( 0.013737, -0.015188 )
+ga_view_zoom_set( 0.220339 )
+ga_view_center_set( 0.007455, -0.008041 )
+ga_view_zoom_set( 0.247881 )
+ga_view_center_set( 0.000387, 0.000000 )
+ga_view_zoom_set( 0.278866 )
+ga_view_center_set( -0.007564, 0.009046 )
+ga_view_zoom_set( 0.313724 )
+ga_view_center_set( -0.016509, 0.019223 )
+ga_view_zoom_set( 0.352940 )
+ga_view_center_set( -0.026572, 0.031838 )
+ga_view_zoom_set( 0.397057 )
+ga_view_center_set( -0.060536, 0.074415 )
+ga_view_zoom_set( 0.545954 )
+ga_view_aa_set( -65.397011, 0.627496, 13.473885 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Eles"] )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_group_x_equivtol
+INTEGER fem_equiv_group_x_segment
+fem_equiv_all_group4( ["Bandeja_A", "Bandeja_B", "Bandeja_C", "Bandeja_D",  @
+"Eles"], 5, "", 1, 1, 4.9999999E-06, FALSE, fem_equiv_group_x_equivtol,  @
+fem_equiv_group_x_segment )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 24 nodes deleted.
+ga_view_aa_set( -64.596382, -13.023807, -15.711812 )
+ga_view_aa_set( -43.749641, -3.891113, -3.720174 )
+ga_view_center_set( -0.076328, 0.107465 )
+ga_view_zoom_set( 0.614198 )
+$# UNDO: Renumber for entities Node 1228 1244:1282:19 2229 2245:2283:19 2855...
+uil_primary_file.db_save(  )
+ga_view_aa_set( -77.667267, -0.141470, -41.948254 )
