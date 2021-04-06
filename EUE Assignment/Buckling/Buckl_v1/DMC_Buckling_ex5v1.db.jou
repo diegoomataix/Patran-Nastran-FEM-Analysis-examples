@@ -1034,3 +1034,1588 @@ res_display_graph_create( "", "DataLocation", "Nodes", 1, [ @
 res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
 xy_window_location_set( "3", 1.698081, 0.367495, 1 )
 xy_window_location_set( "3", 0.000000, 0.000000, 1 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A2:Mode 1 : Factor = 65628.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, [ @
+"NO:Node 1 2 100:149 151:200 202:251 253:302 304:353 355:404 406:455 457:5" // @
+"06 508:557 559:608 610:659 661:710 712:761 763:812 814:863 865:914 916:96" // @
+"5 967:1016 1018:1067 1069:1118 1120:1169 1171:1220 1222:1271 1273:1322 13" // @
+"24:1373 1375:1424 1426:1475 1477:1526 1528:1577 1579:1628 1630:1679 1681:" // @
+"1730 1732:1781 1783:1832 1834:1883 1885:1934 1936:1985 1987:2036 2038:208" // @
+"7 2089:2138 2140:2189 2191:2240 2242:2291 2293:2342 2344:2393 2395:2444 2" // @
+"446:2495 2497:2546 2548:2597 2599:2648 2650:2699 2701:2750 2752:2801 2803" // @
+":2852 2854:2903 2905:2954 2956:3005 3007:3056 3058:3107 3109:3158 3160:32" // @
+"09 3211:3260 3262:3311 3313:3362 3364:3413 3415:3464 3466:3515 3517:3566 " // @
+"3568:3617 3619:3668 3670:3719"], 18, ["curveFitMethod:Linear",  @
+"curveStyle:Solid", "symbolDisplay:OFF", "xAxisLabelDisplay:ON",  @
+"xAxisLabel:X Axis Label", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, ["Eigenvectors, Translational, MAG"] )
+res_display_graph_create( "", "DataLocation", "Nodes", 1, [ @
+"NO:Node 1 2 100:149 151:200 202:251 253:302 304:353 355:404 406:455 457:5" // @
+"06 508:557 559:608 610:659 661:710 712:761 763:812 814:863 865:914 916:96" // @
+"5 967:1016 1018:1067 1069:1118 1120:1169 1171:1220 1222:1271 1273:1322 13" // @
+"24:1373 1375:1424 1426:1475 1477:1526 1528:1577 1579:1628 1630:1679 1681:" // @
+"1730 1732:1781 1783:1832 1834:1883 1885:1934 1936:1985 1987:2036 2038:208" // @
+"7 2089:2138 2140:2189 2191:2240 2242:2291 2293:2342 2344:2393 2395:2444 2" // @
+"446:2495 2497:2546 2548:2597 2599:2648 2650:2699 2701:2750 2752:2801 2803" // @
+":2852 2854:2903 2905:2954 2956:3005 3007:3056 3058:3107 3109:3158 3160:32" // @
+"09 3211:3260 3262:3311 3313:3362 3364:3413 3415:3464 3466:3515 3517:3566 " // @
+"3568:3617 3619:3668 3670:3719"], 18, ["curveFitMethod:Linear",  @
+"curveStyle:Solid", "symbolDisplay:OFF", "xAxisLabelDisplay:ON",  @
+"xAxisLabel:X Axis Label", "xAxisScale:Linear",  @
+"xAxisLabelFormat:Exponential, 12, White, 3", "yAxisLabelDisplay:ON",  @
+"yAxisLabel:Eigenvectors, Translational", "yAxisScale:Linear",  @
+"yAxisLabelFormat:Exponential, 12, White, 3", "ScaleFactor:1.", "Filter:None", @
+ "sortPtsByXCoord:ON", "LocationCID:Coord 0.1", "xAxisGV:", "yAxisGV:",  @
+"WindowName:3"] )
+res_display_graph_post( "", "Nodal", 0, -1, "3", FALSE )
+ga_view_aa_set( -23.971590, 2.644383, 122.602341 )
+ga_view_center_set( -0.219313, -0.041687 )
+ga_view_zoom_set( 0.394702 )
+ga_view_center_set( -0.243025, -0.048168 )
+ga_view_zoom_set( 0.444040 )
+ga_view_center_set( -0.219313, -0.041688 )
+ga_view_zoom_set( 0.394702 )
+ga_view_center_set( -0.181375, -0.031319 )
+ga_view_zoom_set( 0.315762 )
+ga_view_center_set( -0.164513, -0.026711 )
+ga_view_zoom_set( 0.280677 )
+ga_view_center_set( -0.149525, -0.022615 )
+ga_view_zoom_set( 0.249491 )
+ga_view_center_set( -0.136119, -0.018975 )
+ga_view_zoom_set( 0.221770 )
+ga_view_center_set( -0.124203, -0.015812 )
+ga_view_zoom_set( 0.197129 )
+ga_view_center_set( -0.113611, -0.013000 )
+ga_view_zoom_set( 0.175225 )
+ga_view_aa_set( -80.068542, 2.991025, 124.574455 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( -0.143099, -0.004108 )
+ga_view_zoom_set( 0.197129 )
+ga_view_center_set( -0.176272, 0.005674 )
+ga_view_zoom_set( 0.221770 )
+ga_view_center_set( -0.213593, 0.016680 )
+ga_view_zoom_set( 0.249491 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Black,Dotted,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( -0.262653, 0.033903 )
+ga_view_zoom_set( 0.280677 )
+ga_view_center_set( -0.317846, 0.053278 )
+ga_view_zoom_set( 0.315762 )
+ga_view_center_set( -0.262653, 0.033903 )
+ga_view_zoom_set( 0.280677 )
+ga_view_center_set( -0.213592, 0.016680 )
+ga_view_zoom_set( 0.249491 )
+ga_view_center_set( -0.169983, 0.001372 )
+ga_view_zoom_set( 0.221770 )
+ga_view_center_set( -0.131219, -0.012236 )
+ga_view_zoom_set( 0.197129 )
+ga_view_center_set( -0.096763, -0.024332 )
+ga_view_zoom_set( 0.175225 )
+ga_view_center_set( -0.066135, -0.035084 )
+ga_view_zoom_set( 0.155756 )
+ga_view_center_set( -0.038909, -0.044641 )
+ga_view_zoom_set( 0.138450 )
+ga_view_center_set( -0.014709, -0.053136 )
+ga_view_zoom_set( 0.123066 )
+ga_view_center_set( -0.004260, -0.059708 )
+ga_view_zoom_set( 0.109392 )
+ga_view_center_set( 0.004883, -0.065513 )
+ga_view_zoom_set( 0.097238 )
+ga_view_center_set( 0.011495, -0.070512 )
+ga_view_zoom_set( 0.086433 )
+ga_view_center_set( 0.017085, -0.074812 )
+ga_view_zoom_set( 0.076830 )
+ga_view_center_set( 0.021315, -0.077896 )
+ga_view_zoom_set( 0.068293 )
+ga_view_center_set( 0.028083, -0.082829 )
+ga_view_zoom_set( 0.054634 )
+ga_view_center_set( 0.033498, -0.086547 )
+ga_view_zoom_set( 0.043708 )
+ga_view_center_set( 0.030840, -0.085112 )
+ga_view_zoom_set( 0.049171 )
+ga_view_center_set( 0.027849, -0.083498 )
+ga_view_zoom_set( 0.055317 )
+ga_view_center_set( 0.017756, -0.078048 )
+ga_view_zoom_set( 0.076061 )
+ga_view_aa_set( 17.058868, 17.864202, 132.408813 )
+ga_view_center_set( 0.021439, -0.079764 )
+ga_view_zoom_set( 0.067610 )
+ga_view_center_set( 0.024713, -0.081289 )
+ga_view_zoom_set( 0.060098 )
+ga_view_center_set( 0.021439, -0.079764 )
+ga_view_zoom_set( 0.067610 )
+ga_view_center_set( 0.014072, -0.076333 )
+ga_view_zoom_set( 0.084513 )
+ga_view_center_set( 0.009468, -0.074188 )
+ga_view_zoom_set( 0.095077 )
+ga_view_center_set( 0.004289, -0.071776 )
+ga_view_zoom_set( 0.106961 )
+ga_view_center_set( -0.001538, -0.069062 )
+ga_view_zoom_set( 0.120332 )
+ga_view_center_set( -0.014649, -0.062956 )
+ga_view_zoom_set( 0.150414 )
+ga_view_aa_set( -89.879234, 0.392467, 179.934067 )
+ga_view_aa_set( -90.163574, 1.436306, -166.130707 )
+ga_view_center_set( -0.025593, -0.063517 )
+ga_view_zoom_set( 0.169216 )
+ga_view_center_set( -0.050218, -0.064780 )
+ga_view_zoom_set( 0.211520 )
+ga_view_center_set( -0.065609, -0.065569 )
+ga_view_zoom_set( 0.237960 )
+ga_view_center_set( -0.050218, -0.064780 )
+ga_view_zoom_set( 0.211520 )
+ga_view_center_set( -0.016639, -0.063058 )
+ga_view_zoom_set( 0.153833 )
+ga_view_center_set( -0.006689, -0.062547 )
+ga_view_zoom_set( 0.136740 )
+ga_view_center_set( 0.009230, -0.061731 )
+ga_view_zoom_set( 0.109392 )
+ga_view_center_set( 0.016305, -0.061368 )
+ga_view_zoom_set( 0.097238 )
+ga_view_center_set( 0.022594, -0.061046 )
+ga_view_zoom_set( 0.086433 )
+ga_view_center_set( 0.032656, -0.060530 )
+ga_view_zoom_set( 0.069147 )
+ga_view_center_set( 0.037128, -0.060300 )
+ga_view_zoom_set( 0.061464 )
+ga_view_center_set( 0.032656, -0.060186 )
+ga_view_zoom_set( 0.069147 )
+ga_view_center_set( 0.027625, -0.060057 )
+ga_view_zoom_set( 0.077790 )
+ga_view_center_set( 0.021965, -0.059911 )
+ga_view_zoom_set( 0.087514 )
+ga_view_center_set( 0.015663, -0.059324 )
+ga_view_zoom_set( 0.098453 )
+ga_view_center_set( 0.008573, -0.058662 )
+ga_view_zoom_set( 0.110760 )
+ga_view_center_set( 0.000596, -0.057919 )
+ga_view_zoom_set( 0.124605 )
+ga_view_center_set( -0.007819, -0.055826 )
+ga_view_zoom_set( 0.140180 )
+ga_view_aa_set( -83.652939, 0.396809, 168.350998 )
+ga_view_center_set( -0.004704, -0.067031 )
+ga_view_zoom_set( 0.124605 )
+ga_view_center_set( -0.001935, -0.076992 )
+ga_view_zoom_set( 0.110760 )
+ga_view_center_set( -0.004704, -0.067031 )
+ga_view_zoom_set( 0.124605 )
+ga_view_center_set( -0.007819, -0.055826 )
+ga_view_zoom_set( 0.140180 )
+ga_view_center_set( -0.011324, -0.043221 )
+ga_view_zoom_set( 0.157703 )
+ga_view_center_set( -0.015266, -0.029039 )
+ga_view_zoom_set( 0.177416 )
+ga_view_center_set( -0.019702, -0.013085 )
+ga_view_zoom_set( 0.199593 )
+ga_view_center_set( -0.024692, 0.004864 )
+ga_view_zoom_set( 0.224542 )
+ga_view_center_set( -0.030305, 0.025056 )
+ga_view_zoom_set( 0.252609 )
+ga_view_aa_set( -89.773880, 0.538930, 179.322876 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( -0.039856, 0.026312 )
+ga_view_zoom_set( 0.224542 )
+ga_view_center_set( -0.030305, 0.025056 )
+ga_view_zoom_set( 0.252609 )
+ga_view_center_set( -0.019560, 0.023642 )
+ga_view_zoom_set( 0.284186 )
+ga_view_center_set( -0.007471, 0.022051 )
+ga_view_zoom_set( 0.319709 )
+ga_view_center_set( -0.030588, 0.006145 )
+ga_view_zoom_set( 0.284186 )
+ga_view_center_set( -0.051136, -0.007993 )
+ga_view_zoom_set( 0.252609 )
+ga_view_center_set( -0.069401, -0.020561 )
+ga_view_zoom_set( 0.224542 )
+ga_view_center_set( -0.085636, -0.031881 )
+ga_view_zoom_set( 0.199593 )
+ga_view_center_set( -0.100068, -0.041944 )
+ga_view_zoom_set( 0.177416 )
+ga_view_center_set( -0.112896, -0.050888 )
+ga_view_zoom_set( 0.157703 )
+ga_view_center_set( -0.123880, -0.058891 )
+ga_view_zoom_set( 0.140180 )
+ga_view_center_set( -0.141455, -0.071695 )
+ga_view_zoom_set( 0.112144 )
+ga_view_center_set( -0.149043, -0.077386 )
+ga_view_zoom_set( 0.099684 )
+ga_view_center_set( -0.161184, -0.086492 )
+ga_view_zoom_set( 0.079747 )
+ga_view_center_set( -0.166474, -0.090459 )
+ga_view_zoom_set( 0.070886 )
+ga_view_center_set( -0.171176, -0.093986 )
+ga_view_zoom_set( 0.063010 )
+ga_view_center_set( -0.175356, -0.097121 )
+ga_view_zoom_set( 0.056009 )
+ga_view_center_set( -0.171510, -0.094090 )
+ga_view_zoom_set( 0.063010 )
+ga_view_center_set( -0.167184, -0.090681 )
+ga_view_zoom_set( 0.070886 )
+ga_view_center_set( -0.162317, -0.086846 )
+ga_view_zoom_set( 0.079747 )
+ga_view_center_set( -0.156902, -0.082531 )
+ga_view_zoom_set( 0.089715 )
+ga_view_center_set( -0.150809, -0.077677 )
+ga_view_zoom_set( 0.100930 )
+ga_view_center_set( -0.143955, -0.072216 )
+ga_view_zoom_set( 0.113546 )
+ga_view_center_set( -0.136244, -0.066073 )
+ga_view_zoom_set( 0.127739 )
+ga_view_center_set( -0.127569, -0.059162 )
+ga_view_zoom_set( 0.143707 )
+ga_view_center_set( -0.117810, -0.051387 )
+ga_view_zoom_set( 0.161670 )
+ga_view_center_set( -0.106831, -0.042640 )
+ga_view_zoom_set( 0.181879 )
+ga_view_center_set( -0.094479, -0.032799 )
+ga_view_zoom_set( 0.204614 )
+ga_view_center_set( -0.080584, -0.021729 )
+ga_view_zoom_set( 0.230190 )
+ga_view_center_set( -0.064952, -0.009274 )
+ga_view_zoom_set( 0.258964 )
+ga_view_center_set( -0.047752, 0.004833 )
+ga_view_zoom_set( 0.291335 )
+ga_view_center_set( -0.028511, 0.021031 )
+ga_view_zoom_set( 0.327751 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Black,Dotted,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Fixed, 18, White, 4",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( -0.096507, 0.051605 )
+ga_view_zoom_set( 0.368720 )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 04-Apr-21 13:10:05
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\EUE 
+$# Assignment\Buckling\Buckl_v1\DMC_Buckling_ex5v1.db.jou at 05-Apr-21 23:49:34
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\EUE Assignment\Buckling\Buckl_v1" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+res_display_tool_unpost( "Graph", "default_Graph" )
+ga_view_aa_set( -67.000305, 0.034898, 0.999391 )
+gm_visibility_widget( " Point 1:4 Curve 1:2 Surface 1", FALSE )
+ga_view_aa_set( -84.034531, -0.842969, -2.885327 )
+mesh_seed_display_mgr.erase(  )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -67.189819, 2.899667, 9.504171 )
+ga_view_aa_set( -85.140976, 2.487680, 8.555305 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -88.308403, 1.516331, -16.435783 )
+ga_view_center_set( -0.070193, 0.050758 )
+ga_view_zoom_set( 0.327751 )
+ga_view_center_set( -0.046571, 0.049658 )
+ga_view_zoom_set( 0.291335 )
+ga_view_center_set( -0.070772, 0.050410 )
+ga_view_zoom_set( 0.327751 )
+ga_view_center_set( -0.125484, 0.047154 )
+ga_view_zoom_set( 0.409689 )
+ga_view_center_set( -0.172706, 0.055702 )
+ga_view_zoom_set( 0.460900 )
+ga_view_aa_set( -90.300041, 0.721310, -20.442123 )
+ga_view_aa_set( -70.333557, 1.730827, -29.810196 )
+ga_view_aa_set( -88.882378, 0.825771, -50.736298 )
+ga_view_aa_set( 180., -90., 180. )
+ga_view_aa_set( 180., -90., 180. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( -0.212641, 0.058542 )
+ga_view_zoom_set( 0.518513 )
+ga_view_center_set( -0.238196, 0.045662 )
+ga_view_zoom_set( 0.583327 )
+ga_view_center_set( -0.204439, 0.051782 )
+ga_view_zoom_set( 0.466662 )
+ga_view_center_set( -0.222245, 0.048536 )
+ga_view_zoom_set( 0.524994 )
+ga_view_center_set( -0.204439, 0.051782 )
+ga_view_zoom_set( 0.466662 )
+ga_view_center_set( -0.232446, 0.081922 )
+ga_view_zoom_set( 0.524994 )
+ga_view_center_set( -0.326970, 0.183645 )
+ga_view_zoom_set( 0.721867 )
+ga_view_center_set( -0.257193, 0.122820 )
+ga_view_zoom_set( 0.577494 )
+ga_view_center_set( -0.227405, 0.094563 )
+ga_view_zoom_set( 0.513328 )
+ga_view_center_set( -0.202197, 0.067813 )
+ga_view_zoom_set( 0.456292 )
+ga_view_center_set( -0.156298, 0.009845 )
+ga_view_zoom_set( 0.331848 )
+ga_view_center_set( -0.143284, -0.009089 )
+ga_view_zoom_set( 0.294976 )
+ga_view_center_set( -0.116169, -0.056028 )
+ga_view_zoom_set( 0.214528 )
+ga_view_center_set( -0.096078, -0.085142 )
+ga_view_zoom_set( 0.156021 )
+ga_view_center_set( -0.090125, -0.094155 )
+ga_view_zoom_set( 0.138685 )
+ga_view_center_set( -0.084931, -0.097609 )
+ga_view_zoom_set( 0.123275 )
+ga_view_center_set( -0.079182, -0.098545 )
+ga_view_zoom_set( 0.109578 )
+ga_view_center_set( -0.074072, -0.099378 )
+ga_view_zoom_set( 0.097403 )
+ga_view_center_set( -0.069530, -0.100118 )
+ga_view_zoom_set( 0.086580 )
+ga_view_center_set( -0.062152, -0.100971 )
+ga_view_zoom_set( 0.069264 )
+ga_view_center_set( -0.065841, -0.100544 )
+ga_view_zoom_set( 0.077922 )
+ga_view_center_set( -0.069991, -0.100064 )
+ga_view_zoom_set( 0.087663 )
+ga_view_center_set( -0.065841, -0.100544 )
+ga_view_zoom_set( 0.077922 )
+ga_view_center_set( -0.062152, -0.100971 )
+ga_view_zoom_set( 0.069264 )
+ga_view_center_set( -0.065813, -0.100517 )
+ga_view_zoom_set( 0.077922 )
+ga_view_center_set( -0.070149, -0.099448 )
+ga_view_zoom_set( 0.087663 )
+ga_view_center_set( -0.075410, -0.098281 )
+ga_view_zoom_set( 0.098620 )
+ga_view_center_set( -0.082858, -0.095518 )
+ga_view_zoom_set( 0.110948 )
+ga_view_center_set( -0.091280, -0.092982 )
+ga_view_zoom_set( 0.124816 )
+ga_view_center_set( -0.103037, -0.087153 )
+ga_view_zoom_set( 0.140418 )
+ga_view_center_set( -0.116655, -0.080707 )
+ga_view_zoom_set( 0.157971 )
+ga_view_center_set( -0.131598, -0.073832 )
+ga_view_zoom_set( 0.177717 )
+ga_view_center_set( -0.148409, -0.066168 )
+ga_view_zoom_set( 0.199932 )
+ga_view_center_set( -0.167719, -0.060407 )
+ga_view_zoom_set( 0.224923 )
+ga_view_center_set( -0.192125, -0.052406 )
+ga_view_zoom_set( 0.253039 )
+ga_view_center_set( -0.220084, -0.043807 )
+ga_view_zoom_set( 0.284669 )
+ga_view_center_set( -0.195142, -0.062362 )
+ga_view_zoom_set( 0.253039 )
+ga_view_center_set( -0.155718, -0.092373 )
+ga_view_zoom_set( 0.202431 )
+ga_view_center_set( -0.138267, -0.105282 )
+ga_view_zoom_set( 0.179939 )
+ga_view_center_set( -0.123328, -0.118092 )
+ga_view_zoom_set( 0.159945 )
+ga_view_center_set( -0.111348, -0.128574 )
+ga_view_zoom_set( 0.142174 )
+ga_view_center_set( -0.093085, -0.147786 )
+ga_view_zoom_set( 0.113739 )
+ga_view_center_set( -0.087459, -0.155441 )
+ga_view_zoom_set( 0.101101 )
+ga_view_center_set( -0.082423, -0.162210 )
+ga_view_zoom_set( 0.089868 )
+ga_view_center_set( -0.078454, -0.166925 )
+ga_view_zoom_set( 0.079883 )
+ga_view_center_set( -0.075463, -0.171483 )
+ga_view_zoom_set( 0.071007 )
+ga_view_center_set( -0.078539, -0.167913 )
+ga_view_zoom_set( 0.079883 )
+ga_view_center_set( -0.089112, -0.155864 )
+ga_view_zoom_set( 0.109838 )
+ga_view_center_set( -0.095398, -0.150909 )
+ga_view_zoom_set( 0.123568 )
+ga_view_center_set( -0.109444, -0.140251 )
+ga_view_zoom_set( 0.154460 )
+ga_view_center_set( -0.121047, -0.135555 )
+ga_view_zoom_set( 0.173768 )
+ga_view_center_set( -0.133824, -0.130824 )
+ga_view_zoom_set( 0.195489 )
+ga_view_center_set( -0.148121, -0.125735 )
+ga_view_zoom_set( 0.219925 )
+ga_view_center_set( -0.215777, -0.121670 )
+ga_view_zoom_set( 0.302397 )
+ga_view_center_set( -0.255920, -0.108269 )
+ga_view_zoom_set( 0.340196 )
+ga_view_center_set( -0.301081, -0.093463 )
+ga_view_zoom_set( 0.382721 )
+ga_view_aa_set( 18.152170, 54.016956, -64.862343 )
+ga_view_center_set( -0.330592, -0.076958 )
+ga_view_zoom_set( 0.430561 )
+ga_view_center_set( -0.395278, -0.051118 )
+ga_view_zoom_set( 0.538201 )
+ga_view_center_set( -0.435708, -0.038390 )
+ga_view_zoom_set( 0.605477 )
+ga_view_center_set( -0.363320, -0.065535 )
+ga_view_zoom_set( 0.484381 )
+ga_view_center_set( -0.332688, -0.080167 )
+ga_view_zoom_set( 0.430561 )
+ga_view_center_set( -0.306220, -0.093933 )
+ga_view_zoom_set( 0.382721 )
+ga_view_center_set( -0.284992, -0.104277 )
+ga_view_zoom_set( 0.340196 )
+ga_view_center_set( -0.251026, -0.120827 )
+ga_view_zoom_set( 0.272157 )
+ga_view_center_set( -0.235930, -0.129336 )
+ga_view_zoom_set( 0.241917 )
+ga_view_center_set( -0.211777, -0.142951 )
+ga_view_zoom_set( 0.193534 )
+ga_view_aa_set( -77.710213, -5.005145, 80.073303 )
+ga_view_center_set( -0.229546, -0.141221 )
+ga_view_zoom_set( 0.217726 )
+ga_view_center_set( -0.271083, -0.136634 )
+ga_view_zoom_set( 0.272157 )
+ga_view_center_set( -0.298775, -0.129225 )
+ga_view_zoom_set( 0.306177 )
+ga_view_center_set( -0.329928, -0.122106 )
+ga_view_zoom_set( 0.344449 )
+ga_view_center_set( -0.354708, -0.124228 )
+ga_view_zoom_set( 0.387505 )
+ga_view_center_set( -0.383509, -0.126923 )
+ga_view_zoom_set( 0.435943 )
+ga_view_center_set( -0.416430, -0.131514 )
+ga_view_zoom_set( 0.490436 )
+ga_view_center_set( -0.210447, 0.069564 )
+ga_view_center_set( -0.168516, 0.066359 )
+ga_view_zoom_set( 0.435943 )
+ga_view_center_set( -0.132476, 0.062277 )
+ga_view_zoom_set( 0.387505 )
+ga_view_center_set( -0.102083, 0.056596 )
+ga_view_zoom_set( 0.344449 )
+ga_view_center_set( -0.075555, 0.051302 )
+ga_view_zoom_set( 0.306177 )
+ga_view_center_set( -0.053271, 0.045948 )
+ga_view_zoom_set( 0.272157 )
+ga_view_center_set( -0.033945, 0.040900 )
+ga_view_zoom_set( 0.241917 )
+ga_view_center_set( -0.096843, -0.080059 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, FALSE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:96",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:36",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:65",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:72",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -0.312997, 31.765207, 84.480827 )
+ga_view_center_set( -0.123381, -0.072126 )
+ga_view_zoom_set( 0.272157 )
+ga_view_center_set( -0.153885, -0.063202 )
+ga_view_zoom_set( 0.306177 )
+ga_view_center_set( -0.188689, -0.053163 )
+ga_view_zoom_set( 0.344449 )
+ga_view_center_set( -0.153277, -0.063567 )
+ga_view_zoom_set( 0.306177 )
+ga_view_center_set( -0.099148, -0.081383 )
+ga_view_zoom_set( 0.244941 )
+ga_view_center_set( -0.074399, -0.088522 )
+ga_view_zoom_set( 0.217726 )
+ga_view_center_set( -0.034800, -0.099945 )
+ga_view_zoom_set( 0.174181 )
+ga_view_center_set( -0.003342, -0.107533 )
+ga_view_zoom_set( 0.139344 )
+ga_view_center_set( 0.009507, -0.111643 )
+ga_view_zoom_set( 0.123862 )
+ga_view_center_set( 0.020709, -0.115253 )
+ga_view_zoom_set( 0.110099 )
+ga_view_aa_set( -21.354969, -28.327291, 62.804592 )
+ga_view_center_set( 0.016246, -0.113087 )
+ga_view_zoom_set( 0.123862 )
+ga_view_center_set( 0.021322, -0.115560 )
+ga_view_zoom_set( 0.110099 )
+ga_view_center_set( 0.032397, -0.120954 )
+ga_view_zoom_set( 0.080072 )
+ga_view_center_set( 0.036782, -0.122750 )
+ga_view_zoom_set( 0.071175 )
+ga_view_center_set( 0.043797, -0.125625 )
+ga_view_zoom_set( 0.056940 )
+ga_view_center_set( 0.047137, -0.126540 )
+ga_view_zoom_set( 0.050614 )
+ga_view_center_set( 0.052480, -0.128004 )
+ga_view_zoom_set( 0.040491 )
+ga_view_aa_set( 7.579582, 6.928740, 67.458733 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( 0.054282, -0.125293 )
+ga_view_zoom_set( 0.045552 )
+ga_view_center_set( 0.060365, -0.116141 )
+ga_view_zoom_set( 0.062634 )
+ga_view_center_set( 0.063303, -0.113191 )
+ga_view_zoom_set( 0.070464 )
+ga_view_center_set( 0.076522, -0.100140 )
+ga_view_zoom_set( 0.105695 )
+ga_view_center_set( 0.076438, -0.093880 )
+ga_view_zoom_set( 0.132119 )
+ga_view_center_set( 0.076595, -0.090703 )
+ga_view_zoom_set( 0.148634 )
+ga_view_center_set( 0.073878, -0.085652 )
+ga_view_zoom_set( 0.167213 )
+ga_view_center_set( 0.067897, -0.076149 )
+ga_view_zoom_set( 0.209017 )
+ga_view_center_set( 0.062995, -0.068215 )
+ga_view_zoom_set( 0.235144 )
+ga_view_center_set( 0.057481, -0.059663 )
+ga_view_zoom_set( 0.264537 )
+ga_view_center_set( -0.040398, 0.030279 )
+ga_view_aa_set( -90., 0., 0. )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:77",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:80",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -31.508396, 8.346773, 10.461269 )
+ga_view_aa_set( -75.466003, 17.112576, 9.369335 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:8",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:ElemEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -62.068409, 10.046638, -8.753199 )
+ga_view_center_set( -0.050071, 0.053358 )
+ga_view_zoom_set( 0.297604 )
+ga_view_center_set( -0.060953, 0.079321 )
+ga_view_zoom_set( 0.334804 )
+ga_view_center_set( -0.073195, 0.108530 )
+ga_view_zoom_set( 0.376655 )
+ga_view_center_set( -0.060953, 0.079987 )
+ga_view_zoom_set( 0.334804 )
+ga_view_center_set( -0.041365, 0.033252 )
+ga_view_zoom_set( 0.267843 )
+ga_view_center_set( -0.032848, 0.011914 )
+ga_view_zoom_set( 0.238083 )
+ga_view_center_set( -0.024773, -0.007390 )
+ga_view_zoom_set( 0.211629 )
+ga_view_center_set( -0.011854, -0.038277 )
+ga_view_zoom_set( 0.169304 )
+ga_view_center_set( -0.007188, -0.053499 )
+ga_view_zoom_set( 0.150492 )
+ga_view_center_set( -0.003041, -0.067031 )
+ga_view_zoom_set( 0.133771 )
+ga_view_center_set( 0.000551, -0.079389 )
+ga_view_zoom_set( 0.118907 )
+ga_view_center_set( 0.006298, -0.099163 )
+ga_view_zoom_set( 0.095126 )
+ga_view_center_set( 0.008818, -0.108220 )
+ga_view_zoom_set( 0.084556 )
+ga_view_aa_set( -103.105606, 9.900145, 17.409319 )
+ga_view_center_set( 0.005222, -0.100608 )
+ga_view_zoom_set( 0.095126 )
+ga_view_center_set( 0.000005, -0.091175 )
+ga_view_zoom_set( 0.107017 )
+ga_view_center_set( -0.017860, -0.059338 )
+ga_view_zoom_set( 0.147148 )
+ga_view_center_set( -0.027568, -0.044044 )
+ga_view_zoom_set( 0.165541 )
+ga_view_center_set( -0.038490, -0.027431 )
+ga_view_zoom_set( 0.186234 )
+ga_view_center_set( -0.050778, -0.009333 )
+ga_view_zoom_set( 0.209513 )
+ga_view_center_set( -0.063768, -0.000048 )
+ga_view_zoom_set( 0.235702 )
+ga_view_center_set( -0.079226, 0.010304 )
+ga_view_zoom_set( 0.265165 )
+ga_view_aa_set( -76.576340, 1.192219, -28.302338 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:ElemEdge,Black,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 4"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_viewport_range_set( "default_viewport", "Fri_default_Fringe" )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:ElemEdge,Black,Solid,1" @
+, "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 4"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", FALSE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1" @
+, "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 4"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", FALSE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( -0.041622, 0.007353 )
+ga_view_zoom_set( 0.212132 )
+ga_view_center_set( -0.000600, 0.004133 )
+ga_view_zoom_set( 0.154278 )
+ga_view_center_set( 0.011446, 0.002853 )
+ga_view_zoom_set( 0.137136 )
+ga_view_center_set( 0.052746, -0.001539 )
+ga_view_zoom_set( 0.078363 )
+ga_view_center_set( 0.058587, -0.002328 )
+ga_view_zoom_set( 0.069656 )
+ga_view_center_set( 0.073944, -0.004506 )
+ga_view_zoom_set( 0.046438 )
+ga_view_aa_set( -2.624123, 4.088180, 1.325191 )
+ga_view_aa_set( -90.072113, -22.281202, 43.893272 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( 0.073556, -0.006472 )
+ga_view_zoom_set( 0.052242 )
+ga_view_center_set( 0.073120, -0.008683 )
+ga_view_zoom_set( 0.058773 )
+ga_view_center_set( 0.072139, -0.013659 )
+ga_view_zoom_set( 0.073466 )
+ga_view_center_set( 0.071526, -0.016359 )
+ga_view_zoom_set( 0.082649 )
+ga_view_center_set( 0.069456, -0.025475 )
+ga_view_zoom_set( 0.113642 )
+ga_view_center_set( 0.080025, -0.025588 )
+ga_view_zoom_set( 0.127847 )
+ga_view_center_set( -0.058050, 0.129107 )
+ga_view_center_set( -0.066270, 0.129265 )
+ga_view_zoom_set( 0.113642 )
+ga_view_center_set( -0.084206, 0.129610 )
+ga_view_zoom_set( 0.082649 )
+ga_view_center_set( -0.094140, 0.131213 )
+ga_view_zoom_set( 0.066119 )
+ga_view_center_set( -0.107174, 0.133351 )
+ga_view_zoom_set( 0.044079 )
+ga_view_center_set( -0.109043, 0.133779 )
+ga_view_zoom_set( 0.039182 )
+ga_view_center_set( -0.114601, 0.135001 )
+ga_view_zoom_set( 0.024112 )
+ga_view_center_set( -0.114653, 0.135082 )
+ga_view_zoom_set( 0.021433 )
+ga_view_center_set( -0.114448, 0.135166 )
+ga_view_zoom_set( 0.015587 )
+ga_view_center_set( -0.114388, 0.135190 )
+ga_view_zoom_set( 0.013855 )
+ga_view_center_set( -0.114011, 0.135134 )
+ga_view_zoom_set( 0.012316 )
+ga_view_center_set( -0.113447, 0.135036 )
+ga_view_zoom_set( 0.009853 )
+ga_view_center_set( -0.113245, 0.134982 )
+ga_view_zoom_set( 0.008758 )
+ga_view_center_set( -0.113610, 0.134795 )
+ga_view_zoom_set( 0.007785 )
+ga_view_center_set( -0.114562, 0.134380 )
+ga_view_zoom_set( 0.005662 )
+ga_view_center_set( -0.114876, 0.134257 )
+ga_view_zoom_set( 0.005033 )
+ga_view_center_set( -0.115326, 0.134156 )
+ga_view_zoom_set( 0.004473 )
+ga_view_center_set( -0.116721, 0.133836 )
+ga_view_zoom_set( 0.002753 )
+ga_view_center_set( -0.116974, 0.133784 )
+ga_view_zoom_set( 0.002447 )
+ga_view_center_set( -0.117752, 0.133624 )
+ga_view_zoom_set( 0.001506 )
+ga_view_center_set( -0.118083, 0.133558 )
+ga_view_zoom_set( 0.001095 )
+ga_view_center_set( -0.118182, 0.133539 )
+ga_view_zoom_set( 0.000973 )
+ga_view_center_set( -0.118336, 0.133507 )
+ga_view_zoom_set( 0.000779 )
+ga_view_center_set( -0.118525, 0.133458 )
+ga_view_zoom_set( 0.000519 )
+ga_view_center_set( -0.118567, 0.133447 )
+ga_view_zoom_set( 0.000462 )
+ga_view_center_set( -0.118531, 0.133462 )
+ga_view_zoom_set( 0.000519 )
+ga_view_center_set( -0.118291, 0.133555 )
+ga_view_zoom_set( 0.000909 )
+ga_view_center_set( -0.118150, 0.133604 )
+ga_view_zoom_set( 0.001136 )
+ga_view_center_set( -0.117708, 0.133741 )
+ga_view_zoom_set( 0.001846 )
+ga_view_center_set( -0.117438, 0.133834 )
+ga_view_zoom_set( 0.002307 )
+ga_view_center_set( -0.117269, 0.133892 )
+ga_view_zoom_set( 0.002595 )
+ga_view_center_set( -0.116522, 0.134129 )
+ga_view_zoom_set( 0.003893 )
+ga_view_center_set( -0.116251, 0.134251 )
+ga_view_zoom_set( 0.004380 )
+ga_view_center_set( -0.114728, 0.134934 )
+ga_view_zoom_set( 0.007117 )
+ga_view_center_set( -0.111639, 0.137003 )
+ga_view_zoom_set( 0.013344 )
+ga_view_center_set( -0.110038, 0.138239 )
+ga_view_zoom_set( 0.016680 )
+ga_view_center_set( -0.106033, 0.141328 )
+ga_view_zoom_set( 0.025020 )
+ga_view_center_set( -0.104939, 0.142885 )
+ga_view_zoom_set( 0.028148 )
+ga_view_center_set( -0.100196, 0.149888 )
+ga_view_zoom_set( 0.042222 )
+ga_view_center_set( -0.098467, 0.152565 )
+ga_view_zoom_set( 0.047500 )
+ga_view_center_set( -0.096523, 0.155576 )
+ga_view_zoom_set( 0.053437 )
+ga_view_center_set( -0.087772, 0.168956 )
+ga_view_zoom_set( 0.080156 )
+ga_view_center_set( -0.080126, 0.185730 )
+ga_view_zoom_set( 0.110214 )
+ga_view_center_set( -0.069613, 0.208662 )
+ga_view_zoom_set( 0.151544 )
+ga_view_center_set( -0.124169, -0.023201 )
+ga_view_center_set( -0.128131, -0.025477 )
+ga_view_zoom_set( 0.134706 )
+ga_view_center_set( -0.136775, -0.030441 )
+ga_view_zoom_set( 0.097968 )
+ga_view_center_set( -0.139198, -0.031254 )
+ga_view_zoom_set( 0.087083 )
+ga_view_center_set( -0.145659, -0.033423 )
+ga_view_zoom_set( 0.058055 )
+ga_view_center_set( -0.146131, -0.033085 )
+ga_view_zoom_set( 0.051605 )
+ga_view_center_set( -0.147389, -0.032183 )
+ga_view_zoom_set( 0.034403 )
+ga_view_center_set( -0.147705, -0.032079 )
+ga_view_zoom_set( 0.030581 )
+ga_view_center_set( -0.148547, -0.031933 )
+ga_view_zoom_set( 0.020387 )
+ga_view_center_set( -0.149052, -0.032830 )
+ga_view_zoom_set( 0.018122 )
+ga_view_center_set( -0.150434, -0.035279 )
+ga_view_zoom_set( 0.012081 )
+ga_view_center_set( -0.150965, -0.036243 )
+ga_view_zoom_set( 0.009665 )
+ga_view_center_set( -0.151543, -0.037295 )
+ga_view_zoom_set( 0.007029 )
+ga_view_center_set( -0.151431, -0.037279 )
+ga_view_zoom_set( 0.006248 )
+ga_view_center_set( -0.151224, -0.037249 )
+ga_view_zoom_set( 0.004998 )
+ga_view_center_set( -0.151117, -0.037234 )
+ga_view_zoom_set( 0.004443 )
+ga_view_center_set( -0.150914, -0.037229 )
+ga_view_zoom_set( 0.003949 )
+ga_view_center_set( -0.150590, -0.037230 )
+ga_view_zoom_set( 0.003160 )
+ga_view_aa_set( -82.048248, 0.798976, 9.958184 )
+ga_view_center_set( -0.150580, -0.037309 )
+ga_view_zoom_set( 0.002808 )
+ga_view_center_set( -0.150563, -0.037471 )
+ga_view_zoom_set( 0.002043 )
+ga_view_center_set( -0.150609, -0.037373 )
+ga_view_zoom_set( 0.002298 )
+ga_view_center_set( -0.150711, -0.037154 )
+ga_view_zoom_set( 0.002872 )
+ga_view_center_set( -0.150775, -0.037018 )
+ga_view_zoom_set( 0.003231 )
+ga_view_center_set( -0.150848, -0.036865 )
+ga_view_zoom_set( 0.003635 )
+ga_view_center_set( -0.151095, -0.036355 )
+ga_view_zoom_set( 0.004998 )
+ga_view_center_set( -0.151210, -0.036128 )
+ga_view_zoom_set( 0.005623 )
+ga_view_aa_set( -89.866928, 0.540396, -8.034616 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1" @
+, "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 4"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", FALSE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=1.",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( -0.151899, -0.035968 )
+ga_view_zoom_set( 0.006326 )
+ga_view_center_set( -0.154926, -0.035390 )
+ga_view_zoom_set( 0.009489 )
+ga_view_center_set( -0.156057, -0.035188 )
+ga_view_zoom_set( 0.010675 )
+ga_view_center_set( -0.159863, -0.034609 )
+ga_view_zoom_set( 0.014679 )
+ga_view_center_set( -0.161637, -0.034326 )
+ga_view_zoom_set( 0.016513 )
+ga_view_center_set( -0.171613, -0.032800 )
+ga_view_zoom_set( 0.026834 )
+ga_view_center_set( -0.178098, -0.031765 )
+ga_view_zoom_set( 0.033543 )
+ga_view_center_set( -0.194310, -0.029179 )
+ga_view_zoom_set( 0.050314 )
+ga_view_center_set( -0.200389, -0.028129 )
+ga_view_zoom_set( 0.056604 )
+ga_view_center_set( -0.227746, -0.023404 )
+ga_view_zoom_set( 0.084906 )
+ga_view_center_set( -0.238005, -0.021633 )
+ga_view_zoom_set( 0.095519 )
+ga_view_center_set( -0.261087, -0.017495 )
+ga_view_zoom_set( 0.119399 )
+ga_view_center_set( -0.275514, -0.014908 )
+ga_view_zoom_set( 0.134323 )
+ga_view_center_set( -0.324204, -0.006179 )
+ga_view_zoom_set( 0.184695 )
+ga_view_center_set( -0.391152, 0.005823 )
+ga_view_zoom_set( 0.253955 )
+ga_view_center_set( -0.483206, 0.022326 )
+ga_view_zoom_set( 0.349189 )
+ga_view_center_set( -0.525397, 0.029890 )
+ga_view_zoom_set( 0.392837 )
+ga_view_center_set( -0.762723, 0.072437 )
+ga_view_zoom_set( 0.638360 )
+ga_view_center_set( -0.849242, 0.088294 )
+ga_view_zoom_set( 0.718155 )
+ga_view_center_set( -0.946290, 0.109845 )
+ga_view_zoom_set( 0.807925 )
+ga_view_center_set( -1.164648, 0.159618 )
+ga_view_zoom_set( 1.009906 )
+ga_view_center_set( 0.107834, 0.270707 )
+ga_view_aa_set( -86.165779, 7.655892, 12.564259 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1" @
+, "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 4"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", FALSE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( 0.125674, 0.233779 )
+ga_view_zoom_set( 0.897694 )
+ga_view_center_set( 0.141531, 0.200954 )
+ga_view_zoom_set( 0.797951 )
+ga_view_center_set( 0.166903, 0.148434 )
+ga_view_zoom_set( 0.638360 )
+ga_view_center_set( 0.187201, 0.106418 )
+ga_view_zoom_set( 0.510688 )
+ga_view_center_set( 0.200486, 0.061468 )
+ga_view_zoom_set( 0.371410 )
+ga_view_center_set( 0.204292, 0.048280 )
+ga_view_zoom_set( 0.330142 )
+ga_view_center_set( -0.023506, -0.077173 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF",  @
+"FringeStyle:Discrete/Smooth", "Shade:None", "ElemEdge:FreeEdge,Black,Solid,1" @
+, "Shrink:0", "TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF",  @
+"Filter:None", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 4"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", FALSE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.0099999998",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -75.852814, 1.701247, -46.249599 )
+ga_view_center_set( -0.016741, -0.080031 )
+ga_view_zoom_set( 0.293460 )
+ga_view_center_set( -0.024323, -0.077990 )
+ga_view_zoom_set( 0.330142 )
+ga_view_center_set( -0.041906, -0.074447 )
+ga_view_zoom_set( 0.412677 )
+ga_view_center_set( -0.052895, -0.072561 )
+ga_view_zoom_set( 0.464262 )
+ga_view_center_set( -0.041578, -0.073955 )
+ga_view_zoom_set( 0.412677 )
+ga_view_center_set( -0.011398, -0.077673 )
+ga_view_zoom_set( 0.275118 )
+ga_view_center_set( 0.000849, -0.078110 )
+ga_view_zoom_set( 0.220095 )
+ga_view_center_set( 0.010646, -0.078460 )
+ga_view_zoom_set( 0.176076 )
+ga_view_aa_set( -100.877113, 10.522760, -112.936310 )
+ga_view_center_set( 0.008057, -0.078775 )
+ga_view_zoom_set( 0.198085 )
+ga_view_center_set( 0.002231, -0.079484 )
+ga_view_zoom_set( 0.247606 )
+ga_view_center_set( -0.001410, -0.079927 )
+ga_view_zoom_set( 0.278557 )
+ga_view_center_set( -0.140689, 0.023140 )
+ga_view_aa_set( -84.247238, 9.461005, -110.956429 )
+ga_view_center_set( -0.135118, -0.018644 )
+ga_view_aa_set( -96.861046, 10.358172, -119.025574 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( -0.139842, -0.021350 )
+ga_view_zoom_set( 0.247606 )
+ga_view_center_set( -0.151866, -0.025967 )
+ga_view_zoom_set( 0.180077 )
+ga_view_center_set( -0.164419, -0.030261 )
+ga_view_zoom_set( 0.110817 )
+ga_view_center_set( -0.165985, -0.027775 )
+ga_view_zoom_set( 0.098504 )
+ga_view_center_set( -0.165623, -0.025426 )
+ga_view_zoom_set( 0.060618 )
+ga_view_center_set( -0.163931, -0.026379 )
+ga_view_zoom_set( 0.053882 )
+ga_view_center_set( -0.160240, -0.028645 )
+ga_view_zoom_set( 0.039187 )
+ga_view_center_set( -0.159133, -0.029317 )
+ga_view_zoom_set( 0.034833 )
+ga_view_center_set( -0.157383, -0.030435 )
+ga_view_zoom_set( 0.027866 )
+ga_view_center_set( -0.156638, -0.031419 )
+ga_view_zoom_set( 0.022293 )
+ga_view_center_set( -0.156323, -0.031856 )
+ga_view_zoom_set( 0.019816 )
+ga_view_center_set( -0.155819, -0.032555 )
+ga_view_zoom_set( 0.015853 )
+ga_view_center_set( -0.156251, -0.033841 )
+ga_view_zoom_set( 0.009059 )
+ga_view_center_set( -0.156488, -0.034041 )
+ga_view_zoom_set( 0.008052 )
+ga_view_center_set( -0.157005, -0.034477 )
+ga_view_zoom_set( 0.005856 )
+ga_view_center_set( -0.157158, -0.034607 )
+ga_view_zoom_set( 0.005206 )
+ga_view_center_set( -0.157890, -0.034357 )
+ga_view_zoom_set( 0.005856 )
+ga_view_center_set( -0.161177, -0.033235 )
+ga_view_zoom_set( 0.008784 )
+ga_view_center_set( -0.167269, -0.031184 )
+ga_view_zoom_set( 0.014275 )
+ga_view_center_set( -0.169249, -0.030517 )
+ga_view_zoom_set( 0.016059 )
+ga_view_center_set( -0.175913, -0.028268 )
+ga_view_zoom_set( 0.022081 )
+ga_view_center_set( -0.178967, -0.027236 )
+ga_view_zoom_set( 0.024841 )
+ga_view_center_set( -0.182403, -0.026057 )
+ga_view_zoom_set( 0.027946 )
+ga_view_center_set( -0.201730, -0.019420 )
+ga_view_zoom_set( 0.045412 )
+ga_view_center_set( -0.208011, -0.017263 )
+ga_view_zoom_set( 0.051089 )
+ga_view_center_set( -0.236682, -0.006988 )
+ga_view_zoom_set( 0.076633 )
+ga_view_center_set( -0.268938, 0.004753 )
+ga_view_zoom_set( 0.105371 )
+ga_view_center_set( -0.298506, 0.015517 )
+ga_view_zoom_set( 0.131714 )
+ga_view_center_set( -0.316985, 0.022505 )
+ga_view_zoom_set( 0.148178 )
+ga_view_center_set( -0.400144, 0.053955 )
+ga_view_zoom_set( 0.222267 )
+ga_view_center_set( -0.431328, 0.065749 )
+ga_view_zoom_set( 0.250050 )
+ga_view_center_set( -0.571659, 0.118820 )
+ga_view_zoom_set( 0.375076 )
+ga_view_center_set( -0.174078, 0.066309 )
+ga_view_center_set( -0.169573, 0.054184 )
+ga_view_zoom_set( 0.333400 )
+ga_view_center_set( -0.160900, 0.027441 )
+ga_view_zoom_set( 0.242473 )
+ga_view_aa_set( -79.902184, 32.978031, 81.580002 )
+ga_view_aa_set( -71.681183, -20.385881, -13.715846 )
+ga_view_aa_set( -78.260490, -19.551983, -9.553991 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( -0.150877, 0.035108 )
+ga_view_zoom_set( 0.215532 )
+ga_view_center_set( -0.141739, 0.040857 )
+ga_view_zoom_set( 0.191584 )
+ga_view_center_set( -0.135377, 0.042583 )
+ga_view_zoom_set( 0.170297 )
+ga_view_center_set( -0.129781, 0.043937 )
+ga_view_zoom_set( 0.151375 )
+ga_view_center_set( -0.124808, 0.045033 )
+ga_view_zoom_set( 0.134555 )
+ga_view_center_set( -0.116850, 0.046787 )
+ga_view_zoom_set( 0.107644 )
+ga_view_center_set( -0.118835, 0.043536 )
+ga_view_zoom_set( 0.086115 )
+ga_view_center_set( -0.121673, 0.037599 )
+ga_view_zoom_set( 0.062629 )
+ga_view_center_set( -0.122315, 0.033627 )
+ga_view_zoom_set( 0.055671 )
+ga_view_center_set( -0.124026, 0.023036 )
+ga_view_zoom_set( 0.037114 )
+ga_view_center_set( -0.126084, 0.023776 )
+ga_view_zoom_set( 0.032990 )
+ga_view_center_set( -0.130576, 0.025393 )
+ga_view_zoom_set( 0.023993 )
+ga_view_center_set( -0.131907, 0.025872 )
+ga_view_zoom_set( 0.021327 )
+ga_view_center_set( -0.136001, 0.027345 )
+ga_view_zoom_set( 0.013124 )
+ga_view_center_set( -0.136729, 0.027607 )
+ga_view_zoom_set( 0.011666 )
+ga_view_center_set( -0.138318, 0.028179 )
+ga_view_zoom_set( 0.008484 )
+ga_view_center_set( -0.138788, 0.028348 )
+ga_view_zoom_set( 0.007542 )
+ga_view_center_set( -0.139207, 0.028499 )
+ga_view_zoom_set( 0.006704 )
+ga_view_center_set( -0.140322, 0.028879 )
+ga_view_zoom_set( 0.004469 )
+ga_view_center_set( -0.140570, 0.028963 )
+ga_view_zoom_set( 0.003973 )
+ga_view_center_set( -0.141235, 0.029168 )
+ga_view_zoom_set( 0.002648 )
+ga_view_aa_set( -84.007271, 0.278715, 3.987850 )
+ga_view_center_set( -0.140919, 0.029265 )
+ga_view_zoom_set( 0.002979 )
+ga_view_center_set( -0.139143, 0.029813 )
+ga_view_zoom_set( 0.004842 )
+ga_view_center_set( -0.138574, 0.030012 )
+ga_view_zoom_set( 0.005447 )
+ga_view_center_set( -0.135381, 0.031132 )
+ga_view_zoom_set( 0.008851 )
+ga_view_center_set( -0.133622, 0.031917 )
+ga_view_zoom_set( 0.011064 )
+ga_view_center_set( -0.129347, 0.033667 )
+ga_view_zoom_set( 0.016596 )
+ga_view_center_set( -0.127857, 0.034369 )
+ga_view_zoom_set( 0.018670 )
+ga_view_center_set( -0.121267, 0.037471 )
+ga_view_zoom_set( 0.028005 )
+ga_view_center_set( -0.119275, 0.038657 )
+ga_view_zoom_set( 0.031506 )
+ga_view_center_set( -0.108130, 0.045325 )
+ga_view_zoom_set( 0.051197 )
+ga_view_center_set( -0.104549, 0.047451 )
+ga_view_zoom_set( 0.057596 )
+ga_view_center_set( -0.088433, 0.057020 )
+ga_view_zoom_set( 0.086394 )
+ga_view_center_set( -0.082527, 0.060677 )
+ga_view_zoom_set( 0.097193 )
+ga_view_center_set( -0.055949, 0.077133 )
+ga_view_zoom_set( 0.145790 )
+ga_view_center_set( -0.036016, 0.089476 )
+ga_view_zoom_set( 0.182238 )
+ga_view_center_set( -0.011100, 0.104904 )
+ga_view_zoom_set( 0.227797 )
+ga_view_center_set( 0.004201, 0.115361 )
+ga_view_zoom_set( 0.256272 )
+ga_view_center_set( 0.021415, 0.127125 )
+ga_view_zoom_set( 0.288306 )
+ga_view_center_set( 0.060146, 0.153596 )
+ga_view_zoom_set( 0.360382 )
+ga_view_center_set( 0.024108, -0.030199 )
+ga_spectrum_continuous_set( "hotcold12", 1 )
+ga_spectrum_continuous_set( "hotcold12", 0 )
+ga_spectrum_continuous_set( "hotcold12", 1 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF", "FringeStyle:Continuous",  @
+"Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0", "TitleDisplay:ON" @
+, "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 4"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", FALSE, FALSE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.0099999998",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF", "FringeStyle:Continuous",  @
+"Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0", "TitleDisplay:ON" @
+, "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 4"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", FALSE, FALSE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.0099999998",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( 0.023191, -0.045669 )
+ga_view_zoom_set( 0.288306 )
+ga_view_center_set( 0.022191, -0.062545 )
+ga_view_zoom_set( 0.209677 )
+ga_view_center_set( 0.021747, -0.075101 )
+ga_view_zoom_set( 0.139785 )
+ga_view_center_set( 0.021648, -0.077891 )
+ga_view_zoom_set( 0.124253 )
+ga_view_aa_set( -93.053307, 0.151494, 12.981590 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:OFF", "FringeStyle:Continuous",  @
+"Shade:None", "ElemEdge:FreeEdge,Black,Solid,1", "Shrink:0", "TitleDisplay:ON" @
+, "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None", "ScaleFactor:1.",  @
+"LabelStyle:Exponential, 12, White, 4"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", FALSE, FALSE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "LoadCase_buckling",  @
+"A1:Mode 1 : Factor = 65785.", "Eigenvectors", "Translational",  @
+"(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.0099999998",  @
+"UndeformedStyle:OFF,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_center_set( 0.003079, -0.078015 )
+ga_view_zoom_set( 0.139785 )
+ga_view_center_set( -0.078480, -0.081237 )
+ga_view_zoom_set( 0.209677 )
+ga_view_center_set( -0.108732, -0.082862 )
+ga_view_zoom_set( 0.235887 )
+ga_view_center_set( -0.244863, -0.090925 )
+ga_view_zoom_set( 0.353830 )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 06-Apr-21 00:37:55

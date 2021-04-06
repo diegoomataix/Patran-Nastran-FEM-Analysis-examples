@@ -1,0 +1,37 @@
+$# Creating journal file C:\Users\diego\Dropbox\Academic\MEng Space 
+$# Systems\2. EUE\FEA\5.Sat Design\Satellite.db.jou at 06-Apr-21 12:08:48
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\2020\Patran/" // @
+"template.db","C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EUE\F" // @
+"EA\5.Sat Design\Satellite.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\5.Sat Design" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 4.9999999E-06, "" )
+uil_primary_file.db_save(  )
+sys_poll_option( 2 )
+ga_group_create( "Bandeja_A" )
+ga_group_current_set( "Bandeja_A" )
+$# Group "Bandeja_A" created.
+sys_poll_option( 0 )
+point_size( 9 )
+node_size( 9 )
+$# UNDO: Create Point XYZ command
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1", "[-0.223 -0.223  0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1
+STRING sgm_transform_point_created_ids[VIRTUAL]
+asm_transform_grid_translate_1( "2", "<0.079 0 0>", 0.079000004, FALSE,  @
+"Coord 0", 1, FALSE, FALSE, "Point 1", sgm_transform_point_created_ids )
+$# 1 Point created: Grid 2
+asm_transform_grid_translate_1( "3", "<0.072 0 0>", 0.071999997, FALSE,  @
+"Coord 0", 1, FALSE, FALSE, "Point 2", sgm_transform_point_created_ids )
+$# 1 Point created: Grid 3
+asm_transform_grid_translate_1( "4", "<0 0.079 0>", 0.079000004, FALSE,  @
+"Coord 0", 1, FALSE, FALSE, "Point 1:3", sgm_transform_point_created_ids )
+$# 3 Points created: Grid 4:6
+uil_primary_file.db_save(  )
