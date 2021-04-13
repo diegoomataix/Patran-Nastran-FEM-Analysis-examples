@@ -2219,3 +2219,306 @@ ga_view_center_set( 0.552870, -0.251587 )
 ga_view_center_set( 0.532610, -0.194184 )
 ga_view_aa_set( -66.881882, 4.966600, 120.645554 )
 uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -60.265202, -3.820168, 153.338837 )
+ga_view_center_set( 0.502220, -0.194184 )
+ga_view_aa_set( -63.074181, -5.678667, 141.641632 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Panel_xn"] )
+ga_view_aa_set( -78.646553, -22.906864, 100.707802 )
+ga_view_center_set( 0.498844, -0.079377 )
+mesh_seed_display_mgr.erase(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.plot(  )
+ga_view_aa_set( -72.508255, -5.738373, 116.284081 )
+ga_view_center_set( 0.469717, -0.085177 )
+ga_view_zoom_set( 0.300150 )
+ga_view_center_set( 0.443827, -0.090333 )
+ga_view_zoom_set( 0.266800 )
+ga_view_center_set( 0.470046, -0.085067 )
+ga_view_zoom_set( 0.300150 )
+ga_view_center_set( 0.499543, -0.079143 )
+ga_view_zoom_set( 0.337668 )
+ga_view_center_set( 0.532726, -0.072479 )
+ga_view_zoom_set( 0.379877 )
+ga_view_center_set( 0.570058, -0.064981 )
+ga_view_zoom_set( 0.427362 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 145:147", 1, ["0.02"],  @
+"Quad4", "11000", "11000", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# 150 nodes and 120 elements created for Surface 145.
+$# 150 nodes and 120 elements created for Surface 146.
+$# 150 nodes and 120 elements created for Surface 147.
+$# === 450 nodes created.  IDs  = 11000:11449.
+$# === 360 elements created.  IDs  = 11000:11359.
+fem_associate_elems_to_ep( "2D_Al7075_Panel_1p5mm",  @
+fem_create_mesh_s_elems_created, fem_create_mesh_surfa_num_elems )
+$# 360 Element(s) associated to the Element Property 2D_Al7075_Panel_1p5mm.
+gm_visibility_widget( " Point 1:200 Curve 1:64 Surface 1:147", FALSE )
+gm_visibility_widget( " Point 1:200 Curve 1:64 Surface 1:147", TRUE )
+gm_visibility_widget( " Node 1000:1624 2000:3877 10001:10004 10007:10010 1" // @
+"0013:10016 10019:10022 10025:10028 10031:10034 10037:10040 10043:10046 10" // @
+"049:10052 10055:10058 10061:10064 10067:10070 11000:11449 Element 1000:19" // @
+"11 2000:4738 10000:10059 11000:11359 MPC 2001:2003", FALSE )
+gm_visibility_widget( " Node 1000:1624 2000:3877 10001:10004 10007:10010 1" // @
+"0013:10016 10019:10022 10025:10028 10031:10034 10037:10040 10043:10046 10" // @
+"049:10052 10055:10058 10061:10064 10067:10070 11000:11449 Element 1000:19" // @
+"11 2000:4738 10000:10059 11000:11359 MPC 2001:2003", TRUE )
+uil_toolbar.shaded_smooth(  )
+ga_view_center_set( 0.521712, 0.004174 )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["Bandeja_A",  @
+"Bandeja_B", "Bandeja_C", "Bandeja_D", "Panel_xn"] )
+ga_view_center_set( 0.610347, -0.011308 )
+ga_view_aa_set( -71.671585, -1.413428, 129.628586 )
+ga_view_center_set( 0.585423, -0.120976 )
+uil_toolbar.wireframe(  )
+ga_view_aa_set( -58.834991, -1.366969, 118.708168 )
+gm_visibility_widget( " Point 1:200 Curve 1:64 Surface 1:147", FALSE )
+ga_view_center_set( 0.622633, -0.009962 )
+uil_toolbar.shaded_smooth(  )
+ga_view_aa_set( -90.604889, 9.673171, 115.918037 )
+ga_view_center_set( 0.537955, -0.069735 )
+ga_view_aa_set( -61.210499, 30.104961, -177.640610 )
+ga_view_aa_set( -46.696255, -52.068031, 20.757566 )
+ga_view_center_set( 0.606977, -0.038194 )
+ga_view_zoom_set( 0.560370 )
+ga_view_center_set( 0.684628, -0.002710 )
+ga_view_zoom_set( 0.630416 )
+ga_view_center_set( 0.771984, 0.037210 )
+ga_view_zoom_set( 0.709218 )
+ga_view_center_set( 0.684628, -0.002710 )
+ga_view_zoom_set( 0.630416 )
+ga_view_center_set( 0.606977, -0.038194 )
+ga_view_zoom_set( 0.560370 )
+ga_view_center_set( 0.482738, -0.094968 )
+ga_view_zoom_set( 0.448296 )
+ga_view_center_set( 0.383346, -0.140387 )
+ga_view_zoom_set( 0.358637 )
+ga_view_center_set( 0.339172, -0.160574 )
+ga_view_zoom_set( 0.318788 )
+ga_view_center_set( 0.299905, -0.178517 )
+ga_view_zoom_set( 0.283367 )
+ga_view_center_set( 0.214234, -0.217667 )
+ga_view_zoom_set( 0.206085 )
+ga_view_center_set( 0.188850, -0.229266 )
+ga_view_zoom_set( 0.183187 )
+ga_view_center_set( 0.148236, -0.247826 )
+ga_view_zoom_set( 0.146550 )
+ga_view_center_set( 0.115744, -0.262674 )
+ga_view_zoom_set( 0.117240 )
+ga_view_center_set( 0.101304, -0.269144 )
+ga_view_zoom_set( 0.104213 )
+ga_view_center_set( 0.088467, -0.274896 )
+ga_view_zoom_set( 0.092634 )
+ga_view_center_set( 0.067930, -0.284098 )
+ga_view_zoom_set( 0.074107 )
+ga_view_center_set( 0.058802, -0.288188 )
+ga_view_zoom_set( 0.065873 )
+ga_view_center_set( 0.051314, -0.291463 )
+ga_view_zoom_set( 0.058554 )
+ga_view_center_set( 0.044829, -0.294373 )
+ga_view_zoom_set( 0.052048 )
+ga_view_center_set( 0.039065, -0.296922 )
+ga_view_zoom_set( 0.046265 )
+ga_view_center_set( 0.033942, -0.299137 )
+ga_view_zoom_set( 0.041124 )
+ga_view_center_set( 0.029613, -0.300956 )
+ga_view_zoom_set( 0.036555 )
+ga_view_center_set( 0.025765, -0.302573 )
+ga_view_zoom_set( 0.032493 )
+ga_view_center_set( 0.022345, -0.304010 )
+ga_view_zoom_set( 0.028883 )
+ga_view_aa_set( -52.468845, -63.186241, -3.684667 )
+ga_view_center_set( 0.025884, -0.302383 )
+ga_view_zoom_set( 0.032493 )
+ga_view_center_set( 0.029865, -0.300552 )
+ga_view_zoom_set( 0.036555 )
+ga_view_center_set( 0.038824, -0.296434 )
+ga_view_zoom_set( 0.045693 )
+ga_view_center_set( 0.044423, -0.293860 )
+ga_view_zoom_set( 0.051405 )
+ga_view_center_set( 0.050721, -0.290964 )
+ga_view_zoom_set( 0.057831 )
+ga_view_center_set( 0.057808, -0.287706 )
+ga_view_zoom_set( 0.065060 )
+ga_view_center_set( 0.073751, -0.280376 )
+ga_view_zoom_set( 0.081325 )
+ga_view_center_set( 0.083716, -0.275795 )
+ga_view_zoom_set( 0.091490 )
+ga_view_center_set( 0.106137, -0.265487 )
+ga_view_zoom_set( 0.114363 )
+ga_view_center_set( 0.120151, -0.259045 )
+ga_view_zoom_set( 0.128658 )
+ga_view_center_set( 0.135916, -0.251797 )
+ga_view_zoom_set( 0.144740 )
+ga_view_center_set( 0.153651, -0.243644 )
+ga_view_zoom_set( 0.162833 )
+ga_view_center_set( 0.173603, -0.234471 )
+ga_view_zoom_set( 0.183187 )
+ga_view_center_set( 0.196050, -0.224152 )
+ga_view_zoom_set( 0.206085 )
+ga_view_center_set( 0.221302, -0.212543 )
+ga_view_zoom_set( 0.231846 )
+ga_view_center_set( 0.249711, -0.199482 )
+ga_view_zoom_set( 0.260827 )
+ga_view_center_set( 0.281671, -0.184789 )
+ga_view_zoom_set( 0.293430 )
+ga_view_center_set( 0.317626, -0.168260 )
+ga_view_zoom_set( 0.330109 )
+ga_view_center_set( 0.398524, -0.131068 )
+ga_view_zoom_set( 0.412636 )
+ga_view_center_set( 0.449086, -0.107824 )
+ga_view_zoom_set( 0.464216 )
+ga_view_aa_set( -64.275528, -7.639070, 86.886658 )
+ga_view_center_set( 0.606919, -0.061402 )
+ga_view_center_set( 0.616203, -0.033549 )
+ga_view_aa_set( -75.570953, -8.183159, -31.417784 )
+ga_view_aa_set( -77.940804, -7.597621, -33.729485 )
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_group_x_equivtol
+INTEGER fem_equiv_group_x_segment
+fem_equiv_all_group4( ["Bandeja_A", "Bandeja_B", "Bandeja_C", "Bandeja_D",  @
+"Eles", "Panel_xn"], 6, "", 1, 1, 4.9999999E-06, FALSE,  @
+fem_equiv_group_x_equivtol, fem_equiv_group_x_segment )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 174 nodes deleted.
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+$# Reclaimed 1.01 MB of 3.68 MB.
+ga_view_aa_set( -87.579430, -2.649576, -24.389034 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Panel_xn"] )
+uil_primary_file.db_save(  )
+ga_group_transform_rotate_1( 1, ["Panel_xn"], "CoordinateFrame 0", "Coord 0.3" @
+, 90., 0., 16, 1, "Panel_yn", 1 )
+$# Question from application Group Applications
+$#     Point 44 already exists. Do you wish to create a duplicate one?
+$? NOFORALL 11012003 
+$# 8 Points in Group ["Panel_yn"] already exist and are not created.
+$# Question from application Group Applications
+$#     Curve 49 already exists. Do you wish to create a duplicate one?
+$? NOFORALL 11012003 
+$# 4 Curves from Group ["Panel_xn"] are created in Group ["Panel_yn"].
+$# 6 Curves in Group ["Panel_yn"] already exist and are not created.
+$# 3 Surfaces from Group ["Panel_xn"] are created in Group ["Panel_yn"].
+$# 400 Nodes from Group ["Panel_xn"] are created in Group ["Panel_yn"].
+$# 360 Elements from Group ["Panel_xn"] are created in Group ["Panel_yn"].
+$# 1 ElementProperty is updated.
+ga_view_center_set( 0.776761, -0.046620 )
+ga_view_aa_set( -70.288078, -4.202879, -5.440436 )
+ga_group_transform_rotate_1( 1, ["Panel_xn"], "CoordinateFrame 0", "Coord 0.3" @
+, 180., 0., 16, 1, "Panel_xp", 1 )
+$# Question from application Group Applications
+$#     Point 49 already exists. Do you wish to create a duplicate one?
+$? NOFORALL 11012003 
+$# 8 Points in Group ["Panel_xp"] already exist and are not created.
+$# Question from application Group Applications
+$#     Curve 58 already exists. Do you wish to create a duplicate one?
+$? NOFORALL 11012003 
+$# 4 Curves from Group ["Panel_xn"] are created in Group ["Panel_xp"].
+$# 6 Curves in Group ["Panel_xp"] already exist and are not created.
+$# 3 Surfaces from Group ["Panel_xn"] are created in Group ["Panel_xp"].
+$# 400 Nodes from Group ["Panel_xn"] are created in Group ["Panel_xp"].
+$# 360 Elements from Group ["Panel_xn"] are created in Group ["Panel_xp"].
+$# 1 ElementProperty is updated.
+ga_view_center_set( 0.505829, 0.009198 )
+ga_view_aa_set( -74.751732, -13.785887, -33.191040 )
+ga_group_transform_rotate_1( 1, ["Panel_xn"], "CoordinateFrame 0", "Coord 0.3" @
+, 270., 0., 16, 1, "Panel_yp", 1 )
+$# Question from application Group Applications
+$#     Point 37 already exists. Do you wish to create a duplicate one?
+$? NOFORALL 11012003 
+$# 8 Points in Group ["Panel_yp"] already exist and are not created.
+$# Question from application Group Applications
+$#     Curve 55 already exists. Do you wish to create a duplicate one?
+$? NOFORALL 11012003 
+$# 4 Curves from Group ["Panel_xn"] are created in Group ["Panel_yp"].
+$# 6 Curves in Group ["Panel_yp"] already exist and are not created.
+$# 3 Surfaces from Group ["Panel_xn"] are created in Group ["Panel_yp"].
+$# 400 Nodes from Group ["Panel_xn"] are created in Group ["Panel_yp"].
+$# 360 Elements from Group ["Panel_xn"] are created in Group ["Panel_yp"].
+$# 1 ElementProperty is updated.
+ga_view_center_set( 0.616264, -0.004634 )
+ga_view_aa_set( -52.389111, -3.642462, -13.681231 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Panel_xn"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Panel_xp"] )
+ga_view_center_set( -0.032270, -0.017602 )
+ga_view_zoom_set( 0.419686 )
+ga_view_center_set( -0.061262, -0.033709 )
+ga_view_zoom_set( 0.373055 )
+ga_view_center_set( -0.087032, -0.048025 )
+ga_view_zoom_set( 0.331604 )
+ga_view_center_set( -0.056626, -0.033163 )
+ga_view_zoom_set( 0.373055 )
+ga_view_center_set( -0.022419, -0.016443 )
+ga_view_zoom_set( 0.419686 )
+ga_view_center_set( 0.016064, 0.002366 )
+ga_view_zoom_set( 0.472147 )
+ga_view_center_set( 0.059357, 0.023528 )
+ga_view_zoom_set( 0.531166 )
+ga_view_center_set( 0.108061, 0.047334 )
+ga_view_zoom_set( 0.597561 )
+ga_view_center_set( 0.162854, 0.074116 )
+ga_view_zoom_set( 0.672256 )
+ga_view_center_set( 0.224219, 0.110327 )
+ga_view_zoom_set( 0.756289 )
+ga_view_center_set( 0.362292, 0.191802 )
+ga_view_zoom_set( 0.945361 )
+ga_view_center_set( 0.448587, 0.242724 )
+ga_view_zoom_set( 1.063531 )
+ga_view_center_set( 0.545669, 0.300011 )
+ga_view_zoom_set( 1.196472 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Panel_yn"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Panel_yp"] )
+ga_view_center_set( 0.463958, -0.022554 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["Panel_yn",  @
+"Panel_yp"] )
+ga_view_center_set( 0.508263, -0.058087 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Panel_yp"] )
+ga_view_center_set( 0.624437, 0.150059 )
+ga_view_center_set( 0.635430, -0.043826 )
+ga_view_aa_set( -61.755772, 20.877748, 19.845181 )
+fem_equiv_all_group4( ["Bandeja_A", "Bandeja_B", "Bandeja_C", "Bandeja_D",  @
+"Eles", "Panel_xn", "Panel_xp", "Panel_yn", "Panel_yp"], 9, "", 1, 1,  @
+4.9999999E-06, FALSE, fem_equiv_group_x_equivtol, fem_equiv_group_x_segment )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 372 nodes deleted.
+uil_primary_file.db_save(  )
+$# Reclaimed 1.02 MB of 3.90 MB.
+ga_view_aa_set( -91.750465, 17.373505, -3.658908 )
+ga_view_aa_set( -77.728622, 13.230490, -50.221085 )
+ga_view_center_set( 0.760009, -0.010286 )
+ga_view_aa_set( -80.103477, 1.953015, -156.598984 )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 9, ["Bandeja_A",  @
+"Bandeja_B", "Bandeja_C", "Bandeja_D", "Eles", "Panel_xn", "Panel_xp",  @
+"Panel_yn", "Panel_yp"] )
+ga_view_center_set( 0.503422, -0.004266 )
+ga_view_aa_set( -74.278412, -1.805435, -155.727356 )
+ga_view_aa_set( -63.296425, -1.736537, 120.820198 )
+ga_view_center_set( 0.410486, -0.002551 )
+ga_view_zoom_set( 0.379225 )
+ga_view_center_set( 0.503733, -0.003799 )
+ga_view_zoom_set( 0.426628 )
+ga_view_center_set( 0.608636, -0.005202 )
+ga_view_zoom_set( 0.479957 )
+ga_view_center_set( 0.726652, -0.005794 )
+ga_view_zoom_set( 0.539952 )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 13-Apr-21 12:17:24
