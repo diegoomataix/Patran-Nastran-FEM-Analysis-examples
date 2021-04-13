@@ -2522,3 +2522,213 @@ ga_view_zoom_set( 0.539952 )
 uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 13-Apr-21 12:17:24
+$# Appending to existing journal file C:\Users\diego\Dropbox\Academic\MEng 
+$# Space Systems\2. EUE\FEA\5.Sat Design\Satellite.db.jou at 13-Apr-21 12:17:58
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\diego\Dropbox\Academic\MEng Space Systems\2. EU" // @
+"E\FEA\5.Sat Design" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_view_center_set( 0.570066, -0.000394 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Panel_yp"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Bandeja_A"] )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -0.015929, -0.018592 )
+ga_view_zoom_set( 0.162841 )
+ga_view_center_set( -0.031166, -0.012878 )
+ga_view_zoom_set( 0.144748 )
+ga_view_center_set( -0.044709, -0.007799 )
+ga_view_zoom_set( 0.128665 )
+ga_view_center_set( -0.056748, -0.003284 )
+ga_view_zoom_set( 0.114368 )
+ga_view_center_set( -0.044709, -0.007799 )
+ga_view_zoom_set( 0.128665 )
+ga_view_center_set( -0.031166, -0.012878 )
+ga_view_zoom_set( 0.144748 )
+ga_view_center_set( -0.015929, -0.018592 )
+ga_view_zoom_set( 0.162841 )
+ga_view_center_set( 0.018353, -0.031447 )
+ga_view_zoom_set( 0.203551 )
+ga_view_center_set( 0.039780, -0.039482 )
+ga_view_zoom_set( 0.228995 )
+ga_view_center_set( 0.063885, -0.048522 )
+ga_view_zoom_set( 0.257620 )
+ga_view_center_set( 0.091002, -0.058691 )
+ga_view_zoom_set( 0.289822 )
+ga_view_center_set( 0.121510, -0.070131 )
+ga_view_zoom_set( 0.326050 )
+ga_view_center_set( 0.155831, -0.083002 )
+ga_view_zoom_set( 0.366806 )
+ga_view_center_set( 0.456612, -0.009640 )
+gm_visibility_widget( "Elm 1336:1911", FALSE )
+gm_visibility_widget( " Point 1:200 Curve 1:76 Surface 1:156", FALSE )
+ga_view_center_set( 0.363936, -0.029436 )
+sys_poll_option( 2 )
+ga_group_create( "CBUSH" )
+ga_group_entity_add( "CBUSH", "Node 1153 1174 1145 1073 1051 1008 1013 111" // @
+"6 1193 1035 1213 1091" )
+ga_group_current_set( "CBUSH" )
+$# Group "CBUSH" created.
+sys_poll_option( 0 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["CBUSH"] )
+gm_visibility_widget( " Node 1000:1624 2000:3877 10001:10004 10007:10010 1" // @
+"0013:10016 10019:10022 10025:10028 10031:10034 10037:10040 10043:10046 10" // @
+"049:10052 10055:10058 10061:10064 10067:10070 11026:11048 11051:11073 110" // @
+"76:11098 11101:11123 11176:11198 11201:11223 11226:11248 11251:11273 1132" // @
+"6:11348 11351:11373 11376:11398 11401:11423 11548:11823 11948:12223 12348" // @
+":12623 Element 1000:1911 2000:4738 10000:10059 11000:12439 MPC 2001:2003",  @
+FALSE )
+gm_visibility_widget( " Node 1000:1624 2000:3877 10001:10004 10007:10010 1" // @
+"0013:10016 10019:10022 10025:10028 10031:10034 10037:10040 10043:10046 10" // @
+"049:10052 10055:10058 10061:10064 10067:10070 11026:11048 11051:11073 110" // @
+"76:11098 11101:11123 11176:11198 11201:11223 11226:11248 11251:11273 1132" // @
+"6:11348 11351:11373 11376:11398 11401:11423 11548:11823 11948:12223 12348" // @
+":12623 Element 1000:1911 2000:4738 10000:10059 11000:12439 MPC 2001:2003",  @
+TRUE )
+uil_toolbar.wireframe(  )
+ga_view_center_set( 0.267240, -0.011790 )
+ga_view_center_set( 0.291156, -0.006538 )
+ga_view_zoom_set( 0.221063 )
+ga_view_center_set( 0.318062, -0.000812 )
+ga_view_zoom_set( 0.248695 )
+ga_view_center_set( 0.360340, -0.013246 )
+uil_primary_file.db_save(  )
+$# Reclaimed 1.03 MB of 3.96 MB.
+ga_view_aa_set( -75.802742, -6.026325, 29.326496 )
+ga_view_center_set( 0.365314, -0.035629 )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+STRING fem_transform_node__created_ids[VIRTUAL]
+STRING fem_transform_node__deleted_ids[VIRTUAL]
+fem_translate_nodes_2( "1", "<0 0 -0.02>", 0.02, FALSE, "Coord 0", 1, FALSE,  @
+2, "Node 1008 1013 1035 1051 1073 1091 1116 1145 1153 1174 1193 1213",  @
+fem_transform_node__created_ids, fem_transform_node__deleted_ids )
+$# === 12 nodes created.  IDs  = 1:12.
+ga_view_aa_set( -86.308067, -3.644434, 33.373920 )
+ga_view_aa_set( -77.351326, 2.059319, 22.102301 )
+ga_view_center_set( -0.008886, -0.003200 )
+ga_view_zoom_set( 0.069487 )
+ga_view_center_set( -0.016784, -0.006045 )
+ga_view_zoom_set( 0.061766 )
+ga_view_center_set( -0.023805, -0.008573 )
+ga_view_zoom_set( 0.054903 )
+ga_view_center_set( -0.030046, -0.010820 )
+ga_view_zoom_set( 0.048803 )
+ga_view_center_set( -0.023805, -0.008573 )
+ga_view_zoom_set( 0.054903 )
+ga_view_center_set( -0.016784, -0.006045 )
+ga_view_zoom_set( 0.061766 )
+ga_view_center_set( -0.008886, -0.003200 )
+ga_view_zoom_set( 0.069487 )
+ga_view_center_set( 0.000000, 0.000000 )
+ga_view_zoom_set( 0.078172 )
+ga_view_center_set( 0.009997, 0.003600 )
+ga_view_zoom_set( 0.087944 )
+ga_view_center_set( 0.021243, 0.007650 )
+ga_view_zoom_set( 0.098937 )
+ga_view_center_set( 0.033569, 0.012328 )
+ga_view_zoom_set( 0.111304 )
+ga_view_center_set( 0.047436, 0.017592 )
+ga_view_zoom_set( 0.125217 )
+ga_view_center_set( 0.063037, 0.023513 )
+ga_view_zoom_set( 0.140869 )
+ga_view_center_set( 0.205315, 0.008017 )
+ga_view_aa_set( -84.180511, 0.909557, 15.199489 )
+ga_view_center_set( 0.186213, 0.003898 )
+ga_view_zoom_set( 0.125217 )
+ga_view_center_set( 0.169234, 0.000145 )
+ga_view_zoom_set( 0.111304 )
+ga_view_center_set( 0.154141, -0.003231 )
+ga_view_zoom_set( 0.098937 )
+ga_view_center_set( 0.169193, 0.000145 )
+ga_view_zoom_set( 0.111304 )
+ga_view_center_set( 0.186127, 0.003944 )
+ga_view_zoom_set( 0.125217 )
+ga_view_center_set( 0.205177, 0.008217 )
+ga_view_zoom_set( 0.140869 )
+ga_view_center_set( 0.226551, 0.013025 )
+ga_view_zoom_set( 0.158478 )
+ga_view_center_set( 0.250401, 0.018434 )
+ga_view_zoom_set( 0.178288 )
+ga_view_center_set( 0.277085, 0.024518 )
+ga_view_zoom_set( 0.200574 )
+ga_view_center_set( 0.305868, 0.033590 )
+ga_view_zoom_set( 0.225645 )
+ga_view_center_set( 0.338249, 0.043889 )
+ga_view_zoom_set( 0.253851 )
+ga_view_center_set( 0.411106, 0.067061 )
+ga_view_zoom_set( 0.317314 )
+ga_view_center_set( 0.456641, 0.081544 )
+ga_view_zoom_set( 0.356978 )
+ga_view_aa_set( -56.872414, 7.287995, 24.295364 )
+ga_view_center_set( 0.409149, 0.064582 )
+ga_view_zoom_set( 0.317314 )
+ga_view_center_set( 0.366933, 0.049505 )
+ga_view_zoom_set( 0.282057 )
+ga_view_center_set( 0.330645, 0.035691 )
+ga_view_zoom_set( 0.250717 )
+ga_view_center_set( 0.298389, 0.023412 )
+ga_view_zoom_set( 0.222860 )
+ga_view_aa_set( -67.355797, -3.411240, 6.220301 )
+elementprops_create( "1D_CBUSH_IF", 89, 25, 20, 37, 2, 20, [4174, 4177, 4175,  @
+4176, 2104, 2105, 4178, 4179, 4186, 4187, 4198, 4199, 4200, 4201, 4202, 4203,  @
+4192, 4193, 4194, 4195, 4196, 4197, 2028, 2029, 4188, 4189, 4190, 4191, 4204,  @
+4205, 4206, 4207, 4208, 4209, 4180, 4210, 4298, 4299, 4300, 4301, 4302, 4181,  @
+4182, 4183, 4184, 4290, 4291, 4292, 4293, 4294, 4295, 4296, 4297], [2, 1, 9,  @
+2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 4, 4, 4, 1, 1, 1, 4], [ @
+"<0 1 0>", "", "", "", "1E9", "1E9", "1E9", "100", "1E7", "1E7", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+""], "" )
+$# Property Set "1D_CBUSH_IF" created.
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( -87.289063, -6.795505, 12.866082 )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( -67.005424, -0.169049, -1.961212 )
+au_create_elm_by_nodes.main( 1, 1, "Bar2", 2, "Model", "Node 1:12", "Nodes",  @
+0, ["empty"], "Node 1:12 1008 1013 1035 1051 1073 1091 1116 1145 1153 1174" // @
+" 1193 1213" )
+$# 12 elements created ...
+mesh_seed_display_mgr.erase(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+$# Error reported from application ELEM_PROPS
+$#     The Element Properties must be Entered to continue.
+$? NO 29002021 
+elementprops_modify( "1D_CBUSH_IF", "1D_CBUSH_IF", 89, 25, 20, 37, 2, 20, [ @
+4174, 4177, 4175, 4176, 2104, 2105, 4178, 4179, 4186, 4187, 4198, 4199, 4200,  @
+4201, 4202, 4203, 4192, 4193, 4194, 4195, 4196, 4197, 2028, 2029, 4188, 4189,  @
+4190, 4191, 4204, 4205, 4206, 4207, 4208, 4209, 4180, 4210, 4298, 4299, 4300,  @
+4301, 4302, 4181, 4182, 4183, 4184, 4290, 4291, 4292, 4293, 4294, 4295, 4296,  @
+4297], [2, 1, 9, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 4, 4, 4,  @
+1, 1, 1, 4], ["<0. 1. 0.>", "", "", "", "1E+09", "1E+09", "1E+09", "100.",  @
+"10000000.", "10000000.", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+, "", "", "", "", "", "", "", "", "", ""], "Element 1:12" )
+$# Property Set "1D_CBUSH_IF" modified.
+elementprops_modify( "1D_CBUSH_IF", "1D_CBUSH_IF", 89, 25, 20, 37, 2, 20, [ @
+4174, 4177, 4175, 4176, 2104, 2105, 4178, 4179, 4186, 4187, 4198, 4199, 4200,  @
+4201, 4202, 4203, 4192, 4193, 4194, 4195, 4196, 4197, 2028, 2029, 4188, 4189,  @
+4190, 4191, 4204, 4205, 4206, 4207, 4208, 4209, 4180, 4210, 4298, 4299, 4300,  @
+4301, 4302, 4181, 4182, 4183, 4184, 4290, 4291, 4292, 4293, 4294, 4295, 4296,  @
+4297], [2, 1, 9, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 4, 4, 4,  @
+1, 1, 1, 4], ["<0. 1. 0.>", "", "", "", "1E+09", "1E+09", "1E+09", "100.",  @
+"10000000.", "10000000.", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+, "", "", "", "", "", "", "", "", "", ""], "Element 1:12" )
+$# Property Set "1D_CBUSH_IF" modified.
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
