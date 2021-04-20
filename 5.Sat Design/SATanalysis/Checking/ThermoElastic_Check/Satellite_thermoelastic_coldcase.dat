@@ -1,0 +1,37 @@
+SOL 101
+CEND
+$ Direct Text Input for Global Case Control Data
+TITLE = THERMOELASTIC
+ECHO = NONE
+AUTOSPC(NOPRINT) = YES
+RIGID = LAGR
+SUBCASE 1
+$ Subcase name : Homog_Temp
+   SUBTITLE=MODEL_Thermoelastic_check
+   SPC = 2
+   TEMPERATURE(INIT) = 2
+   TEMPERATURE(LOAD) = 1
+   DISPLACEMENT(PLOT,SORT1,REAL)=ALL
+   SPCFORCES(SORT1,PHASE)=ALL
+$   FORCES(SORT1,PHASE)=102
+$   GPFORCES(SORT1,PHASE)=104
+   STRESS(PLOT,SORT1,REAL,VONMISES,BILIN)=ALL
+BEGIN BULK
+$ Direct Text Input for Bulk Data
+PARAM    POST    0
+PARAM   PRTMAXIM YES
+$ Temperatura inicial 20�C
+TEMPD     2       20.
+$Para los nodos sin temperatura utilizar TEMPD, el los encontrar�
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+TEMPD     1       120.
+$ Loads for Load Case :Thermoelastic_coldcase
+$ Bar Element Temperatures of Load Set : tempRef1D50C
+SPCADD   2       1
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+$ Displacement Constraints of Load Set : SPC_ISOSTATIC
+SPC1     1       123456  1       THRU    12
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+INCLUDE 'Satellite.bdf'
+$ INCLUDE 'MODEL_thermaldata_coldcase.dat'
+ENDDATA
