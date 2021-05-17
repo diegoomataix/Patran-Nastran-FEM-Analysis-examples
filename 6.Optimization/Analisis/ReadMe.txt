@@ -18,6 +18,11 @@ SOL4 --> CUMPLE FREQ (150.94 Hz) NO CUMPLE REQ. STRESS (MOS = 2.13). MASS = 5.16
 	
 SOL5 --> CUMPLE FREQ (150.39 Hz) PERO CUMPLE REQ. STRESS (MOS = 2.31). MASS =  5.179465E+01 kg => 1.470 kg
  
+SOL6 --> CUMPLE FREQ (151.278 Hz) NO CUMPLE REQ. STRESS (MOS = ). MASS = 5.282965E+01 kg => 2.505 kg
+     --> edit --> igualando altura rigidizadores: (Sat_Bandeja_Inf_9rig_I_Al7075_SOL6)
+		--- MASS =  5.292510E+01 kg => 2.600 kg
+		--- 1 FREQ = 151.239 Hz
+		--- MOS = 2.5
 
 ----------------------------------------------------------------------------------------------------------
 
